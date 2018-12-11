@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=ZorinRed-Dark
+Comment=The dark desktop theme with red highlights for Zorin OS
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=ZorinRed-Dark
+MetacityTheme=ZorinRed-Dark
+IconTheme=ZorinRed-Dark
+CursorTheme=Adwaita
+ButtonLayout=:minimize,maximize,close

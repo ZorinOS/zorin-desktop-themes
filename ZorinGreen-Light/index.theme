@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=ZorinGreen-Light
+Comment=The light desktop theme with green highlights for Zorin OS
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=ZorinGreen-Light
+MetacityTheme=ZorinGreen-Light
+IconTheme=ZorinGreen-Light
+CursorTheme=Adwaita
+ButtonLayout=:minimize,maximize,close

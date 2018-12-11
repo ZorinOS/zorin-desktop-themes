@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=ZorinOrange-Dark
+Comment=The dark desktop theme with orange highlights for Zorin OS
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=ZorinOrange-Dark
+MetacityTheme=ZorinOrange-Dark
+IconTheme=ZorinOrange-Dark
+CursorTheme=Adwaita
+ButtonLayout=:minimize,maximize,close

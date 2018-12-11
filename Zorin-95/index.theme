@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Zorin-95
+Comment=The classic desktop theme for Zorin OS
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Zorin-95
+MetacityTheme=Zorin-95
+IconTheme=ZorinOrange-Light
+CursorTheme=Adwaita
+ButtonLayout=:minimize,maximize,close

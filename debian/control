@@ -1,0 +1,12 @@
+Source: zorin-desktop-themes
+Section: gnome
+Priority: extra
+Maintainer: Artyom Zorin <azorin@zoringroup.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.3
+
+Package: zorin-desktop-themes
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, gtk2-engines-murrine, gtk2-engines-pixbuf, fonts-zorin-os-core
+Description: Zorin OS desktop themes
+ The Zorin OS desktop theme provided in a variety of color combinations.

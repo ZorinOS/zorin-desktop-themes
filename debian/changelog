@@ -1,0 +1,302 @@
+zorin-desktop-themes (2.0.3) bionic; urgency=medium
+
+  * Added LICENSE and README.md files to root
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Tue, 11 Dec 2018 17:31:33 +0000
+
+zorin-desktop-themes (2.0.2) bionic; urgency=medium
+
+  * Bug fixes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 02 Dec 2018 23:53:40 +0000
+
+zorin-desktop-themes (2.0.1) bionic; urgency=medium
+
+  * Tweaked Gnome Shell panel-button active state
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 30 Nov 2018 13:44:30 +0000
+
+zorin-desktop-themes (2.0) bionic; urgency=medium
+
+  * Entirely re-designed and re-written for Zorin OS 15
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 29 Nov 2018 22:12:59 +0000
+
+zorin-desktop-themes (1.8.1) bionic; urgency=medium
+
+  * Relocate zorin.css Gnome Shell theme
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 22 Sep 2018 12:44:27 +0100
+
+zorin-desktop-themes (1.8) bionic; urgency=medium
+
+  * Test build for Zorin OS 15
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 14 Sep 2018 21:44:33 +0100
+
+zorin-desktop-themes (1.7.3) xenial; urgency=medium
+
+  * Fixed issue in ZorinGrey-Dark theme where text selection is
+    invisible with white text entry backgrounds
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 05 Aug 2018 21:39:11 +0100
+
+zorin-desktop-themes (1.7.2) xenial; urgency=medium
+
+  * Added support for the details-channel widget in Gnome Software
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Wed, 09 May 2018 15:27:45 +0100
+
+zorin-desktop-themes (1.7.1) xenial; urgency=medium
+
+  * Made the newest changes to the gnome-terminal styling compatible
+    with the Dark themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 15 Oct 2017 18:49:07 +0100
+
+zorin-desktop-themes (1.7) xenial; urgency=medium
+
+  * The global tab size now stays consistent within nautilus and gnome-
+    terminal
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 15 Oct 2017 18:41:38 +0100
+
+zorin-desktop-themes (1.6.10) xenial; urgency=medium
+
+  * Added transparency to titlebuttons to fix border issue in Chromium
+    63+
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 09 Oct 2017 11:04:21 +0100
+
+zorin-desktop-themes (1.6.9) xenial; urgency=medium
+
+  * Fixed overlay scrollbar over eject button issue
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 23 Jun 2017 17:13:29 +0100
+
+zorin-desktop-themes (1.6.8) xenial; urgency=medium
+
+  * Added transparency for menubaritems
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 11 Jun 2017 18:24:55 +0100
+
+zorin-desktop-themes (1.6.7) xenial; urgency=medium
+
+  * Added dark styling to gnome-panel
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 11 Jun 2017 16:27:31 +0100
+
+zorin-desktop-themes (1.6.6) xenial; urgency=medium
+
+  * Improved appearance on Xfdesktop
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 08 Jun 2017 18:05:18 +0100
+
+zorin-desktop-themes (1.6.5) xenial; urgency=medium
+
+  * Added fixes for the XFCE panel
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 08 Jun 2017 16:11:15 +0100
+
+zorin-desktop-themes (1.6.4) xenial; urgency=medium
+
+  * Various fixes for XFCE
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 28 May 2017 23:13:31 +0100
+
+zorin-desktop-themes (1.6.3) xenial; urgency=medium
+
+  * Added styling for the lightdm-gtk-greeter
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 06 May 2017 15:34:08 +0100
+
+zorin-desktop-themes (1.6.2) xenial; urgency=medium
+
+  * Changed progress bar background colours in xfce-notify-4.0 themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 05 May 2017 19:48:48 +0100
+
+zorin-desktop-themes (1.6.1) xenial; urgency=medium
+
+  * Better optimized for XFCE
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 04 May 2017 16:20:16 +0100
+
+zorin-desktop-themes (1.6) xenial; urgency=medium
+
+  * Added xfwm4 theme as well as updating the Gtk3 theme for the
+    upcoming version of Chromium and the plank and xfce-notify-4.0
+    themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Wed, 03 May 2017 20:10:58 +0100
+
+zorin-desktop-themes (1.5.10) xenial; urgency=medium
+
+  * Removed GtkEventBox background color
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 24 Feb 2017 14:32:42 +0000
+
+zorin-desktop-themes (1.5.9) xenial; urgency=medium
+
+  * Updated copyright notices
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 04 Nov 2016 14:57:16 +0000
+
+zorin-desktop-themes (1.5.8) xenial; urgency=medium
+
+  * Adjusted dim-label colours on desktop icons
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 01 Oct 2016 02:05:42 +0100
+
+zorin-desktop-themes (1.5.7) xenial; urgency=medium
+
+  * Ready for public use in Zorin OS 12
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 18 Sep 2016 20:37:02 +0100
+
+zorin-desktop-themes (1.5.6) xenial; urgency=medium
+
+  * Software tiles work well in backdrop mode now
+
+ -- Zorin OS <os@zoringroup.com>  Sat, 17 Sep 2016 16:59:54 +0100
+
+zorin-desktop-themes (1.5.5) xenial; urgency=medium
+
+  * Added theme code for Software
+
+ -- Zorin OS <os@zoringroup.com>  Sat, 17 Sep 2016 16:36:07 +0100
+
+zorin-desktop-themes (1.5.4) xenial; urgency=medium
+
+  * Fix for flat buttons on header bars
+
+ -- Zorin OS <os@zoringroup.com>  Fri, 16 Sep 2016 01:32:28 +0100
+
+zorin-desktop-themes (1.5.3) xenial; urgency=medium
+
+  * Fix for the backdrop header bar in Polari
+
+ -- Zorin OS <os@zoringroup.com>  Thu, 15 Sep 2016 03:27:04 +0100
+
+zorin-desktop-themes (1.5.2) xenial; urgency=medium
+
+  * Slight change to window title padding
+
+ -- Zorin OS <os@zoringroup.com>  Wed, 14 Sep 2016 02:24:59 +0100
+
+zorin-desktop-themes (1.5.1) xenial; urgency=medium
+
+  * Improved window title padding
+
+ -- Zorin OS <os@zoringroup.com>  Wed, 14 Sep 2016 02:19:55 +0100
+
+zorin-desktop-themes (1.5-1) xenial; urgency=low
+
+  * Fixed fonts dependency package reference
+
+ -- Zorin OS <os@zoringroup.com>  Thu, 08 Sep 2016 16:46:08 -0400
+
+zorin-desktop-themes (1.5) xenial; urgency=low
+
+  * Bug fixes, improvements and new Gnome Shell themes for Zorin OS 12
+
+ -- Zorin OS <os@zoringroup.com>  Fri, 02 Sep 2016 10:43:01 -0400
+
+zorin-desktop-themes (1.4) vivid; urgency=low
+
+  * Finalised LXDE additions with the changes to the gtk2 panel text
+    colours
+
+ -- Zorin OS <os@zoringroup.com>  Fri, 07 Aug 2015 12:15:07 -0400
+
+zorin-desktop-themes (1.3.2) vivid; urgency=low
+
+  * Added LXDE additions to all theme variants
+
+ -- Zorin OS <os@zoringroup.com>  Thu, 06 Aug 2015 16:59:14 -0400
+
+zorin-desktop-themes (1.3.1) vivid; urgency=low
+
+  * Changed gtk2 panel for LXDE
+
+ -- Zorin OS <os@zoringroup.com>  Thu, 06 Aug 2015 11:56:06 -0400
+
+zorin-desktop-themes (1.3) vivid; urgency=low
+
+  * Added Openbox themes
+
+ -- Zorin OS <os@zoringroup.com>  Wed, 05 Aug 2015 17:38:24 -0400
+
+zorin-desktop-themes (1.2.6) vivid; urgency=low
+
+  * Fixed bug where unselected text became invisible in some
+    GtkTreeViews
+
+ -- Zorin OS <os@zoringroup.com>  Tue, 14 Jul 2015 17:09:17 -0400
+
+zorin-desktop-themes (1.2.5) vivid; urgency=low
+
+  * Added text shadows back to the zorin-greeter
+
+ -- Zorin OS <os@zoringroup.com>  Mon, 13 Jul 2015 10:40:02 -0400
+
+zorin-desktop-themes (1.2.4) vivid; urgency=low
+
+  * Fixed buttons in Parole Media Player
+
+ -- Zorin OS <os@zoringroup.com>  Mon, 13 Jul 2015 10:26:01 -0400
+
+zorin-desktop-themes (1.2.3) vivid; urgency=low
+
+  * Fixed shadow in the zorin-greeter theme file
+
+ -- Zorin OS <os@zoringroup.com>  Sun, 12 Jul 2015 16:14:58 -0400
+
+zorin-desktop-themes (1.2.2) vivid; urgency=low
+
+  * Fixed issue with California calendar in the dark themes
+
+ -- Zorin OS <os@zoringroup.com>  Sun, 12 Jul 2015 15:08:39 -0400
+
+zorin-desktop-themes (1.2.1) vivid; urgency=low
+
+  * Removed unnecessary backup files in Plank themes
+
+ -- Zorin OS <os@zoringroup.com>  Sun, 12 Jul 2015 12:23:15 -0400
+
+zorin-desktop-themes (1.2) vivid; urgency=low
+
+  * Added Plank themes
+
+ -- Zorin OS <os@zoringroup.com>  Sun, 12 Jul 2015 12:20:58 -0400
+
+zorin-desktop-themes (1.1.1) vivid; urgency=low
+
+  * Corrected window border icons for the ZorinRed-Light theme
+
+ -- Zorin OS <os@zoringroup.com>  Thu, 02 Jul 2015 20:42:08 -0400
+
+zorin-desktop-themes (1.1) vivid; urgency=low
+
+  * Added Orb Metacity themes
+
+ -- Zorin OS <os@zoringroup.com>  Wed, 01 Jul 2015 21:06:39 -0400
+
+zorin-desktop-themes (1.0.1) vivid; urgency=low
+
+  * Fixed a few issues with the zorin-greeter theming
+
+ -- Zorin OS <os@zoringroup.com>  Mon, 29 Jun 2015 21:35:06 -0400
+
+zorin-desktop-themes (1.0) vivid; urgency=low
+
+  * Added package to PPA
+
+ -- Zorin OS <os@zoringroup.com>  Mon, 29 Jun 2015 21:10:10 -0400
+
+zorin-desktop-themes (0.1) vivid; urgency=low
+ 
+  * Initial release
+
+ -- Zorin OS <os@zoringroup.com>  Mon, 29 Jun 2015 14:17:47 +0200
+

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=ZorinPurple-Light
+Comment=The light desktop theme with purple highlights for Zorin OS
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=ZorinPurple-Light
+MetacityTheme=ZorinPurple-Light
+IconTheme=ZorinPurple-Light
+CursorTheme=Adwaita
+ButtonLayout=:minimize,maximize,close
