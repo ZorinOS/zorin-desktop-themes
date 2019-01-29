@@ -983,17 +983,17 @@ menu menuitem check, menu menuitem radio { margin: 0; }
 
 menu menuitem check, menu menuitem check:hover, menu menuitem check:disabled, menu menuitem radio, menu menuitem radio:hover, menu menuitem radio:disabled { min-height: 14px; min-width: 14px; background-image: none; background-color: transparent; box-shadow: none; color: inherit; border-color: currentColor; }
 
-check, treeview.view check:selected:focus { border-radius: 4px; }
+check, treeview.view check:selected, treeview.view check:selected:focus { border-radius: 4px; }
 
-check:checked, treeview.view check:selected:focus:checked { -gtk-icon-source: image(-gtk-recolor(url("assets/check-symbolic.svg")), -gtk-recolor(url("assets/check-symbolic.symbolic.png"))); }
+check:checked, treeview.view check:selected:checked, treeview.view check:selected:focus:checked { -gtk-icon-source: image(-gtk-recolor(url("assets/check-symbolic.svg")), -gtk-recolor(url("assets/check-symbolic.symbolic.png"))); }
 
-check:indeterminate, treeview.view check:selected:focus:indeterminate { -gtk-icon-source: image(-gtk-recolor(url("assets/dash-symbolic.svg")), -gtk-recolor(url("assets/dash-symbolic.symbolic.png"))); }
+check:indeterminate, treeview.view check:selected:indeterminate, treeview.view check:selected:focus:indeterminate { -gtk-icon-source: image(-gtk-recolor(url("assets/dash-symbolic.svg")), -gtk-recolor(url("assets/dash-symbolic.symbolic.png"))); }
 
-treeview.view radio:selected:focus, treeview.view radio:selected, radio, treeview.view radio:selected:focus { border-radius: 100%; }
+treeview.view radio:selected:focus, treeview.view radio:selected, radio, treeview.view radio:selected, treeview.view radio:selected:focus { border-radius: 100%; }
 
-treeview.view radio:checked:selected, radio:checked, treeview.view radio:selected:focus:checked { -gtk-icon-source: image(-gtk-recolor(url("assets/bullet-symbolic.svg")), -gtk-recolor(url("assets/bullet-symbolic.symbolic.png"))); }
+treeview.view radio:checked:selected, radio:checked, treeview.view radio:selected:checked, treeview.view radio:selected:focus:checked { -gtk-icon-source: image(-gtk-recolor(url("assets/bullet-symbolic.svg")), -gtk-recolor(url("assets/bullet-symbolic.symbolic.png"))); }
 
-treeview.view radio:indeterminate:selected, radio:indeterminate, treeview.view radio:selected:focus:indeterminate { -gtk-icon-source: image(-gtk-recolor(url("assets/dash-symbolic.svg")), -gtk-recolor(url("assets/dash-symbolic.symbolic.png"))); }
+treeview.view radio:indeterminate:selected, radio:indeterminate, treeview.view radio:selected:indeterminate, treeview.view radio:selected:focus:indeterminate { -gtk-icon-source: image(-gtk-recolor(url("assets/dash-symbolic.svg")), -gtk-recolor(url("assets/dash-symbolic.symbolic.png"))); }
 
 radio:not(:indeterminate):not(:checked):active:not(:backdrop) { -gtk-icon-transform: scale(0); }
 
@@ -1691,11 +1691,9 @@ button.emoji-section:hover { border-color: #433225; }
 
 button.emoji-section:checked { border-color: #febc8d; }
 
-button.emoji-section label { padding: 0; opacity: 0.55; }
+button.emoji-section label { padding: 0; color: #febc8d; opacity: 1; }
 
-button.emoji-section:hover label { opacity: 0.775; }
-
-button.emoji-section:checked label { opacity: 1; }
+button.emoji-section:hover label, button.emoji-section:checked label { color: #febc8d; opacity: 1; }
 
 popover.emoji-picker .emoji { font-size: x-large; padding: 6px; border-radius: 8px; }
 

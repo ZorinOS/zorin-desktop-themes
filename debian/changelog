@@ -1,3 +1,9 @@
+zorin-desktop-themes (2.0.5) bionic; urgency=medium
+
+  * Fixed emoji selector bug
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Tue, 29 Jan 2019 22:18:05 +0000
+
 zorin-desktop-themes (2.0.4) bionic; urgency=medium
 
   * Various improvements and bug fixes
