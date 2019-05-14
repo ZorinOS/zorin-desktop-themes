@@ -1,3 +1,24 @@
+zorin-desktop-themes (2.0.8) bionic; urgency=medium
+
+  * Fixed bug where checkboxes and radio buttons did not appear in
+    LibreOffice
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 12 May 2019 22:27:14 +0100
+
+zorin-desktop-themes (2.0.7) bionic; urgency=medium
+
+  * Fixed bugs with toolbar background and Gnome Software
+    category_page_header_filter_box
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 26 Apr 2019 00:20:27 +0100
+
+zorin-desktop-themes (2.0.6) bionic; urgency=medium
+
+  * Changed Gnome Shell default font to Inter and changed Gnome Shell
+    zorin.css file to a symbolic link
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Tue, 05 Feb 2019 18:02:50 +0000
+
 zorin-desktop-themes (2.0.5) bionic; urgency=medium
 
   * Fixed emoji selector bug

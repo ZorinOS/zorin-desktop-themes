@@ -451,7 +451,7 @@ combobox arrow { -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); min-heig
 combobox:drop(active) { box-shadow: none; }
 
 /************ Toolbars * */
-toolbar, .inline-toolbar, searchbar > revealer > box, .location-bar { -GtkWidget-window-dragging: true; padding: 4px; background-color: transparent; }
+toolbar, .inline-toolbar, searchbar > revealer > box, .location-bar { -GtkWidget-window-dragging: true; padding: 4px; background-color: #161218; }
 
 toolbar { padding: 4px 3px 3px 4px; }
 
@@ -867,7 +867,7 @@ scrollbar.right { border-left: 1px solid #332938; }
 
 scrollbar:backdrop { border-color: #2d2432; transition: 200ms ease-out; }
 
-scrollbar slider { min-width: 6px; min-height: 6px; margin: -1px; border: 4px solid transparent; border-radius: 8px; background-clip: padding-box; background-color: #897098; }
+scrollbar slider { min-width: 8px; min-height: 8px; margin: -1px; border: 4px solid transparent; border-radius: 8px; background-clip: padding-box; background-color: #897098; transition: 150ms linear; transition-property: min-height, min-width, border-color, background-color; }
 
 scrollbar slider:hover { background-color: #b08fc2; }
 
@@ -877,7 +877,7 @@ scrollbar slider:backdrop, scrollbar slider:backdrop:hover { background-color: #
 
 scrollbar slider:disabled { background-color: transparent; }
 
-scrollbar.fine-tune slider { min-width: 4px; min-height: 4px; }
+scrollbar.fine-tune slider { min-width: 6px; min-height: 6px; transition: none; }
 
 scrollbar.fine-tune.horizontal slider { border-width: 5px 4px; }
 
@@ -959,7 +959,7 @@ checkbutton.text-button label:not(:only-child):first-child, radiobutton.text-but
 
 checkbutton.text-button label:not(:only-child):last-child, radiobutton.text-button label:not(:only-child):last-child { margin-right: 4px; }
 
-check, radio { margin: 0 4px; min-height: 14px; min-width: 14px; -gtk-icon-source: none; background-color: #161218; border: 2px solid #46394d; }
+check, radio { margin: 0 4px; color: #d6aeed; min-height: 14px; min-width: 14px; -gtk-icon-source: none; background-color: #161218; border: 2px solid #46394d; }
 
 check:only-child, radio:only-child { margin: 0; }
 
@@ -1746,6 +1746,15 @@ toolbutton > button.image-button.text-button.flat button:active { color: #d6aeed
 
 /****************** Gnome Terminal * */
 terminal-window decoration { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+
+/****************** Gnome Software * */
+.category_page_header_filter_box { border-image: linear-gradient(to bottom, #332938, #332938) 0 0 1 0/0 0 1px 0 stretch; background-image: image(#161218); }
+
+.category_page_header_filter_box button, .category_page_header_filter_box button:hover, .category_page_header_filter_box button:checked { color: #d6aeed; margin: 3px 0 0 0; padding: 4px; }
+
+.category_page_header_filter_box button:disabled { color: #766083; }
+
+.category_page_header_filter_box button:backdrop, .category_page_header_filter_box button label:backdrop { color: #766083; }
 
 /* GTK NAMED COLORS ---------------- use responsibly! */
 /*

@@ -21,7 +21,7 @@
  */
 /* GLOBALS */
 stage {
-  font-family: Inter UI, Sans-Serif;
+  font-family: Inter, Sans-Serif;
   font-size: 10pt;
   color: #d6aeed; }
 
@@ -801,7 +801,6 @@ StScrollBar {
     color: #febc8d; }
   #panel #panelActivities.panel-button > * {
     background-image: url("assets/activities.svg");
-    background-position: center top;
     width: 24px;
     height: 24px;
     color: transparent; }

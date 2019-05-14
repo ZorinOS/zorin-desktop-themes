@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+ln -s /usr/share/themes/ZorinBlue-Dark/gnome-shell/gnome-shell.css /usr/share/gnome-shell/theme/zorin.css
+
+#DEBHELPER#
