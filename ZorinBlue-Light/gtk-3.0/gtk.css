@@ -38,7 +38,7 @@ textview border { background-color: white; }
 
 iconview { border-radius: 0 0 8px 8px; }
 
-.rubberband, rubberband, flowbox rubberband, treeview.view rubberband, .content-view rubberband, .content-view .rubberband { border: 1px solid #0d87c5; background-color: rgba(13, 135, 197, 0.2); }
+.rubberband, rubberband, flowbox rubberband, treeview.view rubberband, .content-view rubberband, .content-view .rubberband, XfdesktopIconView.view .rubberband { border: 1px solid #0d87c5; background-color: rgba(13, 135, 197, 0.2); }
 
 flowbox flowboxchild { padding: 3px; }
 
@@ -926,13 +926,13 @@ scrollbar.horizontal button.up { -gtk-icon-source: -gtk-icontheme("pan-start-sym
 treeview ~ scrollbar.vertical { border-top: 1px solid #e0e0e0; margin-top: -1px; }
 
 /********** Switch * */
-switch { font-size: 0; outline-offset: -4px; min-width: 36px; min-height: 18px; transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); border: 2px solid #cccccc; border-radius: 999px; background-color: #cccccc; color: #ffffff; background-image: image(-gtk-recolor(url("assets/switch-symbols-symbolic.svg")), -gtk-recolor(url("assets/switch-symbols-symbolic.symbolic.png"))); background-repeat: no-repeat; background-position: center; background-size: contain; }
+switch { font-size: 0; outline-offset: -4px; min-width: 36px; min-height: 18px; transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); border: 2px solid #cccccc; border-radius: 999px; background-color: #cccccc; color: transparent; }
 
 switch:checked { border-color: #15a6f0; background-color: #15a6f0; box-shadow: 0 2px 4px rgba(21, 166, 240, 0.3); }
 
-switch:disabled { border-color: #f0f0f0; background-color: #ffffff; color: #f0f0f0; }
+switch:disabled { border-color: #f0f0f0; background-color: #ffffff; }
 
-switch:disabled:checked { border-color: #dcf2fd; background-color: #e8f6fe; color: #ffffff; box-shadow: none; }
+switch:disabled:checked { border-color: #dcf2fd; background-color: #e8f6fe; box-shadow: none; }
 
 switch:backdrop { border-color: #e6e6e6; background-color: #e6e6e6; transition: 200ms ease-out; }
 
@@ -940,7 +940,7 @@ switch:backdrop:checked { border-color: #15a6f0; background-color: #15a6f0; }
 
 switch:backdrop:disabled { border-color: #f0f0f0; background-color: white; }
 
-switch:backdrop:disabled:checked { border-color: #e8f6fe; background-color: #f3fbfe; color: #ffffff; box-shadow: none; }
+switch:backdrop:disabled:checked { border-color: #e8f6fe; background-color: #f3fbfe; box-shadow: none; }
 
 switch slider { margin: 2px; min-width: 18px; min-height: 18px; border: none; border-radius: 999px; -gtk-outline-radius: 999px; transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); background-color: #ffffff; }
 
@@ -1046,7 +1046,7 @@ scale.fine-tune slider { margin: -6px; }
 
 scale.fine-tune fill, scale.fine-tune highlight, scale.fine-tune trough { border-radius: 8px; -gtk-outline-radius: 8px; }
 
-scale trough { outline-offset: 2px; -gtk-outline-radius: 8px; }
+scale trough { border: 1px solid #ffffff; outline-offset: 2px; -gtk-outline-radius: 8px; }
 
 scale fill:backdrop, scale fill { background-color: #e0e0e0; }
 
@@ -1755,6 +1755,36 @@ terminal-window decoration { border-bottom-left-radius: 0; border-bottom-right-r
 .category_page_header_filter_box button:disabled { color: #999999; }
 
 .category_page_header_filter_box button:backdrop, .category_page_header_filter_box button label:backdrop { color: #999999; }
+
+/*********************** LightDM Gtk Greeter * */
+.lightdm-gtk-greeter #panel_window { border-radius: 0; border: none; }
+
+.lightdm-gtk-greeter #buttonbox_frame { padding-top: 24px; }
+
+/******** XFCE * */
+.xfce4-panel.background button { border-radius: 0; margin: 0; font-weight: bold; }
+
+.xfce4-panel.background button:hover { background-color: #e0e0e0; }
+
+.xfce4-panel.background button:active, .xfce4-panel.background button:checked { color: #333333; background-color: #c2c2c2; background-image: none; }
+
+.xfce4-panel.background button menuitem { font-weight: normal; }
+
+.tasklist button.toggle { background-color: transparent; border-top-width: 0; border-bottom-width: 0; }
+
+.tasklist button.toggle:checked { background: none; box-shadow: inset 0 -3px #333333; }
+
+wnck-pager { background-color: #d6d6d6; }
+
+wnck-pager:selected { background-color: #c2c2c2; }
+
+wnck-pager:hover { background-color: #c2c2c2; }
+
+XfdesktopIconView.view { background: transparent; color: white; }
+
+XfdesktopIconView.view:active { background: #15a6f0; color: #ffffff; text-shadow: none; }
+
+XfdesktopIconView.view .label { text-shadow: 1px 1px 2px black; }
 
 /* GTK NAMED COLORS ---------------- use responsibly! */
 /*

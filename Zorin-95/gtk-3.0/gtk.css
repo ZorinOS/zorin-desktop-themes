@@ -38,7 +38,7 @@ textview border { background-color: silver; }
 
 iconview { border-radius: 0 0 8px 8px; }
 
-.rubberband, rubberband, flowbox rubberband, treeview.view rubberband, .content-view rubberband, .content-view .rubberband { border: 1px solid #00004d; background-color: rgba(0, 0, 77, 0.2); }
+.rubberband, rubberband, flowbox rubberband, treeview.view rubberband, .content-view rubberband, .content-view .rubberband, XfdesktopIconView.view .rubberband { border: 1px solid #00004d; background-color: rgba(0, 0, 77, 0.2); }
 
 flowbox flowboxchild { padding: 3px; }
 
@@ -551,7 +551,7 @@ searchbar > revealer > box { margin: -4px; padding: 4px; }
 
 #MozillaGtkWidget.background .default-decoration.titlebar:not(headerbar) button.titlebutton.close:hover, .default-decoration.titlebar:not(headerbar) button.titlebutton.close:hover, #MozillaGtkWidget.background headerbar.default-decoration button.titlebutton.close:hover, headerbar.default-decoration button.titlebutton.close:hover { color: #dc3231; background-color: #c6a4a3; }
 
-#MozillaGtkWidget.background .default-decoration.titlebar:not(headerbar) button.titlebutton.close:active, .default-decoration.titlebar:not(headerbar) button.titlebutton.close:active, #MozillaGtkWidget.background headerbar.default-decoration button.titlebutton.close:active, headerbar.default-decoration button.titlebutton.close:active { color: white; background-color: #dc3231; box-shadow: 0 2px 4px rgba(220, 50, 49, 0.3); }
+#MozillaGtkWidget.background .default-decoration.titlebar:not(headerbar) button.titlebutton.close:active, .default-decoration.titlebar:not(headerbar) button.titlebutton.close:active, #MozillaGtkWidget.background headerbar.default-decoration button.titlebutton.close:active, headerbar.default-decoration button.titlebutton.close:active { color: #c0c0c0; background-color: #dc3231; box-shadow: 0 2px 4px rgba(220, 50, 49, 0.3); }
 
 .solid-csd .titlebar:backdrop:dir(rtl):not(headerbar), .solid-csd .titlebar:backdrop:dir(ltr):not(headerbar), .solid-csd .titlebar:dir(rtl):not(headerbar), .solid-csd .titlebar:dir(ltr):not(headerbar), .solid-csd headerbar:backdrop:dir(rtl), .solid-csd headerbar:backdrop:dir(ltr), .solid-csd headerbar:dir(rtl), .solid-csd headerbar:dir(ltr) { margin-left: -1px; margin-right: -1px; margin-top: -1px; border-radius: 0; box-shadow: none; }
 
@@ -561,7 +561,7 @@ headerbar switch { margin-top: 11px; margin-bottom: 11px; }
 
 #MozillaGtkWidget.background headerbar button.close:hover, headerbar button.close:hover { color: #dc3231; background-color: #c6a4a3; }
 
-#MozillaGtkWidget.background headerbar button.close:active, headerbar button.close:active { color: white; background-color: #dc3231; box-shadow: 0 2px 4px 0 rgba(220, 50, 49, 0.3); }
+#MozillaGtkWidget.background headerbar button.close:active, headerbar button.close:active { color: #c0c0c0; background-color: #dc3231; box-shadow: 0 2px 4px 0 rgba(220, 50, 49, 0.3); }
 
 headerbar.titlebar headerbar:not(.titlebar) { background: none; box-shadow: none; }
 
@@ -926,13 +926,13 @@ scrollbar.horizontal button.up { -gtk-icon-source: -gtk-icontheme("pan-start-sym
 treeview ~ scrollbar.vertical { border-top: 1px solid #a3a3a3; margin-top: -1px; }
 
 /********** Switch * */
-switch { font-size: 0; outline-offset: -4px; min-width: 36px; min-height: 18px; transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); border: 2px solid #909090; border-radius: 999px; background-color: #909090; color: #c0c0c0; background-image: image(-gtk-recolor(url("assets/switch-symbols-symbolic.svg")), -gtk-recolor(url("assets/switch-symbols-symbolic.symbolic.png"))); background-repeat: no-repeat; background-position: center; background-size: contain; }
+switch { font-size: 0; outline-offset: -4px; min-width: 36px; min-height: 18px; transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); border: 2px solid #909090; border-radius: 999px; background-color: #909090; color: transparent; }
 
 switch:checked { border-color: #000080; background-color: #000080; box-shadow: 0 2px 4px rgba(0, 0, 128, 0.3); }
 
-switch:disabled { border-color: #b2b2b2; background-color: #c0c0c0; color: #b2b2b2; }
+switch:disabled { border-color: #b2b2b2; background-color: #c0c0c0; }
 
-switch:disabled:checked { border-color: #a3a3b6; background-color: #adadba; color: #c0c0c0; box-shadow: none; }
+switch:disabled:checked { border-color: #a3a3b6; background-color: #adadba; box-shadow: none; }
 
 switch:backdrop { border-color: darkgray; background-color: darkgray; transition: 200ms ease-out; }
 
@@ -940,7 +940,7 @@ switch:backdrop:checked { border-color: #000080; background-color: #000080; }
 
 switch:backdrop:disabled { border-color: #b2b2b2; background-color: silver; }
 
-switch:backdrop:disabled:checked { border-color: #adadba; background-color: #b6b6bd; color: #c0c0c0; box-shadow: none; }
+switch:backdrop:disabled:checked { border-color: #adadba; background-color: #b6b6bd; box-shadow: none; }
 
 switch slider { margin: 2px; min-width: 18px; min-height: 18px; border: none; border-radius: 999px; -gtk-outline-radius: 999px; transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); background-color: #c0c0c0; }
 
@@ -1046,7 +1046,7 @@ scale.fine-tune slider { margin: -6px; }
 
 scale.fine-tune fill, scale.fine-tune highlight, scale.fine-tune trough { border-radius: 8px; -gtk-outline-radius: 8px; }
 
-scale trough { outline-offset: 2px; -gtk-outline-radius: 8px; }
+scale trough { border: 1px solid #c0c0c0; outline-offset: 2px; -gtk-outline-radius: 8px; }
 
 scale fill:backdrop, scale fill { background-color: #a3a3a3; }
 
@@ -1755,6 +1755,36 @@ terminal-window decoration { border-bottom-left-radius: 0; border-bottom-right-r
 .category_page_header_filter_box button:disabled { color: #606060; }
 
 .category_page_header_filter_box button:backdrop, .category_page_header_filter_box button label:backdrop { color: #606060; }
+
+/*********************** LightDM Gtk Greeter * */
+.lightdm-gtk-greeter #panel_window { border-radius: 0; border: none; }
+
+.lightdm-gtk-greeter #buttonbox_frame { padding-top: 24px; }
+
+/******** XFCE * */
+.xfce4-panel.background button { border-radius: 0; margin: 0; font-weight: bold; }
+
+.xfce4-panel.background button:hover { background-color: #a3a3a3; }
+
+.xfce4-panel.background button:active, .xfce4-panel.background button:checked { color: black; background-color: #868686; background-image: none; }
+
+.xfce4-panel.background button menuitem { font-weight: normal; }
+
+.tasklist button.toggle { background-color: transparent; border-top-width: 0; border-bottom-width: 0; }
+
+.tasklist button.toggle:checked { background: none; box-shadow: inset 0 -3px black; }
+
+wnck-pager { background-color: #9a9a9a; }
+
+wnck-pager:selected { background-color: #868686; }
+
+wnck-pager:hover { background-color: #868686; }
+
+XfdesktopIconView.view { background: transparent; color: white; }
+
+XfdesktopIconView.view:active { background: #000080; color: white; text-shadow: none; }
+
+XfdesktopIconView.view .label { text-shadow: 1px 1px 2px black; }
 
 /* GTK NAMED COLORS ---------------- use responsibly! */
 /*

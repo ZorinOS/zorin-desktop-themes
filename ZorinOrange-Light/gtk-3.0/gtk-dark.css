@@ -38,7 +38,7 @@ textview border { background-color: #221913; }
 
 iconview { border-radius: 0 0 8px 8px; }
 
-.rubberband, rubberband, flowbox rubberband, treeview.view rubberband, .content-view rubberband, .content-view .rubberband { border: 1px solid #fd9e5b; background-color: rgba(253, 158, 91, 0.2); }
+.rubberband, rubberband, flowbox rubberband, treeview.view rubberband, .content-view rubberband, .content-view .rubberband, XfdesktopIconView.view .rubberband { border: 1px solid #fd9e5b; background-color: rgba(253, 158, 91, 0.2); }
 
 flowbox flowboxchild { padding: 3px; }
 
@@ -926,13 +926,13 @@ scrollbar.horizontal button.up { -gtk-icon-source: -gtk-icontheme("pan-start-sym
 treeview ~ scrollbar.vertical { border-top: 1px solid #433225; margin-top: -1px; }
 
 /********** Switch * */
-switch { font-size: 0; outline-offset: -4px; min-width: 36px; min-height: 18px; transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); border: 2px solid #594231; border-radius: 999px; background-color: #594231; color: #221913; background-image: image(-gtk-recolor(url("assets/switch-symbols-symbolic.svg")), -gtk-recolor(url("assets/switch-symbols-symbolic.symbolic.png"))); background-repeat: no-repeat; background-position: center; background-size: contain; }
+switch { font-size: 0; outline-offset: -4px; min-width: 36px; min-height: 18px; transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); border: 2px solid #594231; border-radius: 999px; background-color: #594231; color: transparent; }
 
 switch:checked { border-color: #febc8d; background-color: #febc8d; box-shadow: 0 2px 4px rgba(254, 188, 141, 0.3); }
 
-switch:disabled { border-color: #33261c; background-color: #221913; color: #33261c; }
+switch:disabled { border-color: #33261c; background-color: #221913; }
 
-switch:disabled:checked { border-color: #433225; background-color: #38291f; color: #221913; box-shadow: none; }
+switch:disabled:checked { border-color: #433225; background-color: #38291f; box-shadow: none; }
 
 switch:backdrop { border-color: #3c2d21; background-color: #3c2d21; transition: 200ms ease-out; }
 
@@ -940,7 +940,7 @@ switch:backdrop:checked { border-color: #febc8d; background-color: #febc8d; }
 
 switch:backdrop:disabled { border-color: #33261c; background-color: #221913; }
 
-switch:backdrop:disabled:checked { border-color: #38291f; background-color: #2d2119; color: #221913; box-shadow: none; }
+switch:backdrop:disabled:checked { border-color: #38291f; background-color: #2d2119; box-shadow: none; }
 
 switch slider { margin: 2px; min-width: 18px; min-height: 18px; border: none; border-radius: 999px; -gtk-outline-radius: 999px; transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); background-color: #221913; }
 
@@ -1046,7 +1046,7 @@ scale.fine-tune slider { margin: -6px; }
 
 scale.fine-tune fill, scale.fine-tune highlight, scale.fine-tune trough { border-radius: 8px; -gtk-outline-radius: 8px; }
 
-scale trough { outline-offset: 2px; -gtk-outline-radius: 8px; }
+scale trough { border: 1px solid #221913; outline-offset: 2px; -gtk-outline-radius: 8px; }
 
 scale fill:backdrop, scale fill { background-color: #433225; }
 
@@ -1722,7 +1722,7 @@ popover.emoji-completion .emoji:hover { background: #38291f; }
 
 .nautilus-desktop.nautilus-canvas-item:active { color: #906a50; }
 
-.nautilus-desktop.nautilus-canvas-item:selected { color: white; text-shadow: none; }
+.nautilus-desktop.nautilus-canvas-item:selected { color: #221913; text-shadow: none; }
 
 .nautilus-canvas-item.dim-label, label.nautilus-canvas-item.separator, .titlebar:not(headerbar) .nautilus-canvas-item.subtitle, headerbar .nautilus-canvas-item.subtitle, label.nautilus-canvas-item.separator, headerbar .nautilus-canvas-item.subtitle, .titlebar:not(headerbar) .nautilus-canvas-item.subtitle, popover.background label.nautilus-canvas-item.separator, .nautilus-list-dim-label { color: #9b7356; }
 
@@ -1755,6 +1755,36 @@ terminal-window decoration { border-bottom-left-radius: 0; border-bottom-right-r
 .category_page_header_filter_box button:disabled { color: #906a50; }
 
 .category_page_header_filter_box button:backdrop, .category_page_header_filter_box button label:backdrop { color: #906a50; }
+
+/*********************** LightDM Gtk Greeter * */
+.lightdm-gtk-greeter #panel_window { border-radius: 0; border: none; }
+
+.lightdm-gtk-greeter #buttonbox_frame { padding-top: 24px; }
+
+/******** XFCE * */
+.xfce4-panel.background button { border-radius: 0; margin: 0; font-weight: bold; }
+
+.xfce4-panel.background button:hover { background-color: #433225; }
+
+.xfce4-panel.background button:active, .xfce4-panel.background button:checked { color: #febc8d; background-color: #644a38; background-image: none; }
+
+.xfce4-panel.background button menuitem { font-weight: normal; }
+
+.tasklist button.toggle { background-color: transparent; border-top-width: 0; border-bottom-width: 0; }
+
+.tasklist button.toggle:checked { background: none; box-shadow: inset 0 -3px #febc8d; }
+
+wnck-pager { background-color: #4e3a2b; }
+
+wnck-pager:selected { background-color: #644a38; }
+
+wnck-pager:hover { background-color: #644a38; }
+
+XfdesktopIconView.view { background: transparent; color: white; }
+
+XfdesktopIconView.view:active { background: #febc8d; color: #221913; text-shadow: none; }
+
+XfdesktopIconView.view .label { text-shadow: 1px 1px 2px black; }
 
 /* GTK NAMED COLORS ---------------- use responsibly! */
 /*

@@ -8,19 +8,19 @@ style "theme-panel" {
   xthickness = 2
   ythickness = 0
 
-  bg[NORMAL] = shade(1.0, @tooltip_bg_color)
+  bg[NORMAL] = shade(1.0, @bg_color)
   bg[ACTIVE] = @selected_bg_color
-  bg[PRELIGHT] = shade(0.9, @tooltip_bg_color)
+  bg[PRELIGHT] = shade(0.9, @bg_color)
   bg[SELECTED] = @selected_bg_color
 
-  fg[NORMAL] = shade(1.0, @tooltip_fg_color)
-  fg[PRELIGHT] = @tooltip_fg_color
+  fg[NORMAL] = shade(1.0, @fg_color)
+  fg[PRELIGHT] = @fg_color
   fg[ACTIVE] = @selected_fg_color
   fg[SELECTED] = @selected_fg_color
 
-  text[NORMAL] = shade(1.0, @tooltip_fg_color)
-  text[PRELIGHT] = shade(1.1, @tooltip_fg_color)
-  text[ACTIVE] = shade(1.0, @tooltip_fg_color)
+  text[NORMAL] = shade(1.0, @fg_color)
+  text[PRELIGHT] = shade(1.1, @fg_color)
+  text[ACTIVE] = shade(1.0, @fg_color)
   text[SELECTED] = @selected_fg_color
 
   engine "pixmap" {
@@ -34,14 +34,14 @@ style "theme-panel" {
 }
 
 style "theme-panel-progressbar" {
-  bg[ACTIVE] = shade(0.8, @tooltip_bg_color)
+  bg[ACTIVE] = shade(0.8, @bg_color)
 }
 
 style "panelbar" {
 
-  fg[NORMAL] = shade(1.0, @tooltip_fg_color)
-  fg[ACTIVE] = shade(1.0, @tooltip_fg_color)
-  fg[PRELIGHT] = shade(1.1, @tooltip_fg_color)
+  fg[NORMAL] = shade(1.0, @fg_color)
+  fg[ACTIVE] = shade(1.0, @fg_color)
+  fg[PRELIGHT] = shade(1.1, @fg_color)
   fg[SELECTED] = @selected_fg_color
 
   bg[SELECTED] = @selected_bg_color
@@ -53,13 +53,13 @@ style "panelbuttons" {
   xthickness = 4
   ythickness = 0
 
-  fg[NORMAL] = shade(0.8, @tooltip_fg_color)
+  fg[NORMAL] = shade(0.8, @fg_color)
   fg[PRELIGHT] = @selected_fg_color
   fg[ACTIVE] = @selected_fg_color
   fg[SELECTED] = @selected_fg_color
-  fg[INSENSITIVE] = mix(0.28, @tooltip_fg_color, @tooltip_bg_color)
-  bg[PRELIGHT] = shade(1.2, @tooltip_bg_color)
-  bg[ACTIVE] = shade(1.5, @tooltip_bg_color)
+  fg[INSENSITIVE] = mix(0.28, @fg_color, @bg_color)
+  bg[PRELIGHT] = shade(1.2, @bg_color)
+  bg[ACTIVE] = shade(1.5, @bg_color)
 
   engine "pixmap" {
     image {
@@ -99,13 +99,13 @@ style "regular-label" {
 
 style "theme-panel-text" {
 
-  fg[NORMAL] = shade(1.0, @tooltip_fg_color)
+  fg[NORMAL] = shade(1.0, @fg_color)
   fg[PRELIGHT] = @selected_fg_color
-  fg[ACTIVE] = shade(1.0, @tooltip_fg_color)
+  fg[ACTIVE] = shade(1.0, @fg_color)
 
-  text[NORMAL] = shade(1.0, @tooltip_fg_color)
+  text[NORMAL] = shade(1.0, @fg_color)
   text[PRELIGHT] = @selected_fg_color
-  text[ACTIVE] = shade(1.0, @tooltip_fg_color)
+  text[ACTIVE] = shade(1.0, @fg_color)
 
   engine "murrine" {
     textstyle = 0
