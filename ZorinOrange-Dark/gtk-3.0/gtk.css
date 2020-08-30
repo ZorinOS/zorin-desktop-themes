@@ -1733,7 +1733,7 @@ toolbutton > button.image-button.text-button.flat button { border-color: transpa
 
 toolbutton > button.image-button.text-button.flat button:hover { color: #febc8d; outline-color: rgba(254, 188, 141, 0.3); border-color: transparent; background-color: #38291f; background-image: none; }
 
-toolbutton > button.image-button.text-button.flat button:active { color: #febc8d; outline-color: rgba(254, 188, 141, 0.3); border-color: transparent; background-color: #4e3a2b; box-shadow: none; background-image: none; }
+toolbutton > button.image-button.text-button.flat button:active, toolbutton > button.image-button.text-button.flat button:checked { color: #febc8d; outline-color: rgba(254, 188, 141, 0.3); border-color: transparent; background-color: #4e3a2b; box-shadow: none; background-image: none; }
 
 /********* Gedit * */
 .gedit-search-entry-occurrences-tag { color: rgba(254, 188, 141, 0.45); border: none; background-color: transparent; }

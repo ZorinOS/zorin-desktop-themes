@@ -1,3 +1,15 @@
+zorin-desktop-themes (2.1.5) bionic; urgency=medium
+
+  * Fixed checked buttons in LibreOffice toolbar
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 30 Aug 2020 13:31:11 +0100
+
+zorin-desktop-themes (2.1.4) bionic; urgency=medium
+
+  * Removed icons in Gnome Shell toggle switches
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 09 Jul 2020 23:13:55 +0100
+
 zorin-desktop-themes (2.1.3) bionic; urgency=medium
 
   * Removed icons in Gtk switches
