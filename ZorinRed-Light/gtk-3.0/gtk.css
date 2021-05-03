@@ -2098,6 +2098,10 @@ window.background.csd > headerbar.titlebar > box.horizontal > buttonbox.linked.h
 
 window.background.csd > headerbar.titlebar > box.horizontal > buttonbox.linked.horizontal button:checked + button { border-image: none; }
 
+window.background.csd button.text-button.content-rating { color: #572920; }
+
+window.background.csd button.text-button.content-rating:backdrop { color: #878787; }
+
 /****************** Gnome Terminal * */
 terminal-window.background.csd { border-radius: 0; }
 

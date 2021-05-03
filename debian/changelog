@@ -1,3 +1,10 @@
+zorin-desktop-themes (3.2.1) focal; urgency=medium
+
+  * Fixed appearance of Flatpak permission button in Gnome Software when
+    using a dark theme
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 03 May 2021 15:41:51 +0100
+
 zorin-desktop-themes (3.2) focal; urgency=medium
 
   * Improved dark theme visibility and fixed many bugs
