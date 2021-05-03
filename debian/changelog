@@ -1,3 +1,107 @@
+zorin-desktop-themes (3.2) focal; urgency=medium
+
+  * Improved dark theme visibility and fixed many bugs
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 03 May 2021 01:29:51 +0100
+
+zorin-desktop-themes (3.1.1) focal; urgency=medium
+
+  * Corrected border radius of treeview progress trough in Gtk3 themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 27 Mar 2021 22:11:06 +0000
+
+zorin-desktop-themes (3.1) focal; urgency=medium
+
+  * Updated Gnome Shell login background with blurred wallpaper
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 27 Mar 2021 20:25:04 +0000
+
+zorin-desktop-themes (3.0.12) focal; urgency=medium
+
+  * Changed active button glow in Gtk3 themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Wed, 24 Mar 2021 11:21:52 +0000
+
+zorin-desktop-themes (3.0.11) focal; urgency=medium
+
+  * Fixed toolbar background bug in Gtk3 themes and changed Gnome Shell
+    panel opacity to 75%
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Tue, 23 Mar 2021 19:57:32 +0000
+
+zorin-desktop-themes (3.0.10) focal; urgency=medium
+
+  * Fixed Gtk3 treeview rows and disk-space-display in Nautilus
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 20 Mar 2021 17:37:05 +0000
+
+zorin-desktop-themes (3.0.9) focal; urgency=medium
+
+  * Re-coloured Gnome Shell theme assets
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Wed, 17 Mar 2021 16:15:29 +0000
+
+zorin-desktop-themes (3.0.8) focal; urgency=medium
+
+  * Fixed Gnome Shell theme assets
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Wed, 17 Mar 2021 16:05:11 +0000
+
+zorin-desktop-themes (3.0.7) focal; urgency=medium
+
+  * Updated progress bar border radius in Gtk3 themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 15 Mar 2021 11:06:34 +0000
+
+zorin-desktop-themes (3.0.6) focal; urgency=medium
+
+  * Removed custom styling for Gnome System Monitor
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Tue, 09 Mar 2021 18:31:24 +0000
+
+zorin-desktop-themes (3.0.5) focal; urgency=medium
+
+  * Improved visibility on Gtk2 menu items
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 08 Mar 2021 23:44:45 +0000
+
+zorin-desktop-themes (3.0.4) focal; urgency=medium
+
+  * Improved postinstall script
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 05 Mar 2021 22:51:41 +0000
+
+zorin-desktop-themes (3.0.3) focal; urgency=medium
+
+  * Added custom styling for Zorin Appearance
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 05 Mar 2021 19:20:41 +0000
+
+zorin-desktop-themes (3.0.2) focal; urgency=medium
+
+  * Correctly handle gnome-shell theme linking
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 04 Mar 2021 19:36:19 +0000
+
+zorin-desktop-themes (3.0.1) focal; urgency=medium
+
+  * Linked ZorinBlue-Light gnome-shell theme into Gnome Shell themes
+    directory
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 04 Mar 2021 19:06:37 +0000
+
+zorin-desktop-themes (3.0) focal; urgency=medium
+
+  * Introduced new themes for Gtk 3, Gtk2, and Gnome Shell
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 04 Mar 2021 16:23:32 +0000
+
+zorin-desktop-themes (2.1.5-1) focal; urgency=medium
+
+  * Uploaded to the Zorin OS 16 repositories
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 15 Nov 2020 22:24:28 +0000
+
 zorin-desktop-themes (2.1.5) bionic; urgency=medium
 
   * Fixed checked buttons in LibreOffice toolbar
