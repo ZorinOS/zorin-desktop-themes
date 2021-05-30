@@ -27,11 +27,11 @@
 
 .view, iconview, .view text, iconview text, textview text { color: #563b25; background-color: white; border-radius: 10px; }
 
+.view:disabled, iconview:disabled, .view text:disabled, iconview text:disabled, textview text:disabled { color: #a89a8e; background-color: #faf8f7; }
+
 .view:backdrop, iconview:backdrop, .view text:backdrop, iconview text:backdrop, textview text:backdrop { color: #898989; background-color: white; }
 
-.view:backdrop:disabled, iconview:backdrop:disabled, .view text:backdrop:disabled, iconview text:backdrop:disabled, textview text:backdrop:disabled { color: #d2d2d2; }
-
-.view:disabled, iconview:disabled, .view text:disabled, iconview text:disabled, textview text:disabled { color: #a89a8e; background-color: #faf8f7; }
+.view:backdrop:disabled, iconview:backdrop:disabled, .view text:backdrop:disabled, iconview text:backdrop:disabled, textview text:backdrop:disabled { color: #d2d2d2; background-color: #f9f9f9; }
 
 .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected, .view text:selected:focus, iconview text:selected:focus, textview text:selected:focus, .view text:selected, iconview text:selected, textview text:selected { border-radius: 8px; }
 
@@ -52,8 +52,6 @@ flowbox flowboxchild:selected { outline-offset: -2px; }
 .content-view .tile { margin: 2px; background-color: transparent; border-radius: 0; padding: 0; }
 
 label { caret-color: currentColor; }
-
-label selection { background-color: #f88052; color: white; }
 
 label:disabled { color: #a89a8e; }
 
@@ -1085,11 +1083,11 @@ treeview.view check:selected:focus:backdrop, treeview.view check:selected:backdr
 /************ GtkScale * */
 levelbar block.empty, progressbar trough, scale fill, scale trough { border: none; border-radius: 8px; background-color: #eeeae7; }
 
-levelbar block.empty:disabled, progressbar trough:disabled, scale fill:disabled, scale trough:disabled { background-color: #f4f1ef; }
+levelbar block.empty:disabled, progressbar trough:disabled, scale fill:disabled, scale trough:disabled { background-color: #eeeae7; }
 
 levelbar block.empty:backdrop, progressbar trough:backdrop, scale fill:backdrop, scale trough:backdrop { background-color: #ededed; transition: 150ms ease-out; }
 
-levelbar block.empty:backdrop:disabled, progressbar trough:backdrop:disabled, scale fill:backdrop:disabled, scale trough:backdrop:disabled { background-color: #f4f1ef; }
+levelbar block.empty:backdrop:disabled, progressbar trough:backdrop:disabled, scale fill:backdrop:disabled, scale trough:backdrop:disabled { background-color: #ededed; }
 
 row:selected levelbar block.empty, levelbar row:selected block.empty, row:selected progressbar trough, progressbar row:selected trough, row:selected scale fill, scale row:selected fill, row:selected scale trough, scale row:selected trough { border: 1px solid white; }
 
@@ -1097,11 +1095,11 @@ progressbar progress, scale highlight { border: none; border-radius: 8px; backgr
 
 scale.vertical progressbar progress, progressbar scale.vertical progress, scale.vertical highlight, progressbar.vertical progress, progressbar.vertical scale highlight, scale progressbar.vertical highlight { background: linear-gradient(to top, #ff6a32, #ff8265); }
 
-progressbar progress:disabled, scale highlight:disabled { background-image: none; background-color: #eeeae7; }
+progressbar progress:disabled, scale highlight:disabled { background-image: none; background-color: #d9d2cd; }
 
 progressbar progress:backdrop, scale highlight:backdrop { background-image: none; background-color: #b6b6b6; }
 
-progressbar progress:backdrop:disabled, scale highlight:backdrop:disabled { background-image: none; background-color: #ededed; }
+progressbar progress:backdrop:disabled, scale highlight:backdrop:disabled { background-image: none; background-color: #dbdbdb; }
 
 row:selected progressbar progress, progressbar row:selected progress, row:selected scale highlight, scale row:selected highlight { border: 1px solid white; }
 
@@ -1133,11 +1131,11 @@ row scale slider:hover, popover scale slider:hover { background-color: #faf8f7; 
 
 scale slider:active, row scale slider:active, popover scale slider:active { background-color: #ff8265; }
 
-scale slider:disabled { border-color: #eeeae7; }
+scale slider:disabled { border-color: #d9d2cd; }
 
 scale slider:backdrop { background-color: #f9f9f9; border-color: #b6b6b6; transition: 150ms ease-out; }
 
-scale slider:backdrop:disabled { border-color: #ededed; }
+scale slider:backdrop:disabled { border-color: #dbdbdb; }
 
 row:selected scale slider:disabled, row:selected scale slider { border-color: #e5764c; }
 
@@ -1283,11 +1281,11 @@ progressbar progress, progressbar progress:backdrop, .horizontal progressbar pro
 
 progressbar.horizontal progress { margin: 0 -1px; }
 
-progressbar.horizontal progress:not(.pulse) { animation: progress 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite; background-size: cover, 64px 100%; background-repeat: no-repeat; background-image: linear-gradient(to bottom, alpha(@progress_bg_color, 0.2), rgba(255, 130, 101, 0)), linear-gradient(to right, rgba(255, 130, 101, 0), #ff8265 60%, rgba(255, 130, 101, 0)); }
+progressbar.horizontal progress:not(.pulse):not(:disabled) { animation: progress 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite; background-size: cover, 64px 100%; background-repeat: no-repeat; background-image: linear-gradient(to bottom, alpha(@progress_bg_color, 0.2), rgba(255, 130, 101, 0)), linear-gradient(to right, rgba(255, 130, 101, 0), #ff8265 60%, rgba(255, 130, 101, 0)); }
 
-progressbar.horizontal progress:not(.pulse).right { animation-direction: reverse; }
+progressbar.horizontal progress:not(.pulse):not(:disabled).right { animation-direction: reverse; }
 
-progressbar.horizontal progress:not(.pulse):backdrop { animation: none; background-image: none; }
+progressbar.horizontal progress:not(.pulse):not(:disabled):backdrop { animation: none; background-image: none; }
 
 progressbar.vertical progress { margin: -1px 0; }
 
@@ -1339,6 +1337,10 @@ levelbar block.full, levelbar block.high-battery-offset { background-color: #2ac
 levelbar block.full:backdrop, levelbar block.high-battery-offset:backdrop { background-image: none; background-color: #b6b6b6; }
 
 levelbar block.empty { background-image: none; }
+
+levelbar block:disabled { background-image: none; background-color: #d9d2cd; }
+
+levelbar block:disabled:backdrop { background-image: none; background-color: #dbdbdb; }
 
 /**************** Print dialog * */
 printdialog paper { color: black; border: 1px solid gray; background: white; padding: 0; }
@@ -1448,7 +1450,7 @@ row.activatable:selected:backdrop label, row.activatable:selected:backdrop { col
 
 .app-notification border, .app-notification.frame border { border: none; }
 
-.app-notification button:not(.linked), .app-notification.frame button:not(.linked) { border-radius: 999px; }
+.app-notification button:not(.linked), .app-notification.frame button:not(.linked) { border-radius: 999px; -gtk-outline-radius: 999px; }
 
 /************* Expanders * */
 expander title > arrow { min-width: 16px; min-height: 16px; -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
@@ -1503,7 +1505,9 @@ filechooser .dialog-action-box { border-top: 1px solid #eeeae7; }
 
 filechooser .dialog-action-box:backdrop { border-top-color: #ededed; }
 
-filechooser #pathbarbox { border-bottom: 1px solid #faf8f7; }
+filechooser #pathbarbox { border: none; }
+
+filechooser #pathbarbox:backdrop { background-color: #f9f9f9; }
 
 filechooserbutton:drop(active) { box-shadow: none; border-color: transparent; }
 
@@ -1767,15 +1771,25 @@ button.titlebutton:backdrop { -gtk-icon-shadow: none; }
 
 .selection-mode headerbar button.titlebutton:backdrop, .selection-mode .titlebar button.titlebutton:backdrop, headerbar.selection-mode button.titlebutton:backdrop, .titlebar.selection-mode button.titlebutton:backdrop { -gtk-icon-shadow: none; }
 
-.view:selected:focus, .view:selected, .view text:selected:focus, textview text:selected:focus, .view text:selected, textview text:selected, .view text selection:focus, .view text selection, textview text selection:focus, textview text selection, iconview:selected:focus, iconview:selected, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected, entry selection, modelbutton.flat:selected, .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected { background-color: #f88052; }
+.view:selected:focus, .view:selected, .view text:selected:focus, textview text:selected:focus, .view text:selected, textview text:selected, iconview:selected:focus, iconview:selected, flowbox flowboxchild:selected, modelbutton.flat:selected, .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected { background-color: #f88052; }
 
-label:selected, .selection-mode button.titlebutton, .view:selected:focus, .view:selected, .view text:selected:focus, textview text:selected:focus, .view text:selected, textview text:selected, .view text selection:focus, .view text selection, textview text selection:focus, textview text selection, iconview:selected:focus, iconview:selected, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected, entry selection, modelbutton.flat:selected, .menuitem.button.flat:selected, spinbutton:not(.vertical) selection, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected { color: white; }
+.selection-mode button.titlebutton, .view:selected:focus, .view:selected, .view text:selected:focus, textview text:selected:focus, .view text:selected, textview text:selected, iconview:selected:focus, iconview:selected, flowbox flowboxchild:selected, modelbutton.flat:selected, .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected { color: white; }
 
-label:disabled selection, label:disabled:selected, .selection-mode button.titlebutton:disabled, .view:disabled:selected, textview text:disabled:selected:focus, .view text:disabled:selected, textview text:disabled:selected, .view text selection:disabled, textview text selection:disabled:focus, textview text selection:disabled, iconview:disabled:selected:focus, iconview:disabled:selected, iconview text selection:disabled:focus, iconview text selection:disabled, flowbox flowboxchild:disabled:selected, entry selection:disabled, modelbutton.flat:disabled:selected, .menuitem.button.flat:disabled:selected, spinbutton:not(.vertical) selection:disabled, treeview.view:disabled:selected, row:disabled:selected, calendar:disabled:selected { color: #fcc0a9; }
+.selection-mode button.titlebutton:disabled, .view:disabled:selected, textview text:disabled:selected:focus, .view text:disabled:selected, textview text:disabled:selected, iconview:disabled:selected:focus, iconview:disabled:selected, flowbox flowboxchild:disabled:selected, modelbutton.flat:disabled:selected, .menuitem.button.flat:disabled:selected, treeview.view:disabled:selected, row:disabled:selected, calendar:disabled:selected { color: #fcc0a9; }
 
-label:backdrop selection, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, .view:backdrop:selected, textview text:backdrop:selected:focus, .view text:backdrop:selected, textview text:backdrop:selected, .view text selection:backdrop, textview text selection:backdrop:focus, textview text selection:backdrop, iconview:backdrop:selected:focus, iconview:backdrop:selected, iconview text selection:backdrop:focus, iconview text selection:backdrop, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, modelbutton.flat:backdrop:selected, .menuitem.button.flat:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, treeview.view:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected { color: white; background-color: #b6b6b6; }
+.selection-mode button.titlebutton:backdrop, .view:backdrop:selected, textview text:backdrop:selected:focus, .view text:backdrop:selected, textview text:backdrop:selected, iconview:backdrop:selected:focus, iconview:backdrop:selected, flowbox flowboxchild:backdrop:selected, modelbutton.flat:backdrop:selected, .menuitem.button.flat:backdrop:selected, treeview.view:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected { color: white; background-color: #b6b6b6; }
 
-label:backdrop selection:disabled, label:backdrop:disabled:selected, .selection-mode button.titlebutton:backdrop:disabled, .view:backdrop:disabled:selected, .view text:backdrop:disabled:selected, textview text:backdrop:disabled:selected, .view text selection:backdrop:disabled, textview text selection:backdrop:disabled, iconview:backdrop:disabled:selected, iconview text selection:backdrop:disabled, flowbox flowboxchild:backdrop:disabled:selected, entry selection:backdrop:disabled, modelbutton.flat:backdrop:disabled:selected, .menuitem.button.flat:backdrop:disabled:selected, spinbutton:not(.vertical) selection:backdrop:disabled, row:backdrop:disabled:selected, calendar:backdrop:disabled:selected { color: #faa686; }
+.selection-mode button.titlebutton:backdrop:disabled, .view:backdrop:disabled:selected, .view text:backdrop:disabled:selected, textview text:backdrop:disabled:selected, iconview:backdrop:disabled:selected, flowbox flowboxchild:backdrop:disabled:selected, modelbutton.flat:backdrop:disabled:selected, .menuitem.button.flat:backdrop:disabled:selected, row:backdrop:disabled:selected, calendar:backdrop:disabled:selected { color: #faa686; }
+
+.view text selection:focus, .view text selection, textview text selection:focus, textview text selection, iconview text selection:focus, .view text selection, iconview text selection, label selection, entry selection, spinbutton:not(.vertical) selection { background-color: #faddd2; }
+
+label:selected, .view text selection:focus, .view text selection, textview text selection:focus, textview text selection, iconview text selection:focus, .view text selection, iconview text selection, label selection, entry selection, spinbutton:not(.vertical) selection { color: #66422a; }
+
+label:disabled selection, label:disabled:selected, .view text selection:disabled, textview text selection:disabled:focus, textview text selection:disabled, iconview text selection:disabled:focus, iconview text selection:disabled, label selection:disabled, entry selection:disabled, spinbutton:not(.vertical) selection:disabled { color: #b09788; }
+
+label:backdrop selection, label:backdrop:selected, .view text selection:backdrop, textview text selection:backdrop:focus, textview text selection:backdrop, iconview text selection:backdrop:focus, iconview text selection:backdrop, label selection:backdrop, entry selection:backdrop, spinbutton:not(.vertical) selection:backdrop { background-color: #e9e9e9; color: #8d8d8d; }
+
+label:backdrop selection:disabled, label:backdrop:disabled:selected, .view text selection:backdrop:disabled, textview text selection:backdrop:disabled, iconview text selection:backdrop:disabled, label selection:backdrop:disabled, entry selection:backdrop:disabled, spinbutton:not(.vertical) selection:backdrop:disabled { color: #cfcfcf; }
 
 .monospace { font-family: monospace; }
 
@@ -1847,35 +1861,23 @@ popover.emoji-completion contents row box { padding: 2px 10px; }
 popover.emoji-completion .emoji:hover { background: #eeeae7; }
 
 /***************** View Switcher * */
-viewswitcher button { padding: 0; margin: 0; border-radius: 0; border-top: 0; border-bottom: 0; box-shadow: none; }
+viewswitcher button { margin: 0; padding: 0; border-radius: 0; border: none; box-shadow: none; }
 
-viewswitcher button:not(:checked):not(:hover) { background: transparent; }
+viewswitcher button:checked { box-shadow: none; }
 
-headerbar viewswitcher > box { border-radius: 8px; background-color: #eeeae7; margin: 5px 0; }
+viewswitcher button stack > box.narrow { font-size: smaller; padding-top: 6px; padding-bottom: 6px; }
 
-headerbar viewswitcher > box:backdrop { background-color: #ededed; }
+viewswitcher button stack > box.narrow image, viewswitcher button stack > box.narrow label { padding-left: 6px; padding-right: 6px; }
 
-headerbar viewswitcher > box > button { padding-top: 2px; padding-bottom: 2px; margin: 4px 2px; min-height: 24px; min-width: 54px; border-radius: 8px; -gtk-outline-radius: 8px; background-color: transparent; color: #745e4c; font-weight: normal; border-style: none; transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); background-image: none; }
+viewswitcher button stack > box.wide { padding: 0 12px; }
 
-headerbar viewswitcher > box > button:first-child:dir(ltr) { margin-left: 4px; }
+viewswitcherbar > actionbar > revealer > box { padding: 0; }
 
-headerbar viewswitcher > box > button:first-child:dir(rtl) { margin-right: 4px; }
+viewswitcherbar > actionbar > revealer > box viewswitcher button:not(:checked):not(:hover) { background: transparent; }
 
-headerbar viewswitcher > box > button:last-child:dir(ltr) { margin-right: 4px; }
+headerbar viewswitcher > box > button:first-child { border-bottom-left-radius: 8px; }
 
-headerbar viewswitcher > box > button:last-child:dir(rtl) { margin-left: 4px; }
-
-headerbar viewswitcher > box > button:hover { color: #563b25; background-color: rgba(86, 59, 37, 0.05); }
-
-headerbar viewswitcher > box > button:active, headerbar viewswitcher > box > button:hover:active, headerbar viewswitcher > box > button:checked { color: #563b25; outline-color: rgba(86, 59, 37, 0.3); background-image: none; background-color: white; box-shadow: 0 2px 4px rgba(86, 59, 37, 0.075); animation: none; }
-
-headerbar viewswitcher > box > button:backdrop { color: #898989; background-color: transparent; }
-
-headerbar viewswitcher > box > button:backdrop:hover { background-color: transparent; }
-
-headerbar viewswitcher > box > button:backdrop:checked { background-image: none; background-color: white; box-shadow: 0 1px 2px rgba(137, 137, 137, 0.075); }
-
-headerbar viewswitcher > box > button:backdrop:checked label, headerbar viewswitcher > box > button:backdrop:checked { color: #898989; }
+headerbar viewswitcher > box > button:last-child { border-bottom-right-radius: 8px; }
 
 /*********** Firefox * */
 #MozillaGtkWidget.background { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }

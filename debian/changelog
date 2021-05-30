@@ -1,3 +1,16 @@
+zorin-desktop-themes (3.3) focal; urgency=medium
+
+  * Re-styled viewswitchers in Gtk3 and panel buttons in Gnome Shell as
+    well as many other bug fixes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 30 May 2021 20:41:23 +0100
+
+zorin-desktop-themes (3.2.2) focal; urgency=medium
+
+  * Fixed border radii in Gnome Shell window picker
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 24 May 2021 23:07:18 +0100
+
 zorin-desktop-themes (3.2.1) focal; urgency=medium
 
   * Fixed appearance of Flatpak permission button in Gnome Software when
