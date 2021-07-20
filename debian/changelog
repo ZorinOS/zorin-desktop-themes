@@ -1,3 +1,9 @@
+zorin-desktop-themes (3.3.1) focal; urgency=medium
+
+  * Updated on screen keyboard styling in Gnome Shell theme
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Tue, 20 Jul 2021 18:41:46 +0100
+
 zorin-desktop-themes (3.3) focal; urgency=medium
 
   * Re-styled viewswitchers in Gtk3 and panel buttons in Gnome Shell as

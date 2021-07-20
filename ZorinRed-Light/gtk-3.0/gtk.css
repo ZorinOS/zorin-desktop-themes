@@ -1171,11 +1171,11 @@ scale.horizontal.marks-before:not(.marks-after) slider:hover { color: #ff727e; }
 
 scale.horizontal.marks-before:not(.marks-after) slider:active { color: #fa4444; }
 
-scale.horizontal.marks-before:not(.marks-after) slider:disabled { color: #eee8e6; }
+scale.horizontal.marks-before:not(.marks-after) slider:disabled { color: #d9cecb; }
 
 scale.horizontal.marks-before:not(.marks-after) slider:backdrop { color: #b1b1b1; }
 
-scale.horizontal.marks-before:not(.marks-after) slider:backdrop:disabled { color: #ededed; }
+scale.horizontal.marks-before:not(.marks-after) slider:backdrop:disabled { color: #dadada; }
 
 scale.horizontal.marks-before:not(.marks-after).fine-tune slider { margin: -7px; margin-top: -11px; }
 
@@ -1185,11 +1185,11 @@ scale.horizontal.marks-after:not(.marks-before) slider:hover { color: #ff727e; }
 
 scale.horizontal.marks-after:not(.marks-before) slider:active { color: #fa4444; }
 
-scale.horizontal.marks-after:not(.marks-before) slider:disabled { color: #eee8e6; }
+scale.horizontal.marks-after:not(.marks-before) slider:disabled { color: #d9cecb; }
 
 scale.horizontal.marks-after:not(.marks-before) slider:backdrop { color: #b1b1b1; }
 
-scale.horizontal.marks-after:not(.marks-before) slider:backdrop:disabled { color: #ededed; }
+scale.horizontal.marks-after:not(.marks-before) slider:backdrop:disabled { color: #dadada; }
 
 scale.horizontal.marks-after:not(.marks-before).fine-tune slider { margin: -7px; margin-bottom: -11px; }
 
@@ -1199,11 +1199,11 @@ scale.vertical.marks-before:not(.marks-after) slider:hover { color: #ff727e; }
 
 scale.vertical.marks-before:not(.marks-after) slider:active { color: #fa4444; }
 
-scale.vertical.marks-before:not(.marks-after) slider:disabled { color: #eee8e6; }
+scale.vertical.marks-before:not(.marks-after) slider:disabled { color: #d9cecb; }
 
 scale.vertical.marks-before:not(.marks-after) slider:backdrop { color: #b1b1b1; }
 
-scale.vertical.marks-before:not(.marks-after) slider:backdrop:disabled { color: #ededed; }
+scale.vertical.marks-before:not(.marks-after) slider:backdrop:disabled { color: #dadada; }
 
 scale.vertical.marks-before:not(.marks-after).fine-tune slider { margin: -7px; margin-left: -11px; }
 
@@ -1213,11 +1213,11 @@ scale.vertical.marks-after:not(.marks-before) slider:hover { color: #ff727e; }
 
 scale.vertical.marks-after:not(.marks-before) slider:active { color: #fa4444; }
 
-scale.vertical.marks-after:not(.marks-before) slider:disabled { color: #eee8e6; }
+scale.vertical.marks-after:not(.marks-before) slider:disabled { color: #d9cecb; }
 
 scale.vertical.marks-after:not(.marks-before) slider:backdrop { color: #b1b1b1; }
 
-scale.vertical.marks-after:not(.marks-before) slider:backdrop:disabled { color: #ededed; }
+scale.vertical.marks-after:not(.marks-before) slider:backdrop:disabled { color: #dadada; }
 
 scale.vertical.marks-after:not(.marks-before).fine-tune slider { margin: -7px; margin-right: -11px; }
 
