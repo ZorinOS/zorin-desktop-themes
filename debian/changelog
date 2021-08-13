@@ -1,3 +1,9 @@
+zorin-desktop-themes (3.3.3) focal; urgency=medium
+
+  * Set default login screen text colour to white
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 13 Aug 2021 23:27:17 +0100
+
 zorin-desktop-themes (3.3.2) focal; urgency=medium
 
   * Fixed candidate popup styling in Gnome Shell themes

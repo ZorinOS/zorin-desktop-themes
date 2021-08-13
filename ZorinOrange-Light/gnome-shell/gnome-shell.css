@@ -1014,7 +1014,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 /* Login Dialog */
 .login-dialog-banner-view { padding-top: 24px; max-width: 23em; }
 
-.login-dialog { border: none; background-color: transparent; }
+.login-dialog { border: none; background-color: transparent; color: white; }
 
 .login-dialog StEntry { border: 1px solid transparent; border-radius: 8px; color: white; background-color: rgba(255, 255, 255, 0.075); box-shadow: none; }
 
