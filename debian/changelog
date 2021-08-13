@@ -1,3 +1,9 @@
+zorin-desktop-themes (3.3.2) focal; urgency=medium
+
+  * Fixed candidate popup styling in Gnome Shell themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 13 Aug 2021 22:42:28 +0100
+
 zorin-desktop-themes (3.3.1) focal; urgency=medium
 
   * Updated on screen keyboard styling in Gnome Shell theme

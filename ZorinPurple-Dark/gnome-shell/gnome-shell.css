@@ -104,7 +104,7 @@ StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover { backgro
 StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { background-color: #d8c4f1; }
 
 /* Popovers/Menus */
-.popup-menu-boxpointer, .candidate-popup-boxpointer { -arrow-border-radius: 10px; -arrow-background-color: transparent; -arrow-border-width: 0; -arrow-border-color: transparent; -arrow-base: 10px; -arrow-rise: 0; -arrow-box-shadow: none; background: transparent; }
+.popup-menu-boxpointer { -arrow-border-radius: 10px; -arrow-background-color: transparent; -arrow-border-width: 0; -arrow-border-color: transparent; -arrow-base: 10px; -arrow-rise: 0; -arrow-box-shadow: none; background: transparent; }
 
 .popup-menu { min-width: 15em; color: #d8c4f1; }
 
@@ -377,6 +377,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 .media-message-cover-icon { icon-size: 32px !important; border-radius: 8px; }
 
 .media-message-cover-icon.fallback { color: rgba(216, 196, 241, 0.5); background-color: transparent; border: 1px solid transparent; border-radius: 8px; icon-size: 32px !important; }
+
+.candidate-popup-boxpointer { -arrow-border-radius: 10px; -arrow-background-color: #221f26; -arrow-border-width: 1px; -arrow-border-color: #302b36; -arrow-base: 20px; -arrow-rise: 10px; -arrow-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
 
 .candidate-popup-content { padding: 0.5em; spacing: 0.3em; }
 
