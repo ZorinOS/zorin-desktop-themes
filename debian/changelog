@@ -1,3 +1,10 @@
+zorin-desktop-themes (3.3.4) focal; urgency=medium
+
+  * Fixed issues with Gnome Calendar, Todo, and text selection in Evince
+    with the Grey-Dark theme
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 18 Sep 2021 16:11:14 +0100
+
 zorin-desktop-themes (3.3.3) focal; urgency=medium
 
   * Set default login screen text colour to white

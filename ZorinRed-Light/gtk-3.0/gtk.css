@@ -1885,13 +1885,13 @@ headerbar viewswitcher > box > button:last-child { border-bottom-right-radius: 8
 #MozillaGtkWidget.background scrollbar { background-color: transparent; border-color: transparent; }
 
 /****************** Gnome Calendar * */
-window.background.csd.org-gnome-Calendar calendar-view { background-color: #faf7f6; border-radius: 10px; }
+window.background.csd.org-gnome-Calendar > overlay > box.vertical > stack.view { border-radius: 0 0 10px 10px; }
 
-window.background.csd.org-gnome-Calendar calendar-view:backdrop { background-color: #f8f8f8; }
-
-window.background.csd.org-gnome-Calendar calendar-view.year-view > box.vertical > button.text-button { margin: 0; }
+window.background.csd.org-gnome-Calendar calendar-view.year-view > box.vertical > button.text-button { margin: 0; border-bottom-right-radius: 10px; }
 
 window.background.csd.org-gnome-Calendar calendar-view.year-view > box.vertical > stack > .sidebar.vertical { border-radius: 0; }
+
+window.background.csd.org-gnome-Calendar.maximized calendar-view.year-view > box.vertical > button.text-button, window.background.csd.org-gnome-Calendar.tiled calendar-view.year-view > box.vertical > button.text-button, window.background.csd.org-gnome-Calendar.fullscreen calendar-view.year-view > box.vertical > button.text-button { border-bottom-right-radius: 0; }
 
 /*************** LibreOffice * */
 toolbutton > button.image-button.text-button.flat button { background-color: transparent; background-image: none; background-image: none; }
@@ -2116,13 +2116,13 @@ terminal-window .terminal-screen { background-color: #faf7f6; color: #572920; }
 terminal-window .terminal-screen:backdrop { background-color: #f8f8f8; color: #878787; }
 
 /*************** Gnome Todo * */
+window.background.csd.org-gnome-Todo > overlay > stack.background > box.horizontal > tasklistview > box.vertical > overlay.view > scrolledwindow > viewport.view, window.background.csd.org-gnome-Todo stack.background { border-radius: 0 0 10px 10px; }
+
+window.background.csd.org-gnome-Todo.maximized > overlay > stack.background > box.horizontal > tasklistview > box.vertical > overlay.view > scrolledwindow > viewport.view, window.background.csd.org-gnome-Todo.maximized stack.background, window.background.csd.org-gnome-Todo.tiled > overlay > stack.background > box.horizontal > tasklistview > box.vertical > overlay.view > scrolledwindow > viewport.view, window.background.csd.org-gnome-Todo.tiled stack.background, window.background.csd.org-gnome-Todo.fullscreen > overlay > stack.background > box.horizontal > tasklistview > box.vertical > overlay.view > scrolledwindow > viewport.view, window.background.csd.org-gnome-Todo.fullscreen stack.background { border-radius: 0; }
+
 window.background.csd.org-gnome-Todo taskrow.activatable.new-task-row { box-shadow: none; padding: 0; }
 
 window.background.csd.org-gnome-Todo taskrow.activatable.new-task-row entry, window.background.csd.org-gnome-Todo taskrow.activatable.new-task-row button { margin: 0; border-radius: 2.5px; }
-
-window.background.csd.org-gnome-Todo stack.background { border-radius: 0 0 10px 10px; }
-
-window.background.csd.org-gnome-Todo.maximized stack.background, window.background.csd.org-gnome-Todo.tiled stack.background, window.background.csd.org-gnome-Todo.fullscreen stack.background { border-radius: 0; }
 
 /**************** Gnome Tweaks * */
 hdyleaflet list.tweak-categories, leaflet list.tweak-categories { background-color: transparent; }
@@ -2184,6 +2184,7 @@ text widgets and the like base background color */
 /*
 base background color of selections */
 @define-color theme_selected_bg_color #fa4444;
+/* Tinting in dark variant to avoid a white selection on white page background when highlighting text in Evince when using Grey-Dark theme */
 /*
 text/foreground color of selections */
 @define-color theme_selected_fg_color white;
