@@ -3,18 +3,24 @@
 set -e
 
 if [ "$1" = "remove" ]; then
-  update-alternatives --remove gdm3-theme.gresource \
-    /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource
-    
-  if [ -e /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource ]
+  if [ -d /usr/share/gnome-shell ]
   then
-      rm /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource
-      rmdir /usr/share/gnome-shell/theme/ZorinBlue-Light
-  fi
+    update-alternatives --remove gdm3-theme.gresource \
+      /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource
 
-  # Remove older deprecated themes. Can be removed post Zorin OS 16
-  update-alternatives --remove gdm3.css \
-    /usr/share/gnome-shell/theme/zorin.css || true
+    if [ -e /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinBlue-Light
+    fi
+
+    if [ -e /usr/share/gnome-shell/theme/zorin.css ]
+    then
+      # Remove older deprecated themes. Can be removed post Zorin OS 16
+      update-alternatives --remove gdm3.css \
+        /usr/share/gnome-shell/theme/zorin.css || true
+    fi
+  fi
 fi
 
 #DEBHELPER#

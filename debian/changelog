@@ -1,3 +1,10 @@
+zorin-desktop-themes (3.3.5) focal; urgency=medium
+
+  * Fixed debian installation and removal scripts for non-GNOME
+    environments
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 03 Oct 2021 16:58:34 +0100
+
 zorin-desktop-themes (3.3.4) focal; urgency=medium
 
   * Fixed issues with Gnome Calendar, Todo, and text selection in Evince
