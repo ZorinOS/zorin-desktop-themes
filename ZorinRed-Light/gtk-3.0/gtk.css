@@ -1955,11 +1955,6 @@ dialog > box > grid > scrolledwindow > viewport > box > list > row { border-radi
 
 dialog > box > grid > scrolledwindow > viewport > box > list separator.horizontal { margin: 0; }
 
-/*********************** LightDM Gtk Greeter * */
-.lightdm-gtk-greeter #panel_window { border-radius: 0; border: none; }
-
-.lightdm-gtk-greeter #buttonbox_frame { padding-top: 24px; }
-
 /**************************************************** documents-scrolledwin (Totem, Documents, EvView) * */
 .documents-scrolledwin:backdrop, .documents-scrolledwin { background-color: transparent; }
 
@@ -2140,33 +2135,74 @@ row#AutostartTitle.tweak { padding: 8px 8px 0 8px; }
 
 #weather-page-content-view { border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
 
+/******************** Zorin Appearance * */
+stacksidebar.sidebar > scrolledwindow > viewport.frame > list { border-radius: 0; }
+
+/********** Thunar * */
+.thunar .sidebar.frame { border: none; }
+
+.thunar .sidebar .view, .thunar .sidebar iconview { background-color: #faf7f6; border: none; }
+
+.thunar .sidebar .view:selected, .thunar .sidebar iconview:selected { background-color: #e2d8d6; color: #572920; }
+
+.thunar .sidebar .view:backdrop, .thunar .sidebar iconview:backdrop { background-color: #f8f8f8; }
+
+.thunar .sidebar .view:backdrop:selected, .thunar .sidebar iconview:backdrop:selected { background-color: #e7e7e7; color: #878787; }
+
+.thunar .standard-view > .view, .thunar .standard-view > iconview { border-radius: 0; }
+
+/*********************** LightDM Gtk Greeter * */
+.lightdm-gtk-greeter #panel_window { border-radius: 0; border: none; background-color: #faf7f6; }
+
+.lightdm-gtk-greeter #panel_window menubar { font-weight: bold; }
+
+.lightdm-gtk-greeter #panel_window menubar menu menuitem { font-weight: normal; }
+
+.lightdm-gtk-greeter #buttonbox_frame { padding-top: 20px; }
+
+.lightdm-gtk-greeter #login_window, .lightdm-gtk-greeter #shutdown_dialog, .lightdm-gtk-greeter #restart_dialog { border-style: none; border-radius: 10px; background-color: #faf7f6; color: #572920; box-shadow: none; }
+
+.lightdm-gtk-greeter #login_window menu { border-radius: 0; }
+
 /******** XFCE * */
+.xfce4-panel.background { background-color: white; }
+
 .xfce4-panel.background button { border-radius: 0; margin: 0; font-weight: bold; }
+
+.xfce4-panel.background button menuitem { font-weight: normal; }
 
 .xfce4-panel.background button:hover { background-color: #eee8e6; }
 
 .xfce4-panel.background button:active, .xfce4-panel.background button:checked { color: #572920; background-color: #e2d8d6; background-image: none; }
 
-.xfce4-panel.background button menuitem { font-weight: normal; }
+.xfce4-panel.background button.flat image, .xfce4-panel.background button.image-button image { -gtk-icon-transform: scale(1); transition: none; }
+
+.xfce4-panel.background button.flat:active image, .xfce4-panel.background button.image-button:active image { -gtk-icon-transform: scale(1); }
 
 .tasklist button.toggle { background-color: transparent; border-top-width: 0; border-bottom-width: 0; }
 
 .tasklist button.toggle:checked { background: none; box-shadow: inset 0 -3px #572920; }
 
-wnck-pager { background-color: #e2d8d6; }
+wnck-pager { background-color: #f2efee; }
 
-wnck-pager:selected { background-color: #d9cecb; }
+wnck-pager:hover { background-color: #e6dfde; }
 
-wnck-pager:hover { background-color: #d9cecb; }
+wnck-pager:selected { background-color: #ddd4d2; }
 
 XfdesktopIconView.view { background: transparent; color: white; }
 
 XfdesktopIconView.view:active { background: #fa4444; color: white; text-shadow: none; }
 
-XfdesktopIconView.view .label { text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75), 0px 4px 4px rgba(0, 0, 0, 0.25); color: white; font-weight: 600; }
+XfdesktopIconView.view .label { text-shadow: 1px 1px 2px black; }
 
-/******************** Zorin Appearance * */
-stacksidebar.sidebar > scrolledwindow > viewport.frame > list { border-radius: 0; }
+#XfceNotifyWindow { background-color: white; border: none; box-shadow: inset 0 0 0 1px rgba(238, 232, 230, 0.75); border-radius: 10px; }
+
+#XfceNotifyWindow label#summary { font-weight: bold; }
+
+#XfceNotifyWindow progressbar progress { animation: none; background-image: none; background: linear-gradient(to right, #ff2626, #ff5966); }
+
+/* Xfwm4's alt-tab dialog, aka "tabwin" */
+#xfwm-tabwin { border-radius: 10px; }
 
 /* GTK NAMED COLORS ---------------- use responsibly! */
 /*

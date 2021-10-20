@@ -1,3 +1,9 @@
+zorin-desktop-themes (3.4) focal; urgency=medium
+
+  * Improved support for XFCE
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Wed, 20 Oct 2021 23:24:16 +0100
+
 zorin-desktop-themes (3.3.5) focal; urgency=medium
 
   * Fixed debian installation and removal scripts for non-GNOME
