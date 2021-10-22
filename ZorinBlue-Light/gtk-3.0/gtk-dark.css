@@ -2133,6 +2133,17 @@ row#AutostartTitle.tweak { padding: 8px 8px 0 8px; }
 
 #weather-page-content-view { border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
 
+/************ Ubiquity * */
+#live_installer #stepPartAuto #partition_container #resizewidget separator { background-image: none; }
+
+#live_installer #stepPartAuto #partition_container #resizewidget > frame > * { background-color: transparent; border-radius: 0; border-color: #2a3439; }
+
+#live_installer #stepPartAuto #partition_container #resizewidget > frame > *:backdrop { border-color: #283033; }
+
+#live_installer #stepPartAuto #partition_container #resizewidget > frame box { background-color: #171d20; }
+
+#live_installer #stepPartAuto #partition_container #resizewidget > frame box:backdrop { background-color: #14191a; }
+
 /******************** Zorin Appearance * */
 stacksidebar.sidebar > scrolledwindow > viewport.frame > list { border-radius: 0; }
 

@@ -1,3 +1,9 @@
+zorin-desktop-themes (3.4.1) focal; urgency=medium
+
+  * Fixed styling for partition slider in Ubiquity
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 22 Oct 2021 17:10:25 +0100
+
 zorin-desktop-themes (3.4) focal; urgency=medium
 
   * Improved support for XFCE
