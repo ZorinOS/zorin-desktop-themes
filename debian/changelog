@@ -1,3 +1,9 @@
+zorin-desktop-themes (3.4.2) focal; urgency=medium
+
+  * Corrected button maximized offset in XFWM themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 26 Nov 2021 20:00:41 +0000
+
 zorin-desktop-themes (3.4.1) focal; urgency=medium
 
   * Fixed styling for partition slider in Ubiquity
