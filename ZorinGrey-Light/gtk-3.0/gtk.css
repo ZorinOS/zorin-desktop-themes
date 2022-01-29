@@ -1761,7 +1761,7 @@ messagedialog.csd decoration { border-radius: 10px; box-shadow: 0 3px 6px 1px rg
 
 messagedialog.csd decoration:backdrop { box-shadow: 0 3px 6px 1px rgba(42, 42, 42, 0.2), 0 0 0 1px rgba(124, 124, 124, 0.05); }
 
-.solid-csd decoration { margin: 0; padding: 4px; background-color: #e8e8e8; border: solid 1px #e8e8e8; border-radius: 0; }
+.solid-csd decoration { margin: 0; padding: 4px; background-color: #e8e8e8; border: solid 1px #e8e8e8; border-radius: 0; box-shadow: none; }
 
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized), window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration, window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration-overlay { border-radius: 10px; }
 

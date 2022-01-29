@@ -1,3 +1,9 @@
+zorin-desktop-themes (3.4.3) focal; urgency=medium
+
+  * Fixed shadow issue in XFCE with newest versions of Google Chrome
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 29 Jan 2022 16:36:30 +0000
+
 zorin-desktop-themes (3.4.2) focal; urgency=medium
 
   * Corrected button maximized offset in XFWM themes
