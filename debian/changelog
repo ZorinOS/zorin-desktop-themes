@@ -1,3 +1,9 @@
+zorin-desktop-themes (3.4.4) focal; urgency=medium
+
+  * Fixed toolbar border rendering bug in Google Chrome and Chromium
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 07 Jul 2022 00:04:13 +0100
+
 zorin-desktop-themes (3.4.3) focal; urgency=medium
 
   * Fixed shadow issue in XFCE with newest versions of Google Chrome
