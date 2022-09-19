@@ -1,3 +1,10 @@
+zorin-desktop-themes (3.4.5) focal; urgency=medium
+
+  * Updated styling in Chromium-based browsers to fix active tab
+    visibility bug on Brave
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 19 Sep 2022 16:52:09 +0100
+
 zorin-desktop-themes (3.4.4) focal; urgency=medium
 
   * Fixed toolbar border rendering bug in Google Chrome and Chromium

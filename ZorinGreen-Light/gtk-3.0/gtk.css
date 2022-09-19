@@ -1880,11 +1880,15 @@ headerbar viewswitcher > box > button:first-child { border-bottom-left-radius: 8
 headerbar viewswitcher > box > button:last-child { border-bottom-right-radius: 8px; }
 
 /*********** Chromium * */
+window.background.chromium { background-color: white; }
+
 window.background.chromium headerbar.titlebar button.toggle, window.background.chromium headerbar.titlebar button.titlebutton { border: none; }
 
 window.background.chromium headerbar.titlebar button.titlebutton { background-image: none; }
 
-window.background.chromium button { border-style: solid; border-width: 1px; border-color: #f6f9f9; }
+window.background.chromium button { border-style: solid; border-width: 1px; border-color: #e5eceb; }
+
+window.background.chromium > textview.view { background-color: #f6f9f9; }
 
 /*********** Firefox * */
 #MozillaGtkWidget.background { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
