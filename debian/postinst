@@ -10,9 +10,19 @@ if [ "$1" = configure ]; then
         mkdir /usr/share/gnome-shell/theme
     fi
 
+    if [ ! -d /usr/share/gnome-shell/theme/ZorinBlue-Dark ]
+    then
+        mkdir /usr/share/gnome-shell/theme/ZorinBlue-Dark
+    fi
+
     if [ ! -d /usr/share/gnome-shell/theme/ZorinBlue-Light ]
     then
         mkdir /usr/share/gnome-shell/theme/ZorinBlue-Light
+    fi
+
+    if [ ! -e /usr/share/gnome-shell/theme/ZorinBlue-Dark/gnome-shell-theme.gresource ]
+    then
+      ln -s /usr/share/themes/ZorinBlue-Dark/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/theme/ZorinBlue-Dark/gnome-shell-theme.gresource
     fi
 
     if [ ! -e /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource ]
@@ -21,9 +31,9 @@ if [ "$1" = configure ]; then
     fi
 
     update-alternatives --install \
-      /usr/share/gnome-shell/gdm3-theme.gresource \
-      gdm3-theme.gresource \
-      /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource \
+      /usr/share/gnome-shell/gdm-theme.gresource \
+      gdm-theme.gresource \
+      /usr/share/gnome-shell/theme/ZorinBlue-Dark/gnome-shell-theme.gresource \
       20
   fi
 fi

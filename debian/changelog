@@ -1,3 +1,17 @@
+zorin-desktop-themes (4.0) jammy; urgency=medium
+
+  * Refresh for Zorin OS 17: Updated Gtk2 and Gtk3 themes, redesigned
+    GNOME Shell themes, and created new Gtk4 themes compatible with
+    libadwaita
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 23 Oct 2023 18:15:21 +0100
+
+zorin-desktop-themes (3.4.6) jammy; urgency=medium
+
+  * Removed Zorin OS 15 to 16 upgrade handling code
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 14 Aug 2023 18:13:51 +0100
+
 zorin-desktop-themes (3.4.5) focal; urgency=medium
 
   * Updated styling in Chromium-based browsers to fix active tab

@@ -151,7 +151,7 @@ style "murrine-button" = "murrine-wider"{
 
 	bg[ACTIVE]                  = mix(0.8,@bg_color,@fg_color)
 	bg[NORMAL]                  = mix(0.925,@bg_color,@fg_color)
-	bg[PRELIGHT]				= mix(0.85,@bg_color,@fg_color)
+	bg[PRELIGHT]				= mix(0.875,@bg_color,@fg_color)
 	bg[SELECTED]				= mix(0.6,@bg_color,@selected_bg_color)
 	bg[INSENSITIVE]				= @bg_color
 	
@@ -218,9 +218,9 @@ style "murrine-menu-item"
   xthickness = 0
   ythickness = 4
 
-	bg[PRELIGHT] = mix(0.15,@fg_color, @base_color)
+	bg[PRELIGHT] = mix(0.1,@fg_color, @base_color)
 	fg[PRELIGHT] = @fg_color
-	bg[SELECTED] = mix(0.15,@fg_color, @base_color)
+	bg[SELECTED] = mix(0.1,@fg_color, @base_color)
 	fg[SELECTED] = @fg_color
 
 	text[NORMAL]	= @fg_color
@@ -237,8 +237,8 @@ engine "murrine"
 
 style "murrine-menubar-item" = "murrine-menu-item"
 {
-	bg[SELECTED] = mix(0.15,@fg_color, @bg_color)
-	bg[PRELIGHT] = mix(0.15,@fg_color, @bg_color)
+	bg[SELECTED] = mix(0.1,@fg_color, @bg_color)
+	bg[PRELIGHT] = mix(0.1,@fg_color, @bg_color)
 	fg[SELECTED] = @fg_color
 	fg[PRELIGHT] = @fg_color
 
