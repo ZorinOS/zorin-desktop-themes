@@ -796,7 +796,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .screenshot-ui-area-selector-handle { border-radius: 99px; background-color: white; box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2); width: 24px; height: 24px; }
 
-.screenshot-ui-window-selector { background-color: #1b2421; }
+.screenshot-ui-window-selector { background-color: #1b2421; background-image: url("assets/texture-dark.svg"); background-position: 0 0; background-repeat: repeat; }
 
 .screenshot-ui-window-selector .screenshot-ui-window-selector-window-container { margin: 100px; }
 
@@ -1015,7 +1015,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 /* OVERVIEW */
 .controls-manager, .secondary-monitor-workspaces { spacing: 12px; }
 
-#overviewGroup { background-color: #1b2421; }
+#overviewGroup { background-color: #1b2421; background-image: url("assets/texture-dark.svg"); background-position: 0 0; background-repeat: repeat; }
 
 .overview-controls { padding-bottom: 32px; }
 
@@ -1032,7 +1032,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .window-close:active, .screenshot-ui-close-button:active { background-color: #799c8f; }
 
-.workspace-background { border-radius: 30px; background-color: rgba(3, 2, 1, 0); box-shadow: 0 4px 16px 4px rgba(21, 28, 25, 0.25); }
+.workspace-background { border-radius: 30px; background-color: rgba(3, 2, 1, 0); box-shadow: 0 8px 24px 4px rgba(21, 28, 25, 0.25); }
 
 .search-entry { margin-top: 12px; margin-bottom: 6px; padding: 7px 9px; width: 320px; background-color: #151c19; color: #bbf1dd; border: 1px solid #27332f; box-shadow: none; border-color: rgba(187, 241, 221, 0.25); }
 
@@ -1051,7 +1051,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .search-section .search-section-separator { height: 8px; background-color: transparent; }
 
-.search-section-content { background-color: rgba(21, 28, 25, 0.5); border-radius: 24px; border: 1px solid rgba(187, 241, 221, 0.075); color: #bbf1dd; padding: 12px; margin: 0 12px; }
+.search-section-content { background-color: rgba(21, 28, 25, 0.75); border-radius: 24px; border: 1px solid rgba(187, 241, 221, 0.075); color: #bbf1dd; padding: 12px; margin: 0 12px; }
 
 .list-search-result, .search-provider-icon { background-color: transparent; border-radius: 11px; }
 
@@ -1334,7 +1334,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 .caps-lock-warning-label { text-align: center; padding-bottom: 8px; color: #faa483; font-weight: bold; }
 
 /* Workspace animation */
-.workspace-animation { background-color: #1b2421; }
+.workspace-animation { background-color: #1b2421; background-image: url("assets/texture-dark.svg"); background-position: 0 0; background-repeat: repeat; }
 
 /* Tiled window previews */
 .tile-preview { background-color: rgba(187, 241, 221, 0.5); border: 1px solid #bbf1dd; }

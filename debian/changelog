@@ -1,3 +1,9 @@
+zorin-desktop-themes (4.0.1) jammy; urgency=medium
+
+  * Added texture to overview background in GNOME Shell themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Tue, 24 Oct 2023 17:13:05 +0100
+
 zorin-desktop-themes (4.0) jammy; urgency=medium
 
   * Refresh for Zorin OS 17: Updated Gtk2 and Gtk3 themes, redesigned
