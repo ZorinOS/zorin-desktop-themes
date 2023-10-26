@@ -1,3 +1,9 @@
+zorin-desktop-themes (4.0.2) jammy; urgency=medium
+
+  * Fixed bugs in Gtk3 and Libadwaita themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 26 Oct 2023 15:44:33 +0100
+
 zorin-desktop-themes (4.0.1) jammy; urgency=medium
 
   * Added texture to overview background in GNOME Shell themes

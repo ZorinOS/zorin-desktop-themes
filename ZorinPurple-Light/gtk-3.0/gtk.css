@@ -2135,11 +2135,7 @@ window.background.csd.maximized > box.vertical > scrolledwindow > iconview.view.
 /******************* Archive Manager * */
 .background.csd > grid.horizontal > paned.horizontal > scrolledwindow { border-radius: 0 0 12px 12px; background-color: white; }
 
-.background.csd > grid.horizontal > paned.horizontal > scrolledwindow treeview.view:not(:selected), .background.csd > grid.horizontal > paned.horizontal > scrolledwindow treeview.view:hover:backdrop:not(:selected) { background-color: transparent; }
-
 .background.csd > grid.horizontal > paned.horizontal > box.vertical > scrolledwindow { border-radius: 0 0 0 12px; background-color: #f9f7f9; }
-
-.background.csd > grid.horizontal > paned.horizontal > box.vertical > scrolledwindow treeview.view:not(:selected) { background-color: transparent; }
 
 .background.csd.maximized > grid.horizontal > paned.horizontal > scrolledwindow, .background.csd.tiled > grid.horizontal > paned.horizontal > scrolledwindow, .background.csd.fullscreen > grid.horizontal > paned.horizontal > scrolledwindow { border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
 

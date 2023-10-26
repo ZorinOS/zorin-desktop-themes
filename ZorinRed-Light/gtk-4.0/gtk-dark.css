@@ -2255,6 +2255,33 @@ button.card:drop(active) { color: #4cd9a4; box-shadow: inset 0 0 0 1px #4cd9a4; 
 /***************** ThemeSelector * */
 themeselector checkbutton { border-radius: 9999px; }
 
+/********************* Transition Shadow * */
+flap > dimming, leaflet > dimming { background: alpha(rgba(30, 21, 21, 0.6),0.5); }
+
+flap > dimming:backdrop, leaflet > dimming:backdrop { background: alpha(rgba(29, 22, 22, 0.6),0.5); }
+
+flap > border, leaflet > border { min-width: 1px; min-height: 1px; background: rgba(253, 180, 180, 0.1); }
+
+flap > border:backdrop, leaflet > border:backdrop { background: rgba(139, 106, 106, 0.125); }
+
+flap > shadow, leaflet > shadow { min-width: 56px; min-height: 56px; }
+
+flap > shadow.left, leaflet > shadow.left { background-image: linear-gradient(to right, alpha(rgba(30, 21, 21, 0.6),0.35), alpha(rgba(30, 21, 21, 0.6),0.1) 40px, alpha(rgba(30, 21, 21, 0.6),0) 56px), linear-gradient(to right, alpha(rgba(30, 21, 21, 0.6),0.2), alpha(rgba(30, 21, 21, 0.6),0.1) 7px, alpha(rgba(30, 21, 21, 0.6),0) 24px); }
+
+flap > shadow.right, leaflet > shadow.right { background-image: linear-gradient(to left, alpha(rgba(30, 21, 21, 0.6),0.35), alpha(rgba(30, 21, 21, 0.6),0.1) 40px, alpha(rgba(30, 21, 21, 0.6),0) 56px), linear-gradient(to left, alpha(rgba(30, 21, 21, 0.6),0.2), alpha(rgba(30, 21, 21, 0.6),0.1) 7px, alpha(rgba(30, 21, 21, 0.6),0) 24px); }
+
+flap > shadow.up, leaflet > shadow.up { background-image: linear-gradient(to bottom, alpha(rgba(30, 21, 21, 0.6),0.35), alpha(rgba(30, 21, 21, 0.6),0.1) 40px, alpha(rgba(30, 21, 21, 0.6),0) 56px), linear-gradient(to bottom, alpha(rgba(30, 21, 21, 0.6),0.2), alpha(rgba(30, 21, 21, 0.6),0.1) 7px, alpha(rgba(30, 21, 21, 0.6),0) 24px); }
+
+flap > shadow.down, leaflet > shadow.down { background-image: linear-gradient(to top, alpha(rgba(30, 21, 21, 0.6),0.35), alpha(rgba(30, 21, 21, 0.6),0.1) 40px, alpha(rgba(30, 21, 21, 0.6),0) 56px), linear-gradient(to top, alpha(rgba(30, 21, 21, 0.6),0.2), alpha(rgba(30, 21, 21, 0.6),0.1) 7px, alpha(rgba(30, 21, 21, 0.6),0) 24px); }
+
+flap > shadow:backdrop.left, leaflet > shadow:backdrop.left { background-image: linear-gradient(to right, alpha(rgba(29, 22, 22, 0.6),0.35), alpha(rgba(29, 22, 22, 0.6),0.1) 40px, alpha(rgba(29, 22, 22, 0.6),0) 56px), linear-gradient(to right, alpha(rgba(29, 22, 22, 0.6),0.2), alpha(rgba(29, 22, 22, 0.6),0.1) 7px, alpha(rgba(29, 22, 22, 0.6),0) 24px); }
+
+flap > shadow:backdrop.right, leaflet > shadow:backdrop.right { background-image: linear-gradient(to left, alpha(rgba(29, 22, 22, 0.6),0.35), alpha(rgba(29, 22, 22, 0.6),0.1) 40px, alpha(rgba(29, 22, 22, 0.6),0) 56px), linear-gradient(to left, alpha(rgba(29, 22, 22, 0.6),0.2), alpha(rgba(29, 22, 22, 0.6),0.1) 7px, alpha(rgba(29, 22, 22, 0.6),0) 24px); }
+
+flap > shadow:backdrop.up, leaflet > shadow:backdrop.up { background-image: linear-gradient(to bottom, alpha(rgba(29, 22, 22, 0.6),0.35), alpha(rgba(29, 22, 22, 0.6),0.1) 40px, alpha(rgba(29, 22, 22, 0.6),0) 56px), linear-gradient(to bottom, alpha(rgba(29, 22, 22, 0.6),0.2), alpha(rgba(29, 22, 22, 0.6),0.1) 7px, alpha(rgba(29, 22, 22, 0.6),0) 24px); }
+
+flap > shadow:backdrop.down, leaflet > shadow:backdrop.down { background-image: linear-gradient(to top, alpha(rgba(29, 22, 22, 0.6),0.35), alpha(rgba(29, 22, 22, 0.6),0.1) 40px, alpha(rgba(29, 22, 22, 0.6),0) 56px), linear-gradient(to top, alpha(rgba(29, 22, 22, 0.6),0.2), alpha(rgba(29, 22, 22, 0.6),0.1) 7px, alpha(rgba(29, 22, 22, 0.6),0) 24px); }
+
 /* GTK NAMED COLORS ---------------- use responsibly! */
 /*
 widget text/foreground color */
