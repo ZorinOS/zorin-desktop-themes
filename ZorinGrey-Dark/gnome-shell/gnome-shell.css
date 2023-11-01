@@ -159,7 +159,7 @@ StEntry StLabel.hint-text { margin-left: 2px; color: rgba(255, 255, 255, 0.7); }
 .toggle-switch:checked { background-image: url("assets/toggle-on-dark.svg"); }
 
 /* Slider */
-.slider { height: 22px; -barlevel-height: 4px; -barlevel-background-color: #313131; -barlevel-border-width: 0px; -barlevel-border-color: transparent; -barlevel-active-background-color: #ffffff; -barlevel-active-border-color: transparent; -barlevel-overdrive-color: #fb7c7c; -barlevel-overdrive-border-color: transparent; -barlevel-overdrive-separator-width: 2px; -slider-handle-radius: 10px; -slider-handle-border-width: 1px; -slider-handle-border-color: #797979; color: #c6c6c6; }
+.slider { height: 22px; -barlevel-height: 4px; -barlevel-background-color: #313131; -barlevel-border-width: 0px; -barlevel-border-color: transparent; -barlevel-active-background-color: #ffffff; -barlevel-active-border-color: transparent; -barlevel-overdrive-color: #fb7c7c; -barlevel-overdrive-border-color: transparent; -barlevel-overdrive-separator-width: 2px; -slider-handle-radius: 10px; -slider-handle-border-width: 1px; -slider-handle-border-color: #ffffff; color: #ffffff; }
 
 /* Scrollbars */
 StScrollView.vfade { -st-vfade-offset: 68px; }
@@ -1100,7 +1100,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dash .app-well-app-running-dot { margin-bottom: 14px; background-color: #ffffff; }
 
-.dash-background { background-color: rgba(25, 25, 25, 0.75); border-radius: 28px; padding: 12px; spacing: 6px; margin-bottom: 12px; }
+.dash-background { background-color: rgba(25, 25, 25, 0.75); border-radius: 28px; padding: 12px; spacing: 6px; margin-bottom: 12px; border: 1px solid rgba(255, 255, 255, 0.125); }
 
 .dash-item-container > * { margin: 0 2px; }
 
@@ -1166,7 +1166,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dash .app-well-app:hover .dtp-container, #dash .grid-search-result:hover .dtp-container, #dash .app-well-app:selected .dtp-container, #dash .grid-search-result:selected .dtp-container, #dashtodockContainer .app-well-app:hover .dtp-container, #dashtodockContainer .grid-search-result:hover .dtp-container, #dashtodockContainer .app-well-app:selected .dtp-container, #dashtodockContainer .grid-search-result:selected .dtp-container, #dashtopanelScrollview .app-well-app:hover .dtp-container, #dashtopanelScrollview .grid-search-result:hover .dtp-container, #dashtopanelScrollview .app-well-app:selected .dtp-container, #dashtopanelScrollview .grid-search-result:selected .dtp-container, #zorintaskbarScrollview .app-well-app:hover .dtp-container, #zorintaskbarScrollview .grid-search-result:hover .dtp-container, #zorintaskbarScrollview .app-well-app:selected .dtp-container, #zorintaskbarScrollview .grid-search-result:selected .dtp-container { background-color: rgba(255, 255, 255, 0.125); }
 
-#dash .app-well-app:focus .dtp-container, #dash .grid-search-result:focus .dtp-container, #dashtodockContainer .app-well-app:focus .dtp-container, #dashtodockContainer .grid-search-result:focus .dtp-container, #dashtopanelScrollview .app-well-app:focus .dtp-container, #dashtopanelScrollview .grid-search-result:focus .dtp-container, #zorintaskbarScrollview .app-well-app:focus .dtp-container, #zorintaskbarScrollview .grid-search-result:focus .dtp-container { background-color: rgba(255, 255, 255, 0.125); }
+#dash .app-well-app:focus .dtp-container, #dash .grid-search-result:focus .dtp-container, #dash .app-well-app.focused .overview-icon, #dash .focused.grid-search-result .overview-icon, #dashtodockContainer .app-well-app:focus .dtp-container, #dashtodockContainer .grid-search-result:focus .dtp-container, #dashtodockContainer .app-well-app.focused .overview-icon, #dashtodockContainer .focused.grid-search-result .overview-icon, #dashtopanelScrollview .app-well-app:focus .dtp-container, #dashtopanelScrollview .grid-search-result:focus .dtp-container, #dashtopanelScrollview .app-well-app.focused .overview-icon, #dashtopanelScrollview .focused.grid-search-result .overview-icon, #zorintaskbarScrollview .app-well-app:focus .dtp-container, #zorintaskbarScrollview .grid-search-result:focus .dtp-container, #zorintaskbarScrollview .app-well-app.focused .overview-icon, #zorintaskbarScrollview .focused.grid-search-result .overview-icon { background-color: rgba(255, 255, 255, 0.125); }
 
 #dash .app-well-app:active .dtp-container, #dash .grid-search-result:active .dtp-container, #dash .app-well-app:checked .dtp-container, #dash .grid-search-result:checked .dtp-container, #dashtodockContainer .app-well-app:active .dtp-container, #dashtodockContainer .grid-search-result:active .dtp-container, #dashtodockContainer .app-well-app:checked .dtp-container, #dashtodockContainer .grid-search-result:checked .dtp-container, #dashtopanelScrollview .app-well-app:active .dtp-container, #dashtopanelScrollview .grid-search-result:active .dtp-container, #dashtopanelScrollview .app-well-app:checked .dtp-container, #dashtopanelScrollview .grid-search-result:checked .dtp-container, #zorintaskbarScrollview .app-well-app:active .dtp-container, #zorintaskbarScrollview .grid-search-result:active .dtp-container, #zorintaskbarScrollview .app-well-app:checked .dtp-container, #zorintaskbarScrollview .grid-search-result:checked .dtp-container { background-color: rgba(255, 255, 255, 0.2); }
 

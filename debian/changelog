@@ -1,3 +1,9 @@
+zorin-desktop-themes (4.0.3) jammy; urgency=medium
+
+  * Updated styling for GNOME Shell and Gtk themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Wed, 01 Nov 2023 16:47:59 +0000
+
 zorin-desktop-themes (4.0.2) jammy; urgency=medium
 
   * Fixed bugs in Gtk3 and Libadwaita themes

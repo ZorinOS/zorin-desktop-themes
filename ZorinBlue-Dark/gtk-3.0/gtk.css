@@ -1197,15 +1197,15 @@ scale fill:backdrop, scale fill { background-color: #2a3439; }
 
 scale fill:disabled:backdrop, scale fill:disabled { border-color: transparent; background-color: transparent; }
 
-scale slider { border: none; border-radius: 100%; background-color: #93b4c4; box-shadow: 0 1.5px 2px 1px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(189, 230, 251, 0.1); transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: background, border, box-shadow; }
+scale slider { border: none; border-radius: 100%; background-color: #bde6fb; box-shadow: 0 1.5px 2px 1px rgba(0, 0, 0, 0.4), 0 0 0 1px transparent; transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: background, border, box-shadow; }
 
-scale slider:hover, row scale slider:hover, popover scale slider:hover { background-color: #bde6fb; box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(189, 230, 251, 0.15); }
+scale slider:hover, row scale slider:hover, popover scale slider:hover { background-color: #d5effc; box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 1px transparent; }
 
-scale slider:active, row scale slider:active, popover scale slider:active { background-color: #93b4c4; box-shadow: 0 1.5px 2px 1px rgba(189, 230, 251, 0.2), 0 0 0 1px rgba(189, 230, 251, 0.325); }
+scale slider:active, row scale slider:active, popover scale slider:active { background-color: #bde6fb; box-shadow: 0 1.5px 2px 1px rgba(189, 230, 251, 0.2), 0 0 0 1px transparent; }
 
 scale slider:disabled { background-color: #404f57; box-shadow: 0 1.5px 2px 1px rgba(0, 0, 0, 0.4); }
 
-scale slider:backdrop { background-color: #64777f; transition: 150ms ease-out; box-shadow: 0 1.5px 2px 1px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(111, 130, 138, 0.15); }
+scale slider:backdrop { background-color: #7f96a1; transition: 150ms ease-out; box-shadow: 0 1.5px 2px 1px rgba(0, 0, 0, 0.4), 0 0 0 1px transparent; }
 
 scale slider:backdrop:disabled { background-color: #2f383c; box-shadow: 0 1.5px 2px 1px rgba(0, 0, 0, 0.4); }
 
@@ -1235,11 +1235,11 @@ scale.vertical indicator { min-height: 1px; min-width: 6px; }
 
 scale.vertical.fine-tune indicator { min-width: 3px; }
 
-scale.horizontal.marks-before:not(.marks-after) slider { margin: -9px; border-style: none; border-radius: 0; background-color: transparent; color: #93b4c4; background-image: image(-gtk-recolor(url("assets/slider-horz-scale-has-marks-above-symbolic.svg")), -gtk-recolor(url("assets/slider-horz-scale-has-marks-above-symbolic.symbolic.png"))); min-height: 26px; min-width: 22px; margin-top: -13px; background-position: top; background-repeat: no-repeat; box-shadow: none; }
+scale.horizontal.marks-before:not(.marks-after) slider { margin: -9px; border-style: none; border-radius: 0; background-color: transparent; color: #bde6fb; background-image: image(-gtk-recolor(url("assets/slider-horz-scale-has-marks-above-symbolic.svg")), -gtk-recolor(url("assets/slider-horz-scale-has-marks-above-symbolic.symbolic.png"))); min-height: 26px; min-width: 22px; margin-top: -13px; background-position: top; background-repeat: no-repeat; box-shadow: none; }
 
-scale.horizontal.marks-before:not(.marks-after) slider:hover { color: #bde6fb; }
+scale.horizontal.marks-before:not(.marks-after) slider:hover { color: #d5effc; }
 
-scale.horizontal.marks-before:not(.marks-after) slider:active { color: #93b4c4; }
+scale.horizontal.marks-before:not(.marks-after) slider:active { color: #bde6fb; }
 
 scale.horizontal.marks-before:not(.marks-after) slider:disabled { color: #404f57; }
 
@@ -1249,11 +1249,11 @@ scale.horizontal.marks-before:not(.marks-after) slider:backdrop:disabled { color
 
 scale.horizontal.marks-before:not(.marks-after).fine-tune slider { margin: -7px; margin-top: -11px; }
 
-scale.horizontal.marks-after:not(.marks-before) slider { margin: -9px; border-style: none; border-radius: 0; background-color: transparent; color: #93b4c4; background-image: image(-gtk-recolor(url("assets/slider-horz-scale-has-marks-below-symbolic.svg")), -gtk-recolor(url("assets/slider-horz-scale-has-marks-below-symbolic.symbolic.png"))); min-height: 26px; min-width: 22px; margin-bottom: -13px; background-position: bottom; background-repeat: no-repeat; box-shadow: none; }
+scale.horizontal.marks-after:not(.marks-before) slider { margin: -9px; border-style: none; border-radius: 0; background-color: transparent; color: #bde6fb; background-image: image(-gtk-recolor(url("assets/slider-horz-scale-has-marks-below-symbolic.svg")), -gtk-recolor(url("assets/slider-horz-scale-has-marks-below-symbolic.symbolic.png"))); min-height: 26px; min-width: 22px; margin-bottom: -13px; background-position: bottom; background-repeat: no-repeat; box-shadow: none; }
 
-scale.horizontal.marks-after:not(.marks-before) slider:hover { color: #bde6fb; }
+scale.horizontal.marks-after:not(.marks-before) slider:hover { color: #d5effc; }
 
-scale.horizontal.marks-after:not(.marks-before) slider:active { color: #93b4c4; }
+scale.horizontal.marks-after:not(.marks-before) slider:active { color: #bde6fb; }
 
 scale.horizontal.marks-after:not(.marks-before) slider:disabled { color: #404f57; }
 
@@ -1263,11 +1263,11 @@ scale.horizontal.marks-after:not(.marks-before) slider:backdrop:disabled { color
 
 scale.horizontal.marks-after:not(.marks-before).fine-tune slider { margin: -7px; margin-bottom: -11px; }
 
-scale.vertical.marks-before:not(.marks-after) slider { margin: -9px; border-style: none; border-radius: 0; background-color: transparent; color: #93b4c4; background-image: image(-gtk-recolor(url("assets/slider-vert-scale-has-marks-above-symbolic.svg")), -gtk-recolor(url("assets/slider-vert-scale-has-marks-above-symbolic.symbolic.png"))); min-height: 22px; min-width: 26px; margin-left: -13px; background-position: left bottom; background-repeat: no-repeat; box-shadow: none; }
+scale.vertical.marks-before:not(.marks-after) slider { margin: -9px; border-style: none; border-radius: 0; background-color: transparent; color: #bde6fb; background-image: image(-gtk-recolor(url("assets/slider-vert-scale-has-marks-above-symbolic.svg")), -gtk-recolor(url("assets/slider-vert-scale-has-marks-above-symbolic.symbolic.png"))); min-height: 22px; min-width: 26px; margin-left: -13px; background-position: left bottom; background-repeat: no-repeat; box-shadow: none; }
 
-scale.vertical.marks-before:not(.marks-after) slider:hover { color: #bde6fb; }
+scale.vertical.marks-before:not(.marks-after) slider:hover { color: #d5effc; }
 
-scale.vertical.marks-before:not(.marks-after) slider:active { color: #93b4c4; }
+scale.vertical.marks-before:not(.marks-after) slider:active { color: #bde6fb; }
 
 scale.vertical.marks-before:not(.marks-after) slider:disabled { color: #404f57; }
 
@@ -1277,11 +1277,11 @@ scale.vertical.marks-before:not(.marks-after) slider:backdrop:disabled { color: 
 
 scale.vertical.marks-before:not(.marks-after).fine-tune slider { margin: -7px; margin-left: -11px; }
 
-scale.vertical.marks-after:not(.marks-before) slider { margin: -9px; border-style: none; border-radius: 0; background-color: transparent; color: #93b4c4; background-image: image(-gtk-recolor(url("assets/slider-vert-scale-has-marks-below-symbolic.svg")), -gtk-recolor(url("assets/slider-vert-scale-has-marks-below-symbolic.symbolic.png"))); min-height: 22px; min-width: 26px; margin-right: -13px; background-position: right bottom; background-repeat: no-repeat; box-shadow: none; }
+scale.vertical.marks-after:not(.marks-before) slider { margin: -9px; border-style: none; border-radius: 0; background-color: transparent; color: #bde6fb; background-image: image(-gtk-recolor(url("assets/slider-vert-scale-has-marks-below-symbolic.svg")), -gtk-recolor(url("assets/slider-vert-scale-has-marks-below-symbolic.symbolic.png"))); min-height: 22px; min-width: 26px; margin-right: -13px; background-position: right bottom; background-repeat: no-repeat; box-shadow: none; }
 
-scale.vertical.marks-after:not(.marks-before) slider:hover { color: #bde6fb; }
+scale.vertical.marks-after:not(.marks-before) slider:hover { color: #d5effc; }
 
-scale.vertical.marks-after:not(.marks-before) slider:active { color: #93b4c4; }
+scale.vertical.marks-after:not(.marks-before) slider:active { color: #bde6fb; }
 
 scale.vertical.marks-after:not(.marks-before) slider:disabled { color: #404f57; }
 

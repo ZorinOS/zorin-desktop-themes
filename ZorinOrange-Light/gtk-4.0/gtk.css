@@ -925,29 +925,31 @@ notebook > header > tabs > arrow:hover:not(:active):not(:backdrop) { background-
 
 notebook > header > tabs > arrow:disabled { color: #a89a8e; background-color: transparent; background-image: none; box-shadow: none; }
 
-notebook > header > tabs > tab { transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); min-height: 24px; min-width: 30px; padding: 2px 9px; margin: 2px; border-radius: 8px; color: #745e4c; font-weight: normal; border-style: none; }
+notebook > header.top > tabs, notebook > header.bottom > tabs, notebook > header.left > tabs, notebook > header.right > tabs { margin: 0; padding: 0; }
 
-notebook > header > tabs > tab:hover { color: #563b25; background-color: rgba(86, 59, 37, 0.05); }
+notebook > header.top > tabs > tab, notebook > header.bottom > tabs > tab, notebook > header.left > tabs > tab, notebook > header.right > tabs > tab { transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); min-height: 24px; min-width: 30px; padding: 2px 9px; margin: 2px; border-radius: 8px; color: #745e4c; font-weight: normal; border-style: none; box-shadow: none; }
 
-notebook > header > tabs > tab:backdrop { color: #898989; }
+notebook > header.top > tabs > tab:hover, notebook > header.bottom > tabs > tab:hover, notebook > header.left > tabs > tab:hover, notebook > header.right > tabs > tab:hover { color: #563b25; background-color: rgba(86, 59, 37, 0.05); box-shadow: none; }
 
-notebook > header > tabs > tab:backdrop.reorderable-page { background-color: transparent; }
+notebook > header.top > tabs > tab:backdrop, notebook > header.bottom > tabs > tab:backdrop, notebook > header.left > tabs > tab:backdrop, notebook > header.right > tabs > tab:backdrop { color: #898989; box-shadow: none; }
 
-notebook > header > tabs > tab:not(:checked) { outline-color: transparent; }
+notebook > header.top > tabs > tab:backdrop.reorderable-page, notebook > header.bottom > tabs > tab:backdrop.reorderable-page, notebook > header.left > tabs > tab:backdrop.reorderable-page, notebook > header.right > tabs > tab:backdrop.reorderable-page { background-color: transparent; }
 
-notebook > header > tabs > tab:checked { color: #563b25; background-color: white; box-shadow: 0 2px 8px rgba(86, 59, 37, 0.075); }
+notebook > header.top > tabs > tab:not(:checked), notebook > header.bottom > tabs > tab:not(:checked), notebook > header.left > tabs > tab:not(:checked), notebook > header.right > tabs > tab:not(:checked) { outline-color: transparent; box-shadow: none; }
 
-notebook > header > tabs > tab:backdrop:checked { color: #898989; background-color: white; box-shadow: 0 1px 4px rgba(62, 62, 62, 0.075); }
+notebook > header.top > tabs > tab:checked, notebook > header.bottom > tabs > tab:checked, notebook > header.left > tabs > tab:checked, notebook > header.right > tabs > tab:checked { color: #563b25; background-color: white; box-shadow: 0 2px 8px rgba(86, 59, 37, 0.075); }
 
-notebook > header > tabs > tab:backdrop:checked.reorderable-page { background-color: white; }
+notebook > header.top > tabs > tab:backdrop:checked, notebook > header.bottom > tabs > tab:backdrop:checked, notebook > header.left > tabs > tab:backdrop:checked, notebook > header.right > tabs > tab:backdrop:checked { color: #898989; background-color: white; box-shadow: 0 1px 4px rgba(62, 62, 62, 0.075); }
 
-notebook > header > tabs > tab button.flat { border-radius: 999px; color: alpha(currentColor,0.3); padding: 0; margin-top: 2px; margin-bottom: 2px; min-width: 20px; min-height: 20px; }
+notebook > header.top > tabs > tab:backdrop:checked.reorderable-page, notebook > header.bottom > tabs > tab:backdrop:checked.reorderable-page, notebook > header.left > tabs > tab:backdrop:checked.reorderable-page, notebook > header.right > tabs > tab:backdrop:checked.reorderable-page { background-color: white; }
 
-notebook > header > tabs > tab button.flat:hover { color: currentColor; }
+notebook > header.top > tabs > tab button.flat, notebook > header.bottom > tabs > tab button.flat, notebook > header.left > tabs > tab button.flat, notebook > header.right > tabs > tab button.flat { border-radius: 999px; color: alpha(currentColor,0.3); padding: 0; margin-top: 2px; margin-bottom: 2px; min-width: 20px; min-height: 20px; }
 
-notebook > header > tabs > tab button.flat:last-child { margin-left: 4px; margin-right: -4px; }
+notebook > header.top > tabs > tab button.flat:hover, notebook > header.bottom > tabs > tab button.flat:hover, notebook > header.left > tabs > tab button.flat:hover, notebook > header.right > tabs > tab button.flat:hover { color: currentColor; }
 
-notebook > header > tabs > tab button.flat:first-child { margin-left: -4px; margin-right: 4px; }
+notebook > header.top > tabs > tab button.flat:last-child, notebook > header.bottom > tabs > tab button.flat:last-child, notebook > header.left > tabs > tab button.flat:last-child, notebook > header.right > tabs > tab button.flat:last-child { margin-left: 4px; margin-right: -4px; }
+
+notebook > header.top > tabs > tab button.flat:first-child, notebook > header.bottom > tabs > tab button.flat:first-child, notebook > header.left > tabs > tab button.flat:first-child, notebook > header.right > tabs > tab button.flat:first-child { margin-left: -4px; margin-right: 4px; }
 
 notebook > stack:not(:only-child) { background-color: transparent; }
 

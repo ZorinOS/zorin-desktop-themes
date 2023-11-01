@@ -925,29 +925,31 @@ notebook > header > tabs > arrow:hover:not(:active):not(:backdrop) { background-
 
 notebook > header > tabs > arrow:disabled { color: #909090; background-color: transparent; background-image: none; box-shadow: none; }
 
-notebook > header > tabs > tab { transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); min-height: 24px; min-width: 30px; padding: 2px 9px; margin: 2px; border-radius: 8px; color: #d1d1d1; font-weight: normal; border-style: none; }
+notebook > header.top > tabs, notebook > header.bottom > tabs, notebook > header.left > tabs, notebook > header.right > tabs { margin: 0; padding: 0; }
 
-notebook > header > tabs > tab:hover { color: #ffffff; background-color: rgba(255, 255, 255, 0.05); }
+notebook > header.top > tabs > tab, notebook > header.bottom > tabs > tab, notebook > header.left > tabs > tab, notebook > header.right > tabs > tab { transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); min-height: 24px; min-width: 30px; padding: 2px 9px; margin: 2px; border-radius: 8px; color: #d1d1d1; font-weight: normal; border-style: none; box-shadow: none; }
 
-notebook > header > tabs > tab:backdrop { color: #8d8d8d; }
+notebook > header.top > tabs > tab:hover, notebook > header.bottom > tabs > tab:hover, notebook > header.left > tabs > tab:hover, notebook > header.right > tabs > tab:hover { color: #ffffff; background-color: rgba(255, 255, 255, 0.05); box-shadow: none; }
 
-notebook > header > tabs > tab:backdrop.reorderable-page { background-color: transparent; }
+notebook > header.top > tabs > tab:backdrop, notebook > header.bottom > tabs > tab:backdrop, notebook > header.left > tabs > tab:backdrop, notebook > header.right > tabs > tab:backdrop { color: #8d8d8d; box-shadow: none; }
 
-notebook > header > tabs > tab:not(:checked) { outline-color: transparent; }
+notebook > header.top > tabs > tab:backdrop.reorderable-page, notebook > header.bottom > tabs > tab:backdrop.reorderable-page, notebook > header.left > tabs > tab:backdrop.reorderable-page, notebook > header.right > tabs > tab:backdrop.reorderable-page { background-color: transparent; }
 
-notebook > header > tabs > tab:checked { color: #ffffff; background-color: #3c3c3c; box-shadow: 0 2px 8px rgba(25, 25, 25, 0.45); }
+notebook > header.top > tabs > tab:not(:checked), notebook > header.bottom > tabs > tab:not(:checked), notebook > header.left > tabs > tab:not(:checked), notebook > header.right > tabs > tab:not(:checked) { outline-color: transparent; box-shadow: none; }
 
-notebook > header > tabs > tab:backdrop:checked { color: #8d8d8d; background-color: #292929; box-shadow: 0 1px 4px rgba(25, 25, 25, 0.45); }
+notebook > header.top > tabs > tab:checked, notebook > header.bottom > tabs > tab:checked, notebook > header.left > tabs > tab:checked, notebook > header.right > tabs > tab:checked { color: #ffffff; background-color: #3c3c3c; box-shadow: 0 2px 8px rgba(25, 25, 25, 0.45); }
 
-notebook > header > tabs > tab:backdrop:checked.reorderable-page { background-color: #292929; }
+notebook > header.top > tabs > tab:backdrop:checked, notebook > header.bottom > tabs > tab:backdrop:checked, notebook > header.left > tabs > tab:backdrop:checked, notebook > header.right > tabs > tab:backdrop:checked { color: #8d8d8d; background-color: #292929; box-shadow: 0 1px 4px rgba(25, 25, 25, 0.45); }
 
-notebook > header > tabs > tab button.flat { border-radius: 999px; color: alpha(currentColor,0.3); padding: 0; margin-top: 2px; margin-bottom: 2px; min-width: 20px; min-height: 20px; }
+notebook > header.top > tabs > tab:backdrop:checked.reorderable-page, notebook > header.bottom > tabs > tab:backdrop:checked.reorderable-page, notebook > header.left > tabs > tab:backdrop:checked.reorderable-page, notebook > header.right > tabs > tab:backdrop:checked.reorderable-page { background-color: #292929; }
 
-notebook > header > tabs > tab button.flat:hover { color: currentColor; }
+notebook > header.top > tabs > tab button.flat, notebook > header.bottom > tabs > tab button.flat, notebook > header.left > tabs > tab button.flat, notebook > header.right > tabs > tab button.flat { border-radius: 999px; color: alpha(currentColor,0.3); padding: 0; margin-top: 2px; margin-bottom: 2px; min-width: 20px; min-height: 20px; }
 
-notebook > header > tabs > tab button.flat:last-child { margin-left: 4px; margin-right: -4px; }
+notebook > header.top > tabs > tab button.flat:hover, notebook > header.bottom > tabs > tab button.flat:hover, notebook > header.left > tabs > tab button.flat:hover, notebook > header.right > tabs > tab button.flat:hover { color: currentColor; }
 
-notebook > header > tabs > tab button.flat:first-child { margin-left: -4px; margin-right: 4px; }
+notebook > header.top > tabs > tab button.flat:last-child, notebook > header.bottom > tabs > tab button.flat:last-child, notebook > header.left > tabs > tab button.flat:last-child, notebook > header.right > tabs > tab button.flat:last-child { margin-left: 4px; margin-right: -4px; }
+
+notebook > header.top > tabs > tab button.flat:first-child, notebook > header.bottom > tabs > tab button.flat:first-child, notebook > header.left > tabs > tab button.flat:first-child, notebook > header.right > tabs > tab button.flat:first-child { margin-left: -4px; margin-right: 4px; }
 
 notebook > stack:not(:only-child) { background-color: transparent; }
 
@@ -1187,15 +1189,15 @@ scale.fine-tune > trough > fill, scale.fine-tune > trough > highlight, scale.fin
 
 scale > trough > fill:disabled { border-color: transparent; background-color: transparent; }
 
-scale > trough > slider { border: none; border-radius: 100%; background-color: #c6c6c6; outline: none; box-shadow: 0 1.5px 2px 1px rgba(25, 25, 25, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1); transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: background, border, box-shadow; }
+scale > trough > slider { border: none; border-radius: 100%; background-color: #ffffff; outline: none; box-shadow: 0 1.5px 2px 1px rgba(25, 25, 25, 0.6), 0 0 0 1px transparent; transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); transition-property: background, border, box-shadow; }
 
-scale > trough > slider:hover, row scale > trough > slider:hover, popover scale > trough > slider:hover { background-color: #ffffff; box-shadow: 0 2px 3px 1px rgba(25, 25, 25, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.15); }
+scale > trough > slider:hover, row scale > trough > slider:hover, popover scale > trough > slider:hover { background-color: white; box-shadow: 0 2px 3px 1px rgba(25, 25, 25, 0.6), 0 0 0 1px transparent; }
 
-scale > trough > slider:active, row scale > trough > slider:active, popover scale > trough > slider:active { background-color: #c6c6c6; box-shadow: 0 1.5px 2px 1px rgba(255, 255, 255, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.325); }
+scale > trough > slider:active, row scale > trough > slider:active, popover scale > trough > slider:active { background-color: #ffffff; box-shadow: 0 1.5px 2px 1px rgba(255, 255, 255, 0.2), 0 0 0 1px transparent; }
 
 scale > trough > slider:disabled { background-color: #535353; box-shadow: 0 1.5px 2px 1px rgba(25, 25, 25, 0.6); }
 
-scale > trough > slider:backdrop { background-color: gray; transition: 150ms ease-out; box-shadow: 0 1.5px 2px 1px rgba(25, 25, 25, 0.6), 0 0 0 1px rgba(141, 141, 141, 0.15); }
+scale > trough > slider:backdrop { background-color: #a4a4a4; transition: 150ms ease-out; box-shadow: 0 1.5px 2px 1px rgba(25, 25, 25, 0.6), 0 0 0 1px transparent; }
 
 scale > trough > slider:backdrop:disabled { background-color: #393939; box-shadow: 0 1.5px 2px 1px rgba(25, 25, 25, 0.6); }
 
@@ -1247,15 +1249,15 @@ scale.vertical.marks-before > trough > slider { border-bottom-left-radius: 0; }
 
 scale.vertical.marks-after > trough > slider { border-top-right-radius: 0; }
 
-scale.marks-before:not(.marks-after) > trough > slider, scale.marks-after:not(.marks-before) > trough > slider { transform: rotate(45deg); box-shadow: 0 1px 4px 1px rgba(25, 25, 25, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1); }
+scale.marks-before:not(.marks-after) > trough > slider, scale.marks-after:not(.marks-before) > trough > slider { transform: rotate(45deg); box-shadow: 0 1px 4px 1px rgba(25, 25, 25, 0.6), 0 0 0 1px transparent; }
 
-scale.marks-before:not(.marks-after) > trough > slider:hover, row scale.marks-before:not(.marks-after) > trough > slider:hover, popover scale.marks-before:not(.marks-after) > trough > slider:hover, scale.marks-after:not(.marks-before) > trough > slider:hover, row scale.marks-after:not(.marks-before) > trough > slider:hover, popover scale.marks-after:not(.marks-before) > trough > slider:hover { box-shadow: 0 1px 6px 1px rgba(25, 25, 25, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.15); }
+scale.marks-before:not(.marks-after) > trough > slider:hover, row scale.marks-before:not(.marks-after) > trough > slider:hover, popover scale.marks-before:not(.marks-after) > trough > slider:hover, scale.marks-after:not(.marks-before) > trough > slider:hover, row scale.marks-after:not(.marks-before) > trough > slider:hover, popover scale.marks-after:not(.marks-before) > trough > slider:hover { box-shadow: 0 1px 6px 1px rgba(25, 25, 25, 0.6), 0 0 0 1px transparent; }
 
-scale.marks-before:not(.marks-after) > trough > slider:active, row scale.marks-before:not(.marks-after) > trough > slider:active, popover scale.marks-before:not(.marks-after) > trough > slider:active, scale.marks-after:not(.marks-before) > trough > slider:active, row scale.marks-after:not(.marks-before) > trough > slider:active, popover scale.marks-after:not(.marks-before) > trough > slider:active { box-shadow: 0 1px 4px 1px rgba(255, 255, 255, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.325); }
+scale.marks-before:not(.marks-after) > trough > slider:active, row scale.marks-before:not(.marks-after) > trough > slider:active, popover scale.marks-before:not(.marks-after) > trough > slider:active, scale.marks-after:not(.marks-before) > trough > slider:active, row scale.marks-after:not(.marks-before) > trough > slider:active, popover scale.marks-after:not(.marks-before) > trough > slider:active { box-shadow: 0 1px 4px 1px rgba(255, 255, 255, 0.2), 0 0 0 1px transparent; }
 
 scale.marks-before:not(.marks-after) > trough > slider:disabled, scale.marks-after:not(.marks-before) > trough > slider:disabled { box-shadow: 0 1px 4px rgba(25, 25, 25, 0.6); }
 
-scale.marks-before:not(.marks-after) > trough > slider:backdrop, scale.marks-after:not(.marks-before) > trough > slider:backdrop { transition: 150ms ease-out; box-shadow: 0 1px 4px rgba(25, 25, 25, 0.6), 0 0 0 1px rgba(141, 141, 141, 0.15); }
+scale.marks-before:not(.marks-after) > trough > slider:backdrop, scale.marks-after:not(.marks-before) > trough > slider:backdrop { transition: 150ms ease-out; box-shadow: 0 1px 4px rgba(25, 25, 25, 0.6), 0 0 0 1px transparent; }
 
 scale.marks-before:not(.marks-after) > trough > slider:backdrop:disabled, scale.marks-after:not(.marks-before) > trough > slider:backdrop:disabled { box-shadow: 0 1px 4px rgba(25, 25, 25, 0.6); }
 
