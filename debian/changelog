@@ -1,3 +1,9 @@
+zorin-desktop-themes (4.0.4) jammy; urgency=medium
+
+  * Improved libadwaita styling
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 04 Nov 2023 21:23:42 +0000
+
 zorin-desktop-themes (4.0.3) jammy; urgency=medium
 
   * Updated styling for GNOME Shell and Gtk themes

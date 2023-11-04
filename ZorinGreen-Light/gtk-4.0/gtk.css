@@ -1559,7 +1559,7 @@ calendar > grid > label.day-number:checked { background-color: alpha(#2ac88d,0.3
 calendar > grid > label.day-number.other-month { color: alpha(currentColor,0.3); }
 
 /*********** Dialogs * */
-.dialog-action-area { margin: 0; border-spacing: 0; }
+.dialog-action-area { margin: 0; border-spacing: 0; border: none; }
 
 window.dialog.message .titlebar { min-height: 20px; background-image: none; background-color: #f6f9f9; border-style: none; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 
@@ -2220,9 +2220,9 @@ tabview:drop(active), tabbox:drop(active) { box-shadow: none; }
 /********* Cards * */
 .card { transition-property: outline, outline-width, outline-offset, outline-color; transition-duration: 300ms; animation-timing-function: ease-in-out; }
 
-.card { background-color: white; color: #19483e; border-radius: 12px; box-shadow: 0 1.5px 6px rgba(25, 72, 62, 0.225), 0 0 0 1px rgba(25, 72, 62, 0.05); }
+.card { background-color: white; color: #19483e; border-radius: 12px; box-shadow: none; }
 
-.card:backdrop { background-color: white; color: gray; box-shadow: 0 1.5px 6px rgba(49, 49, 49, 0.225), 0 0 0 1px rgba(128, 128, 128, 0.05); }
+.card:backdrop { background-color: white; color: gray; box-shadow: none; }
 
 .osd .card, .card.osd { color: inherit; box-shadow: none; }
 
@@ -2234,25 +2234,29 @@ tabview:drop(active), tabbox:drop(active) { box-shadow: none; }
 
 .card.activatable { transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
-.card.activatable:hover { background-image: image(alpha(currentColor,0.075)); }
+.card.activatable:hover { background-image: image(alpha(currentColor,0.125)); box-shadow: 0 2px 8px rgba(25, 72, 62, 0.075); }
 
-.card.activatable:active { background-image: image(alpha(currentColor,0.125)); }
+.card.activatable:hover:backdrop { box-shadow: none; }
 
-button.card { background-color: white; background-clip: padding-box; font-weight: inherit; padding: 0; box-shadow: 0 1.5px 6px rgba(25, 72, 62, 0.225), 0 0 0 1px rgba(25, 72, 62, 0.05); transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.card.activatable:active { background-image: image(alpha(currentColor,0.2)); box-shadow: none; }
 
-button.card:backdrop { background-color: white; box-shadow: 0 1.5px 6px rgba(49, 49, 49, 0.225), 0 0 0 1px rgba(128, 128, 128, 0.05); }
+button.card { background-color: white; background-clip: padding-box; font-weight: inherit; padding: 0; box-shadow: none; transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
-button.card:hover { background-color: alpha(currentColor,0.075); }
+button.card:backdrop { background-color: white; box-shadow: none; }
 
-button.card.keyboard-activating, button.card:active { background-color: alpha(currentColor,0.125); }
+button.card:hover { background-color: alpha(currentColor,0.125); box-shadow: 0 2px 8px rgba(25, 72, 62, 0.075); }
 
-button.card:checked { background-color: alpha(currentColor,0.2); }
+button.card:hover:backdrop { box-shadow: none; }
 
-button.card:checked:hover { background-color: alpha(currentColor,0.125); }
+button.card.keyboard-activating, button.card:active { background-color: alpha(currentColor,0.2); box-shadow: none; }
 
-button.card:checked.keyboard-activating, button.card:checked:active { background-color: alpha(currentColor,0.075); }
+button.card:checked { background-color: alpha(currentColor,0.175); }
 
-button.card:checked.has-open-popup { background-color: alpha(currentColor,0.125); }
+button.card:checked:hover { background-color: alpha(currentColor,0.2); }
+
+button.card:checked.keyboard-activating, button.card:checked:active { background-color: alpha(currentColor,0.175); }
+
+button.card:checked.has-open-popup { background-color: alpha(currentColor,0.2); }
 
 button.card:drop(active) { color: #2ac88d; box-shadow: inset 0 0 0 1px #2ac88d; }
 
@@ -2346,6 +2350,7 @@ these are pretty self explicative */
 @define-color warning_color #f88052;
 @define-color error_color #fa4444;
 @define-color success_color #2ac88d;
+@define-color destructive_color #fa4444;
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
@@ -2366,3 +2371,82 @@ read if you used those and something break with a version upgrade you're on your
 @define-color content_view_bg white;
 /* Very contrasty background for text views (@theme_text_color foreground) */
 @define-color text_view_bg white;
+@define-color blue_1 #99c1f1;
+@define-color blue_2 #62a0ea;
+@define-color blue_3 #3584e4;
+@define-color blue_4 #1c71d8;
+@define-color blue_5 #1a5fb4;
+@define-color green_1 #8ff0a4;
+@define-color green_2 #57e389;
+@define-color green_3 #33d17a;
+@define-color green_4 #2ec27e;
+@define-color green_5 #26a269;
+@define-color yellow_1 #f9f06b;
+@define-color yellow_2 #f8e45c;
+@define-color yellow_3 #f6d32d;
+@define-color yellow_4 #f5c211;
+@define-color yellow_5 #e5a50a;
+@define-color orange_1 #ffbe6f;
+@define-color orange_2 #ffa348;
+@define-color orange_3 #ff7800;
+@define-color orange_4 #e66100;
+@define-color orange_5 #c64600;
+@define-color red_1 #f66151;
+@define-color red_2 #ed333b;
+@define-color red_3 #e01b24;
+@define-color red_4 #c01c28;
+@define-color red_5 #a51d2d;
+@define-color purple_1 #dc8add;
+@define-color purple_2 #c061cb;
+@define-color purple_3 #9141ac;
+@define-color purple_4 #813d9c;
+@define-color purple_5 #613583;
+@define-color brown_1 #cdab8f;
+@define-color brown_2 #b5835a;
+@define-color brown_3 #986a44;
+@define-color brown_4 #865e3c;
+@define-color brown_5 #63452c;
+@define-color light_1 #ffffff;
+@define-color light_2 #f6f5f4;
+@define-color light_3 #deddda;
+@define-color light_4 #c0bfbc;
+@define-color light_5 #9a9996;
+@define-color dark_1 #77767b;
+@define-color dark_2 #5e5c64;
+@define-color dark_3 #3d3846;
+@define-color dark_4 #241f31;
+@define-color dark_5 #000000;
+/* GTK NAMED COLORS ---------------- use responsibly! */
+@define-color accent_bg_color #2ac88d;
+@define-color accent_fg_color white;
+@define-color accent_color #2ac88d;
+@define-color destructive_bg_color #fa4444;
+@define-color destructive_fg_color white;
+@define-color destructive_color #fa4444;
+@define-color success_bg_color #2ac88d;
+@define-color success_fg_color white;
+@define-color success_color #2ac88d;
+@define-color warning_bg_color #f88052;
+@define-color warning_fg_color white;
+@define-color warning_color #f88052;
+@define-color error_bg_color #fa4444;
+@define-color error_fg_color white;
+@define-color error_color #fa4444;
+@define-color window_bg_color #f6f9f9;
+@define-color window_fg_color #19483e;
+@define-color view_bg_color white;
+@define-color view_fg_color #19483e;
+@define-color headerbar_bg_color #f6f9f9;
+@define-color headerbar_fg_color #19483e;
+@define-color headerbar_border_color #e5eceb;
+@define-color headerbar_backdrop_color #f8f8f8;
+@define-color headerbar_shade_color #e5eceb;
+@define-color card_bg_color white;
+@define-color card_fg_color #19483e;
+@define-color card_shade_color #e5eceb;
+@define-color dialog_bg_color #f6f9f9;
+@define-color dialog_fg_color #19483e;
+@define-color popover_bg_color white;
+@define-color popover_fg_color #19483e;
+@define-color shade_color #e5eceb;
+@define-color scrollbar_outline_color #e5eceb;
