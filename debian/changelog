@@ -1,3 +1,9 @@
+zorin-desktop-themes (4.0.5) jammy; urgency=medium
+
+  * Created dark.css files in Gtk3 and Gtk4 themes for Dark variants
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 11 Nov 2023 23:34:23 +0000
+
 zorin-desktop-themes (4.0.4) jammy; urgency=medium
 
   * Improved libadwaita styling
