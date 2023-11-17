@@ -197,13 +197,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .popup-menu-item:focus:active, .popup-menu-item:hover:active { background-color: #ddd8df !important; }
 
-.popup-menu-item:checked { background-color: #9c68da !important; }
+.popup-menu-item:checked { background-color: white !important; }
 
-.popup-menu-item:checked { margin-bottom: 0; box-shadow: inset 0 -1px 0 0 #8f54d5; border-radius: 8px 8px 0 0; }
+.popup-menu-item:checked { margin-bottom: 0; box-shadow: inset 0 -1px 0 0 #ebe8ec; border-radius: 8px 8px 0 0; }
 
-.popup-menu-item:checked:focus, .popup-menu-item:checked:hover { background-color: #a474dd !important; }
+.popup-menu-item:checked:focus, .popup-menu-item:checked:hover { background-color: #e7e3e8 !important; }
 
-.popup-menu-item:checked:active { background-color: #a97cdf !important; }
+.popup-menu-item:checked:active { background-color: #ddd8df !important; }
 
 .popup-menu-item:active { background-color: #e9e6ea; color: #402b4d; }
 
@@ -219,7 +219,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .popup-menu-arrow, .popup-menu-icon { icon-size: 16px !important; }
 
-.popup-sub-menu { background-color: #9c68da; border-radius: 0 0 8px 8px; }
+.popup-sub-menu { background-color: white; border-radius: 0 0 8px 8px; }
 
 .popup-sub-menu .popup-menu-ornament { min-width: 16px !important; }
 
@@ -229,9 +229,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .popup-sub-menu .popup-menu-item:focus, .popup-sub-menu .popup-menu-item:hover { background-color: #e7e3e8 !important; }
 
-.popup-sub-menu .popup-menu-item:checked { background-color: #9c68da !important; }
+.popup-sub-menu .popup-menu-item:checked { background-color: white !important; }
 
-.popup-sub-menu .popup-menu-item:checked:focus, .popup-sub-menu .popup-menu-item:checked:hover { background-color: #b189e2 !important; }
+.popup-sub-menu .popup-menu-item:checked:focus, .popup-sub-menu .popup-menu-item:checked:hover { background-color: #e7e3e8 !important; }
 
 .popup-sub-menu .popup-menu-item:active { background-color: #ddd8df !important; }
 

@@ -1,3 +1,9 @@
+zorin-desktop-themes (4.0.6) jammy; urgency=medium
+
+  * Fixed issues with GNOME Shell and Gtk3 theme elements
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 17 Nov 2023 20:07:09 +0000
+
 zorin-desktop-themes (4.0.5) jammy; urgency=medium
 
   * Created dark.css files in Gtk3 and Gtk4 themes for Dark variants
