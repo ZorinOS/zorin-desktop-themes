@@ -1,3 +1,10 @@
+zorin-desktop-themes (4.0.7) jammy; urgency=medium
+
+  * Fixed styling of suggested and destructive action buttons in
+    headerbars
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 18 Nov 2023 23:27:10 +0000
+
 zorin-desktop-themes (4.0.6) jammy; urgency=medium
 
   * Fixed issues with GNOME Shell and Gtk3 theme elements

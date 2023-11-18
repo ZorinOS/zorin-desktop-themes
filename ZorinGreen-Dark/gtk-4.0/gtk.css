@@ -664,33 +664,33 @@ headerbar > windowhandle > box, headerbar > windowhandle > box > box.start, head
 
 headerbar button { font-weight: bold; }
 
-headerbar button:not(.text-button) { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background-size 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background-image 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); background-image: radial-gradient(circle farthest-corner at center, transparent 10%, transparent 0%); background-repeat: no-repeat; background-position: center; background-size: 1000% 1000%; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action) { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background-size 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background-image 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); background-image: radial-gradient(circle farthest-corner at center, transparent 10%, transparent 0%); background-repeat: no-repeat; background-position: center; background-size: 1000% 1000%; }
 
-headerbar button:not(.text-button):hover { color: #bbf1dd; background-color: #2f3d38; background-image: none; box-shadow: 0 2px 8px rgba(21, 28, 25, 0.45); box-shadow: none; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):hover { color: #bbf1dd; background-color: #2f3d38; background-image: none; box-shadow: 0 2px 8px rgba(21, 28, 25, 0.45); box-shadow: none; }
 
-headerbar button:not(.text-button):active { color: #bbf1dd; background-color: #3b4d46; background-image: none; box-shadow: none; transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background-size 0, background-image 0; animation: ripple_effect 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; background-image: radial-gradient(circle farthest-corner at center, rgba(187, 241, 221, 0.075) 10%, transparent 0%); background-size: 0% 0%; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):active { color: #bbf1dd; background-color: #3b4d46; background-image: none; box-shadow: none; transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background-size 0, background-image 0; animation: ripple_effect 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; background-image: radial-gradient(circle farthest-corner at center, rgba(187, 241, 221, 0.075) 10%, transparent 0%); background-size: 0% 0%; }
 
-headerbar button:not(.text-button):checked { color: #151c19; background-color: #bbf1dd; background: image(#bbf1dd); box-shadow: 0 2px 8px rgba(187, 241, 221, 0.2); }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):checked { color: #151c19; background-color: #bbf1dd; background: image(#bbf1dd); box-shadow: 0 2px 8px rgba(187, 241, 221, 0.2); }
 
-headerbar button:not(.text-button):checked:hover { color: #151c19; background-color: #bbf1dd; background: image(#bbf1dd); box-shadow: 0 2px 8px rgba(187, 241, 221, 0.2); }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):checked:hover { color: #151c19; background-color: #bbf1dd; background: image(#bbf1dd); box-shadow: 0 2px 8px rgba(187, 241, 221, 0.2); }
 
-headerbar button:not(.text-button):checked:active { color: #151c19; background-color: #bbf1dd; background: image(#bbf1dd); box-shadow: none; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):checked:active { color: #151c19; background-color: #bbf1dd; background: image(#bbf1dd); box-shadow: none; }
 
-headerbar button:not(.text-button):disabled { color: #6b8a7f; background-color: transparent; background-image: none; box-shadow: none; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):disabled { color: #6b8a7f; background-color: transparent; background-image: none; box-shadow: none; }
 
-headerbar button:not(.text-button):disabled:active, headerbar button:not(.text-button):disabled:checked { color: #6b8a7f; background-color: #1f2925; box-shadow: none; background-image: none; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):disabled:active, headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):disabled:checked { color: #6b8a7f; background-color: #1f2925; box-shadow: none; background-image: none; }
 
-headerbar button:not(.text-button):backdrop { transition: 150ms ease-out; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):backdrop { transition: 150ms ease-out; }
 
-headerbar button:not(.text-button):backdrop:hover { color: #6e837b; background-color: #232b28; background-image: none; box-shadow: none; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):backdrop:hover { color: #6e837b; background-color: #232b28; background-image: none; box-shadow: none; }
 
-headerbar button:not(.text-button):backdrop:active { color: #6e837b; background-color: #29322f; background-image: none; box-shadow: none; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):backdrop:active { color: #6e837b; background-color: #29322f; background-image: none; box-shadow: none; }
 
-headerbar button:not(.text-button):backdrop:checked { color: #131716; background-color: #7d998f; background-image: none; box-shadow: none; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):backdrop:checked { color: #131716; background-color: #7d998f; background-image: none; box-shadow: none; }
 
-headerbar button:not(.text-button):backdrop:disabled { color: #3a4944; background-color: transparent; background-image: none; box-shadow: none; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):backdrop:disabled { color: #3a4944; background-color: transparent; background-image: none; box-shadow: none; }
 
-headerbar button:not(.text-button):backdrop:disabled:active, headerbar button:not(.text-button):backdrop:disabled:checked { color: #3a4944; background-color: #242d2a; box-shadow: none; background-image: none; }
+headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):backdrop:disabled:active, headerbar button:not(.text-button):not(.suggested-action):not(.destructive-action):backdrop:disabled:checked { color: #3a4944; background-color: #242d2a; box-shadow: none; background-image: none; }
 
 headerbar .linked:not(.vertical) > button:not(.text-button):dir(ltr), headerbar .linked:not(.vertical) > button:not(.text-button):dir(rtl) { border-style: solid; border-width: 0 1px 0 0; border-color: #27332f; margin-left: 0; margin-right: 0; }
 
