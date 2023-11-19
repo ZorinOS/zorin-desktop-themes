@@ -1,3 +1,9 @@
+zorin-desktop-themes (4.0.8) jammy; urgency=medium
+
+  * Fixed regression from previous version
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 19 Nov 2023 13:52:30 +0000
+
 zorin-desktop-themes (4.0.7) jammy; urgency=medium
 
   * Fixed styling of suggested and destructive action buttons in
