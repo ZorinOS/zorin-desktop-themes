@@ -111,7 +111,7 @@ stage { font-size: 10pt; color: #fcc8b4; }
 
 .calendar .calendar-day-base.calendar-day-heading, .calendar .calendar-day-base { font-weight: 400; font-size: 8pt; }
 
-.unlock-dialog-clock-time, #panel, .weather-button .weather-forecast-time, .world-clocks-button .world-clocks-timezone, .world-clocks-button .world-clocks-time, .events-button .event-time, .calendar .calendar-day-base { font-feature-settings: "tnum"; }
+.world-clocks-button .world-clocks-timezone, .events-button .event-time { font-feature-settings: "tnum"; }
 
 /* WIDGETS */
 .shell-link { color: #feece5; }

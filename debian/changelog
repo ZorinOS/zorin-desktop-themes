@@ -1,3 +1,10 @@
+zorin-desktop-themes (4.0.9) jammy; urgency=medium
+
+  * Switched away from using tabular numbers in some places in the GNOME
+    Shell themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Tue, 21 Nov 2023 00:09:53 +0000
+
 zorin-desktop-themes (4.0.8) jammy; urgency=medium
 
   * Fixed regression from previous version
