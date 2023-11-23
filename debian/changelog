@@ -1,3 +1,9 @@
+zorin-desktop-themes (4.1) jammy; urgency=medium
+
+  * Updated login screen background image in GNOME Shell themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 23 Nov 2023 16:29:00 +0000
+
 zorin-desktop-themes (4.0.9) jammy; urgency=medium
 
   * Switched away from using tabular numbers in some places in the GNOME
