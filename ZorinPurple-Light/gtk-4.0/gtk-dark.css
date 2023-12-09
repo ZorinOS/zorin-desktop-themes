@@ -628,6 +628,10 @@ infobar.info button:backdrop label, infobar.info button:backdrop, infobar.info b
 
 infobar button.close, searchbar button.close { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; min-width: 16px; min-height: 16px; padding: 4px; border-radius: 50%; }
 
+infobar button.close:dir(ltr), searchbar button.close:dir(ltr) { margin-left: 10px; margin-right: 4px; }
+
+infobar button.close:dir(rtl), searchbar button.close:dir(rtl) { margin-left: 4px; margin-right: 10px; }
+
 /***************** Title buttons * */
 windowcontrols { border-spacing: 6px; margin: 0 1px; }
 
@@ -885,6 +889,10 @@ popover.menu modelbutton:selected:active, popover.menu modelbutton:checked:activ
 popover.menu modelbutton:selected:active label, popover.menu modelbutton:checked:active label, popover.menu row:selected:active label, popover.menu row:checked:active label { color: #d8c4f1; }
 
 popover.menu label.title { font-weight: bold; padding: 4px 32px; }
+
+popover.menu contents > list, popover.menu contents > listview, popover.menu scrolledwindow > viewport > list, popover.menu scrolledwindow > listview { padding: 6px 0; }
+
+popover.menu contents > list > row, popover.menu contents > listview > row, popover.menu scrolledwindow > viewport > list > row, popover.menu scrolledwindow > listview > row { margin: 0 6px; padding: 9px 12px; min-height: 0; }
 
 menubar { padding: 0px; box-shadow: none; }
 
@@ -1542,17 +1550,19 @@ calendar > header > button { border: none; box-shadow: none; background: none; b
 
 calendar > header > button:backdrop { background: none; }
 
+calendar > grid { padding-left: 3px; padding-bottom: 3px; }
+
 calendar > grid > label.today { box-shadow: inset 0px -2px #302b36; }
 
 calendar > grid > label.today:selected { box-shadow: none; }
 
 calendar > grid > label:focus { outline-color: #d8c4f1; outline-offset: -2px; outline-width: 2px; outline-style: solid; }
 
-calendar > grid > label.day-number { padding: 4px; }
+calendar > grid > label.day-number { padding: 3px; }
+
+calendar > grid > label.day-number:checked { border-radius: 8px; background-color: alpha(#d8c4f1,0.3); }
 
 calendar > grid > label.day-number:selected { border-radius: 8px; }
-
-calendar > grid > label.day-number:checked { background-color: alpha(#d8c4f1,0.3); }
 
 calendar > grid > label.day-number.other-month { color: alpha(currentColor,0.3); }
 
@@ -2043,6 +2053,12 @@ buttoncontent > label:dir(rtl) { padding-left: 2px; }
 
 .arrow-button > box > buttoncontent > label:dir(rtl), splitbutton > button > buttoncontent > label:dir(rtl) { padding-left: 0; }
 
+tabbutton label { font-weight: 800; font-size: 8pt; }
+
+tabbutton label.small { font-size: 6pt; }
+
+tabbutton indicatorbin > indicator, tabbutton indicatorbin > mask { transform: translate(-1px, 1px); }
+
 /********* Lists * */
 row label.subtitle { font-size: smaller; }
 
@@ -2090,7 +2106,7 @@ toast:dir(ltr) { padding-left: 12px; }
 
 toast:dir(rtl) { padding-right: 12px; }
 
-toast > label { margin: 0 6px; }
+toast > widget { margin: 0 6px; }
 
 /************** Header Bar * */
 headerbar > windowhandle > box { padding: 0; }
@@ -2113,107 +2129,99 @@ headerbar .subtitle, windowtitle .subtitle { font-size: smaller; padding-left: 1
 .error { color: #fb7c7c; }
 
 /************ Tab View * */
-tabbar .box { min-height: 36px; }
+tabbar .box { min-height: 38px; }
 
-tabbar scrolledwindow.pinned undershoot { border: 0 solid #47404f; }
+tabbar tabbox > tabboxchild { transition-property: outline, outline-width, outline-offset, outline-color; transition-duration: 300ms; animation-timing-function: ease-in-out; border-radius: 8px; margin-bottom: 4px; margin-top: 4px; }
 
-tabbar scrolledwindow.pinned:dir(rtl) undershoot.left { border-left-width: 1px; }
+tabbar tabbox > tabboxchild { outline: 0 solid transparent; outline-offset: 4px; }
 
-tabbar scrolledwindow.pinned:dir(ltr) undershoot.right { border-right-width: 1px; }
+tabbar tabbox > tabboxchild:focus:focus-visible { outline-color: #d8c4f1; outline-width: 2px; outline-offset: -2px; }
 
-tabbar scrolledwindow.pinned tabbox > background:dir(ltr) { box-shadow: inset -1px 0 #47404f; }
+tabbar tabbox > separator { margin-top: 8px; margin-bottom: 8px; transition: opacity 150ms ease-in-out; background-color: #47404f; }
 
-tabbar scrolledwindow.pinned tabbox > background:dir(rtl) { box-shadow: inset 1px 0 #47404f; }
+tabbar tabbox > separator:backdrop { background-color: #3f3a44; }
 
-tabbar undershoot { transition: background 150ms ease-in-out; }
+tabbar tabbox > separator.hidden { opacity: 0; }
 
-tabbar undershoot.left { background: linear-gradient(to right, rgba(26, 24, 30, 0.6), rgba(26, 24, 30, 0) 20px); }
+tabbar tabbox > revealer > indicator { min-width: 2px; border-radius: 2px; margin: 8px 6px; background: #d8c4f1; }
 
-tabbar undershoot.right { background: linear-gradient(to left, rgba(26, 24, 30, 0.6), rgba(26, 24, 30, 0) 20px); }
+tabbar tab { color: #b2a2c6; transition: background 150ms ease-in-out; box-shadow: none; }
 
-tabbar .needs-attention-left undershoot.left { background: linear-gradient(to right, alpha(#d8c4f1,0.35), alpha(#d8c4f1,0) 20px); }
+tabbar tab:backdrop { color: #7b7484; box-shadow: none; }
 
-tabbar .needs-attention-right undershoot.right { background: linear-gradient(to left, alpha(#d8c4f1,0.35), alpha(#d8c4f1,0) 20px); }
+tabbar tab:selected, tabbar tab:selected:hover, tabbar tab:selected:active, tabbar tab:active, tabbar tab:active:hover, tabbar tab:active:active { color: #d8c4f1; background-color: #393340; box-shadow: 0 2px 8px rgba(26, 24, 30, 0.45); }
 
-tabbar tabbox { background-color: #1a181e; }
+tabbar tab:selected:backdrop, tabbar tab:selected:hover:backdrop, tabbar tab:selected:active:backdrop, tabbar tab:active:backdrop, tabbar tab:active:hover:backdrop, tabbar tab:active:active:backdrop { color: #7b7484; background-color: #29262d; box-shadow: 0 1px 4px rgba(26, 25, 29, 0.45); }
 
-tabbar tabbox:backdrop { background-color: #161519; }
+tabbar tab:hover { color: #d8c4f1; background-color: rgba(216, 196, 241, 0.05); box-shadow: none; }
 
-tabbar tabbox > background { background-color: transparent; }
+tabbar tab:hover:backdrop { color: #7b7484; background-color: rgba(123, 116, 132, 0.05); }
 
-tabbar tabbox > widget { transition-property: outline, outline-width, outline-offset, outline-color; transition-duration: 300ms; animation-timing-function: ease-in-out; }
+tabbar tabbox.single-tab tab, tabbar tabbox.single-tab tab:hover, tabbar tabbox.single-tab tab:active { background: none; }
 
-tabbar tabbox > widget { outline: 0 solid transparent; outline-offset: 4px; }
+tabbar .start-action, tabbar .end-action { padding: 4px; }
 
-tabbar tabbox > widget:focus:focus-visible { outline-color: #d8c4f1; outline-width: 2px; outline-offset: -2px; }
+tabbar .start-action:dir(ltr), tabbar .end-action:dir(rtl) { padding-right: 0; }
 
-tabbar tab { border-style: none; border-radius: 8px; transition: background 150ms ease-in-out; background-color: transparent; color: #b2a2c6; background-clip: padding-box; margin: 4px; }
+tabbar .start-action:dir(rtl), tabbar .end-action:dir(ltr) { padding-left: 0; }
 
-tabbar tab:hover, tabbar tab:active { color: #d8c4f1; background-color: rgba(216, 196, 241, 0.05); }
+tabbar:not(.inline) .box { background-color: #1a181e; color: #d8c4f1; padding-bottom: 0; box-shadow: none; }
 
-tabbar tab:hover:backdrop, tabbar tab:active:backdrop { color: #7b7484; background-color: rgba(123, 116, 132, 0.05); }
+tabbar:not(.inline):backdrop .box { background-color: #161519; color: #7b7484; transition: background-color 150ms ease-out; box-shadow: none; }
 
-tabbar tab:checked, tabbar tab:checked:hover, tabbar tab:checked:active { color: #d8c4f1; background-color: #393340; box-shadow: 0 2px 8px rgba(26, 24, 30, 0.45); }
+tabbar:not(.inline):backdrop .box > scrolledwindow, tabbar:not(.inline):backdrop .box > .start-action, tabbar:not(.inline):backdrop .box > .end-action { filter: opacity(0.5); transition: filter 150ms ease-out; }
 
-tabbar tab:checked:backdrop, tabbar tab:checked:hover:backdrop, tabbar tab:checked:active:backdrop { color: #7b7484; background-color: #29262d; box-shadow: 0 1px 4px rgba(26, 25, 29, 0.45); }
+dnd tab { background-color: #393340; background-image: none; color: #d8c4f1; box-shadow: 0 2px 8px rgba(26, 24, 30, 0.45); outline: 1px solid rgba(216, 196, 241, 0.1); margin: 25px; }
 
-tabbar tab.needs-attention { background-image: radial-gradient(ellipse at bottom, alpha(#d8c4f1,0.35), alpha(#d8c4f1,0) 40%); }
+tabbar tab, dnd tab { min-height: 24px; padding: 4px; border-radius: 8px; }
 
-tabbar tab.needs-attention:hover, tabbar tab.needs-attention:active { background-image: image(alpha(currentColor,0.03)), radial-gradient(ellipse at bottom, alpha(#d8c4f1,0.35), alpha(#d8c4f1,0) 40%); }
+tabbar tab button.image-button, dnd tab button.image-button { padding: 0; margin: 0; min-width: 24px; min-height: 24px; border-radius: 99px; color: alpha(currentColor,0.3); }
 
-tabbar tab button.flat { border-radius: 999px; }
+tabbar tab button.image-button:hover, dnd tab button.image-button:hover { color: currentColor; }
 
-tabbar tab button.flat, tabbar tab button.flat:backdrop { color: alpha(currentColor,0.3); }
+tabbar tab indicator, dnd tab indicator { min-height: 2px; border-radius: 2px; background: #d8c4f1; transform: translateY(4px); }
 
-tabbar tab button.flat:hover, tabbar tab button.flat:backdrop:hover { color: currentColor; }
+tabgrid > tabgridchild { transition-property: outline, outline-width, outline-offset, outline-color; transition-duration: 300ms; animation-timing-function: ease-in-out; }
 
-tabbar tab button.flat:last-child { margin-left: 4px; margin-right: -4px; }
+tabgrid > tabgridchild .card { outline: 0 solid transparent; outline-offset: 4px; }
 
-tabbar tab button.flat:first-child { margin-left: -4px; margin-right: 4px; }
+tabgrid > tabgridchild:focus:focus-visible .card { outline-color: #d8c4f1; outline-width: 2px; outline-offset: 0; }
 
-tabbar tab:not(:checked) button.flat:hover { background-color: transparent; }
+tabthumbnail { border-radius: 16px; transition: box-shadow 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
-tabbar .start-action, tabbar .end-action { background-color: transparent; background-clip: padding-box; border-color: #47404f; border-style: solid; transition: background 150ms ease-in-out; }
+tabthumbnail > box { margin: 6px; }
 
-tabbar .start-action:backdrop, tabbar .end-action:backdrop { border-color: #3f3a44; }
+tabthumbnail:drop(active) { box-shadow: inset 0 0 0 2px alpha(#4cd9a4,0.4); background-color: alpha(#4cd9a4,0.1); }
 
-tabbar .start-action button, tabbar .end-action button { border: none; border-radius: 0; }
+tabthumbnail .needs-attention:dir(ltr) { transform: translate(8px, -8px); }
 
-tabbar .start-action:dir(ltr), tabbar .end-action:dir(rtl) { border-right-width: 1px; }
+tabthumbnail .needs-attention:dir(rtl) { transform: translate(-8px, -8px); }
 
-tabbar .start-action:dir(rtl), tabbar .end-action:dir(ltr) { border-left-width: 1px; }
+tabthumbnail .needs-attention > widget { background: #d8c4f1; min-width: 12px; min-height: 12px; border-radius: 8px; margin: 3px; box-shadow: 0 1px 2px alpha(#d8c4f1,0.4); }
 
-tabbar:not(.inline) .box { background-color: #221f26; color: #d8c4f1; border: none; }
+tabthumbnail .card { background: none; color: inherit; }
 
-tabbar:not(.inline) scrolledwindow.pinned undershoot { border-color: #47404f; }
+tabthumbnail .card picture { outline: 1px solid rgba(216, 196, 241, 0.1); outline-offset: -1px; border-radius: 12px; }
 
-tabbar:not(.inline) scrolledwindow.pinned tabbox > background:dir(ltr) { box-shadow: inset -1px 0 #47404f; }
+tabthumbnail .card picture:backdrop { outline: 1px solid rgba(123, 116, 132, 0.125); }
 
-tabbar:not(.inline) scrolledwindow.pinned tabbox > background:dir(rtl) { box-shadow: inset 1px 0 #47404f; }
+tabthumbnail.pinned .card { background-color: #1a181e; color: #d8c4f1; }
 
-tabbar:not(.inline) undershoot.left { background: linear-gradient(to right, rgba(26, 24, 30, 0.6), rgba(26, 24, 30, 0) 20px); }
+tabthumbnail .icon-title-box { border-spacing: 6px; }
 
-tabbar:not(.inline) undershoot.right { background: linear-gradient(to left, rgba(26, 24, 30, 0.6), rgba(26, 24, 30, 0) 20px); }
+tabthumbnail .tab-unpin-icon { margin: 6px; min-width: 24px; min-height: 24px; }
 
-tabbar:not(.inline) .needs-attention-left undershoot.left { background: linear-gradient(to right, alpha(#d8c4f1,0.35), alpha(#d8c4f1,0) 20px); }
+tabthumbnail button.circular { margin: 6px; background-color: alpha(#1a181e,0.75); min-width: 24px; min-height: 24px; }
 
-tabbar:not(.inline) .needs-attention-right undershoot.right { background: linear-gradient(to left, alpha(#d8c4f1,0.35), alpha(#d8c4f1,0) 20px); }
+tabthumbnail button.circular:hover { background-color: alpha(mix(#1a181e,currentColor,0.1),0.75); }
 
-tabbar:not(.inline) .start-action, tabbar:not(.inline) .end-action { background-color: transparent; border-color: #47404f; }
+tabthumbnail button.circular:active { background-color: alpha(mix(#1a181e,currentColor,0.2),0.75); }
 
-tabbar:not(.inline) .start-action:backdrop, tabbar:not(.inline) .end-action:backdrop { border-color: #3f3a44; }
+taboverview > .overview.scrolled-to-top headerbar, taboverview > .overview.scrolled-to-top searchbar > revealer > box { background: none; color: inherit; box-shadow: none; }
 
-tabbar:not(.inline):backdrop .box { background-color: #1d1b20; transition: 150ms ease-out; }
+taboverview > .overview .new-tab-button { margin: 18px; }
 
-dnd tab { min-height: 28px; background-color: #393340; color: #d8c4f1; border-radius: 8px; box-shadow: 0 2px 8px rgba(26, 24, 30, 0.45); outline: 1px solid rgba(48, 43, 54, 0.75); outline-offset: -1px; margin: 27px; }
-
-dnd tab.needs-attention { background-image: radial-gradient(ellipse at bottom, alpha(#d8c4f1,0.35), alpha(#d8c4f1,0) 40%); }
-
-tabbar tab, dnd tab { padding: 2px 6px; }
-
-tabbar tab button.image-button, dnd tab button.image-button { padding: 0; margin: 0; min-width: 24px; min-height: 24px; border-radius: 99px; }
-
-tabview:drop(active), tabbox:drop(active) { box-shadow: none; }
+tabview:drop(active), tabbox:drop(active), tabgrid:drop(active) { box-shadow: none; }
 
 /********* Cards * */
 .card { transition-property: outline, outline-width, outline-offset, outline-color; transition-duration: 300ms; animation-timing-function: ease-in-out; }
@@ -2287,6 +2295,54 @@ flap > shadow:backdrop.right, leaflet > shadow:backdrop.right { background-image
 flap > shadow:backdrop.up, leaflet > shadow:backdrop.up { background-image: linear-gradient(to bottom, alpha(rgba(26, 25, 29, 0.6),0.35), alpha(rgba(26, 25, 29, 0.6),0.1) 40px, alpha(rgba(26, 25, 29, 0.6),0) 56px), linear-gradient(to bottom, alpha(rgba(26, 25, 29, 0.6),0.2), alpha(rgba(26, 25, 29, 0.6),0.1) 7px, alpha(rgba(26, 25, 29, 0.6),0) 24px); }
 
 flap > shadow:backdrop.down, leaflet > shadow:backdrop.down { background-image: linear-gradient(to top, alpha(rgba(26, 25, 29, 0.6),0.35), alpha(rgba(26, 25, 29, 0.6),0.1) 40px, alpha(rgba(26, 25, 29, 0.6),0) 56px), linear-gradient(to top, alpha(rgba(26, 25, 29, 0.6),0.2), alpha(rgba(26, 25, 29, 0.6),0.1) 7px, alpha(rgba(26, 25, 29, 0.6),0) 24px); }
+
+/******************** AdwMessageDialog * */
+window.messagedialog { background-color: #221f26; color: #d8c4f1; }
+
+window.messagedialog:backdrop { background-color: #1d1b20; color: #7b7484; }
+
+window.messagedialog .message-area { padding: 24px 30px; border-spacing: 24px; }
+
+window.messagedialog .message-area.has-heading.has-body { border-spacing: 10px; }
+
+window.messagedialog .response-area > button { padding: 10px 14px; border-radius: 0; }
+
+window.messagedialog .response-area > button.suggested { color: #ffffff; }
+
+window.messagedialog .response-area > button.destructive { color: #fb7c7c; }
+
+window.messagedialog.csd:not(.solid-csd) { border-radius: 13px; }
+
+window.messagedialog.csd:not(.solid-csd) .response-area:not(.compact) > button { margin-top: -1px; margin-right: -1px; margin-left: -1px; }
+
+window.messagedialog.csd:not(.solid-csd) .response-area:not(.compact) > button:first-child:dir(ltr), window.messagedialog.csd:not(.solid-csd) .response-area:not(.compact) > button:last-child:dir(rtl) { border-bottom-left-radius: 13px; margin-left: 0; }
+
+window.messagedialog.csd:not(.solid-csd) .response-area:not(.compact) > button:last-child:dir(ltr), window.messagedialog.csd:not(.solid-csd) .response-area:not(.compact) > button:first-child:dir(rtl) { border-bottom-right-radius: 13px; margin-right: 0; }
+
+window.messagedialog.csd:not(.solid-csd) .response-area.compact > button { margin-top: -1px; margin-bottom: -1px; }
+
+window.messagedialog.csd:not(.solid-csd) .response-area.compact > button:first-child { border-bottom-left-radius: 13px; border-bottom-right-radius: 13px; margin-bottom: 0; }
+
+/************* AdwBanner * */
+banner > revealer > widget { color: #faa483; background-color: #32211a; padding: 6px; }
+
+banner > revealer > widget button { color: #faa483; background-color: #412b22; background-image: none; box-shadow: none; transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background-size 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background-image 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); background-image: radial-gradient(circle farthest-corner at center, transparent 10%, transparent 0%); background-repeat: no-repeat; background-position: center; background-size: 1000% 1000%; }
+
+banner > revealer > widget button:hover { color: #faa483; background-color: #4b3127; background-image: none; box-shadow: 0 2px 8px rgba(26, 24, 30, 0.45); }
+
+banner > revealer > widget button:active { color: #faa483; background-color: #5a3b2f; background-image: none; box-shadow: none; transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background-size 0, background-image 0; animation: ripple_effect 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; background-image: radial-gradient(circle farthest-corner at center, #644234 10%, transparent 0%); background-size: 0% 0%; }
+
+banner > revealer > widget button:checked { color: #1a181e; background-color: #d8c4f1; background: image(#d8c4f1); box-shadow: 0 2px 8px rgba(216, 196, 241, 0.2); }
+
+banner > revealer > widget button:checked:active { color: #1a181e; background-color: #d8c4f1; background: image(#d8c4f1); box-shadow: none; }
+
+banner > revealer > widget button:disabled { color: #7d718c; background-color: transparent; background-image: none; box-shadow: none; }
+
+banner > revealer > widget button:backdrop { color: #7b7484; background-color: #242228; background-image: none; box-shadow: none; }
+
+banner > revealer > widget button:backdrop:disabled { color: #433e49; background-color: transparent; background-image: none; box-shadow: none; }
+
+banner > revealer > widget button:backdrop label, banner > revealer > widget button:backdrop, banner > revealer > widget button label, banner > revealer > widget button { color: #faa483; }
 
 /* GTK NAMED COLORS ---------------- use responsibly! */
 /*

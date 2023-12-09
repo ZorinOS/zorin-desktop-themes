@@ -1,3 +1,15 @@
+zorin-desktop-themes (4.2) jammy; urgency=medium
+
+  * Upgraded Gtk4 theme to be compatible with libadwaita 1.3.3
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 09 Dec 2023 22:45:42 +0000
+
+zorin-desktop-themes (4.1.1) jammy; urgency=medium
+
+  * Updated login backgorund image
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 24 Nov 2023 00:30:15 +0000
+
 zorin-desktop-themes (4.1) jammy; urgency=medium
 
   * Updated login screen background image in GNOME Shell themes
