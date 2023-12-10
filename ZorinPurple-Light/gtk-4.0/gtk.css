@@ -589,11 +589,13 @@ searchbar > revealer > box popover.menu separator:not(.sidebar), .toolbar popove
 
 .toolbar.vertical > separator { margin: 0 4px; }
 
-searchbar > revealer > box { padding: 6px; border-spacing: 6px; border-width: 0 0 1px; }
+searchbar > revealer > box { padding: 6px; border-spacing: 6px; box-shadow: none; border-width: 0 0 1px; }
 
 searchbar > revealer > box { border-style: none; background-color: #f9f7f9; }
 
 searchbar > revealer > box:backdrop { background-color: #f8f8f8; }
+
+searchbar > revealer > box:backdrop > * { filter: none; }
 
 /************** GtkInfoBar * */
 infobar > revealer > box { padding: 8px; border-spacing: 12px; }
@@ -1377,6 +1379,8 @@ frame > label { margin: 4px; }
 actionbar > revealer > box { padding: 6px; border-top: 1px solid #ebe8ec; box-shadow: none; }
 
 actionbar > revealer > box:backdrop { border-color: #ededed; }
+
+actionbar > revealer > box:backdrop > * { filter: none; }
 
 actionbar > revealer > box, actionbar > revealer > box > box.start, actionbar > revealer > box > box.end { border-spacing: 6px; }
 
@@ -2171,7 +2175,7 @@ tabbar:not(.inline) .box { background-color: #ebe8ec; color: #402b4d; padding-bo
 
 tabbar:not(.inline):backdrop .box { background-color: #ededed; color: #878787; transition: background-color 150ms ease-out; box-shadow: none; }
 
-tabbar:not(.inline):backdrop .box > scrolledwindow, tabbar:not(.inline):backdrop .box > .start-action, tabbar:not(.inline):backdrop .box > .end-action { filter: opacity(0.5); transition: filter 150ms ease-out; }
+tabbar:not(.inline):backdrop .box > scrolledwindow, tabbar:not(.inline):backdrop .box > .start-action, tabbar:not(.inline):backdrop .box > .end-action { filter: none; }
 
 dnd tab { background-color: white; background-image: none; color: #402b4d; box-shadow: 0 2px 8px rgba(64, 43, 77, 0.075); outline: 1px solid rgba(64, 43, 77, 0.05); margin: 25px; }
 
