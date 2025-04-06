@@ -1,3 +1,9 @@
+zorin-desktop-themes (4.2.2) jammy; urgency=medium
+
+  * Fixed styling of Chromium-based browsers in Gtk4
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 06 Apr 2025 13:16:27 +0100
+
 zorin-desktop-themes (4.2.1) jammy; urgency=medium
 
   * Improved styling for tabs and actionbars in Gtk4

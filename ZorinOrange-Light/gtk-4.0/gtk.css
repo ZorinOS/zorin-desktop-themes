@@ -1956,6 +1956,17 @@ menubutton arrow.left { -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); 
 
 menubutton arrow.right { -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
 
+/*********** Chromium * */
+window.background.chromium { background-color: white; }
+
+window.background.chromium headerbar.titlebar button.toggle, window.background.chromium headerbar.titlebar button.titlebutton { border: none; }
+
+window.background.chromium headerbar.titlebar button.titlebutton { background-image: none; }
+
+window.background.chromium button { border-style: solid; border-width: 1px; border-color: #eeeae7; }
+
+window.background.chromium > textview.view { background-color: #faf8f7; }
+
 /******************* AdwViewSwitcher * */
 viewswitcher { margin: 0; }
 
