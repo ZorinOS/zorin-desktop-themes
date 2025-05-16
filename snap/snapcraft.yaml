@@ -1,0 +1,72 @@
+name: gtk-theme-zorin
+build-base: core24
+base: bare
+version: '4.2.2'
+platforms:
+  all:
+    build-on: [amd64]
+    build-for: [all]
+summary: GTK themes of Zorin OS.
+description: |
+  A Snap to enable the use of Zorin GTK themes in Snap apps.
+grade: stable
+confinement: strict
+
+slots:
+  gtk-2-themes:
+    interface: content
+    source:
+      read:
+        - $SNAP/share/gtk2/ZorinBlue-Dark
+        - $SNAP/share/gtk2/ZorinBlue-Light
+        - $SNAP/share/gtk2/ZorinGreen-Dark
+        - $SNAP/share/gtk2/ZorinGreen-Light
+        - $SNAP/share/gtk2/ZorinGrey-Dark
+        - $SNAP/share/gtk2/ZorinGrey-Light
+        - $SNAP/share/gtk2/ZorinOrange-Dark
+        - $SNAP/share/gtk2/ZorinOrange-Light
+        - $SNAP/share/gtk2/ZorinPurple-Dark
+        - $SNAP/share/gtk2/ZorinPurple-Light
+        - $SNAP/share/gtk2/ZorinRed-Dark
+        - $SNAP/share/gtk2/ZorinRed-Light
+  gtk-3-themes:
+    interface: content
+    source:
+      read:
+        - $SNAP/share/themes/ZorinBlue-Dark
+        - $SNAP/share/themes/ZorinBlue-Light
+        - $SNAP/share/themes/ZorinGreen-Dark
+        - $SNAP/share/themes/ZorinGreen-Light
+        - $SNAP/share/themes/ZorinGrey-Dark
+        - $SNAP/share/themes/ZorinGrey-Light
+        - $SNAP/share/themes/ZorinOrange-Dark
+        - $SNAP/share/themes/ZorinOrange-Light
+        - $SNAP/share/themes/ZorinPurple-Dark
+        - $SNAP/share/themes/ZorinPurple-Light
+        - $SNAP/share/themes/ZorinRed-Dark
+        - $SNAP/share/themes/ZorinRed-Light
+  
+parts:
+  gtk-2-themes:
+    plugin: dump
+    source: https://github.com/ZorinOS/zorin-desktop-themes/archive/refs/tags/4.2.2.tar.gz
+    override-build: |
+      snapcraftctl build
+      pwd
+      ls -l
+      mkdir -p $CRAFT_PART_INSTALL/share/gtk2
+      mv -f $CRAFT_PART_INSTALL/Zorin* $CRAFT_PART_INSTALL/share/gtk2
+    stage:
+      - share/gtk2/*/gtk-2.0
+  gtk-3-themes:
+    plugin: dump
+    source: https://github.com/ZorinOS/zorin-desktop-themes/archive/refs/tags/4.2.2.tar.gz
+    override-build: |
+      snapcraftctl build
+      pwd
+      ls -l
+      mkdir -p $CRAFT_PART_INSTALL/share/themes
+      mv -f $CRAFT_PART_INSTALL/Zorin* $CRAFT_PART_INSTALL/share/themes
+    stage:
+      - share/themes/*/gtk-3.0
+      - share/themes/*/gtk-4.0
