@@ -1,3 +1,3 @@
-# Zorin Desktop Themes
+# Pinoy OS Desktop Themes
 
-The Zorin OS desktop theme provided in a variety of color combinations.
+The PinoyOS desktop theme provided in a variety of color combinations.
