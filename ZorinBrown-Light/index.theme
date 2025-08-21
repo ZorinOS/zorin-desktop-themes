@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=ZorinBrown-Light
+Comment=The light desktop theme with brown highlights for Zorin OS
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=ZorinBrown-Light
+MetacityTheme=ZorinBrown-Light
+IconTheme=ZorinBrown-Light
+CursorTheme=Adwaita
+ButtonLayout=:minimize,maximize,close

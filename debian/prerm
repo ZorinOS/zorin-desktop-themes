@@ -6,14 +6,18 @@ if [ "$1" = "remove" ]; then
   if [ -d /usr/share/gnome-shell ]
   then
     update-alternatives --remove gdm-theme.gresource \
-      /usr/share/gnome-shell/theme/ZorinBlue-Dark/gnome-shell-theme.gresource
+      /usr/share/gnome-shell/theme/ZorinGrey-Dark/gnome-shell-theme.gresource
 
-    if [ -e /usr/share/gnome-shell/theme/ZorinBlue-Dark/gnome-shell-theme.gresource ]
+    if [ -e /usr/share/gnome-shell/theme/ZorinGrey-Dark/gnome-shell-theme.gresource ]
     then
-        rm /usr/share/gnome-shell/theme/ZorinBlue-Dark/gnome-shell-theme.gresource
-        rmdir /usr/share/gnome-shell/theme/ZorinBlue-Dark
+        rm /usr/share/gnome-shell/theme/ZorinGrey-Dark/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinGrey-Dark
     fi
-
+    if [ -e /usr/share/gnome-shell/theme/ZorinGrey-Light/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinGrey-Light/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinGrey-Light
+    fi
     if [ -e /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource ]
     then
         rm /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource

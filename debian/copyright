@@ -2,7 +2,7 @@ Format: http://dep.debian.net/deps/dep5
 Upstream-Name: zorin-desktop-themes
 
 Files: *
-Copyright: 2015-2023 Zorin OS Technologies Ltd.
+Copyright: 2015-2025 Zorin OS Technologies Ltd.
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

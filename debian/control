@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Maintainer: Artyom Zorin <azorin@zoringroup.com>
 Build-Depends: debhelper (>= 10.3)
-Standards-Version: 4.1.5
+Standards-Version: 4.6.2
 
 Package: zorin-desktop-themes
 Architecture: all

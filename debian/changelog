@@ -1,8 +1,15 @@
-zorin-desktop-themes (4.2.2) jammy; urgency=medium
+zorin-desktop-themes (4.3.1) noble; urgency=medium
 
-  * Fixed styling of Chromium-based browsers in Gtk4
+  * Added code to create symbolic links for ZorinBlue-Light variant in
+    gnome-shell directory
 
- -- Artyom Zorin <azorin@zoringroup.com>  Sun, 06 Apr 2025 13:16:27 +0100
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 09 May 2025 14:17:12 +0100
+
+zorin-desktop-themes (4.3) noble; urgency=medium
+
+  * Switched default GNOME Shell theme to the Grey variant
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Fri, 24 Jan 2025 22:52:22 +0000
 
 zorin-desktop-themes (4.2.1) jammy; urgency=medium
 
