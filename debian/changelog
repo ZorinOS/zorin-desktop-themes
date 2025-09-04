@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.0.1) noble; urgency=medium
+
+  * Various fixes in GNOME Shell themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 04 Sep 2025 14:13:08 +0100
+
 zorin-desktop-themes (5.0) noble; urgency=medium
 
   * Redesigned theme and added Brown and Yellow variants

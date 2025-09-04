@@ -1262,12 +1262,13 @@ StScrollBar {
 
 /* Notifications & Message Tray */
 .notification-banner {
+  background-color: rgba(255, 255, 255, 0.925);
   min-height: 64px;
   width: 34em;
   box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.175);
   border-radius: 15px;
   margin: 4px;
-  border: none; }
+  border: 1px solid transparent; }
 
 .notification-buttons-bin {
   spacing: 0; }

@@ -1132,7 +1132,7 @@ StScrollBar {
     margin: 6px;
     margin-bottom: 0;
     spacing: 6px;
-    color: #966969; }
+    color: gray; }
     .message .message-header .message-source-icon {
       icon-size: 16px;
       -st-icon-style: symbolic; }
@@ -1143,7 +1143,7 @@ StScrollBar {
       .message .message-header .message-header-content .message-source-title {
         font-weight: bold; }
       .message .message-header .message-header-content .event-time {
-        color: #966969;
+        color: gray;
         padding-bottom: 0.068em; }
         .message .message-header .message-header-content .event-time:ltr {
           text-align: right; }
@@ -1262,6 +1262,7 @@ StScrollBar {
 
 /* Notifications & Message Tray */
 .notification-banner {
+  background-color: rgba(30, 20, 20, 0.925);
   min-height: 64px;
   width: 34em;
   box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.4);

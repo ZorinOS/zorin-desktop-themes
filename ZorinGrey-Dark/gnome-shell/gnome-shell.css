@@ -1262,6 +1262,7 @@ StScrollBar {
 
 /* Notifications & Message Tray */
 .notification-banner {
+  background-color: rgba(27, 27, 27, 0.925);
   min-height: 64px;
   width: 34em;
   box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.4);
