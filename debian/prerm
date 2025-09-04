@@ -6,8 +6,38 @@ if [ "$1" = "remove" ]; then
   if [ -d /usr/share/gnome-shell ]
   then
     update-alternatives --remove gdm-theme.gresource \
-      /usr/share/gnome-shell/theme/ZorinGrey-Dark/gnome-shell-theme.gresource
+      /usr/share/gnome-shell/theme/ZorinBlue-Dark/gnome-shell-theme.gresource
 
+    if [ -e /usr/share/gnome-shell/theme/ZorinBlue-Dark/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinBlue-Dark/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinBlue-Dark
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinBlue-Light
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinBrown-Dark/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinBrown-Dark/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinBrown-Dark
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinBrown-Light/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinBrown-Light/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinBrown-Light
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinGreen-Dark/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinGreen-Dark/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinGreen-Dark
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinGreen-Light/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinGreen-Light/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinGreen-Light
+    fi
     if [ -e /usr/share/gnome-shell/theme/ZorinGrey-Dark/gnome-shell-theme.gresource ]
     then
         rm /usr/share/gnome-shell/theme/ZorinGrey-Dark/gnome-shell-theme.gresource
@@ -18,10 +48,45 @@ if [ "$1" = "remove" ]; then
         rm /usr/share/gnome-shell/theme/ZorinGrey-Light/gnome-shell-theme.gresource
         rmdir /usr/share/gnome-shell/theme/ZorinGrey-Light
     fi
-    if [ -e /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource ]
+    if [ -e /usr/share/gnome-shell/theme/ZorinOrange-Dark/gnome-shell-theme.gresource ]
     then
-        rm /usr/share/gnome-shell/theme/ZorinBlue-Light/gnome-shell-theme.gresource
-        rmdir /usr/share/gnome-shell/theme/ZorinBlue-Light
+        rm /usr/share/gnome-shell/theme/ZorinOrange-Dark/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinOrange-Dark
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinOrange-Light/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinOrange-Light/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinOrange-Light
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinPurple-Dark/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinPurple-Dark/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinPurple-Dark
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinPurple-Light/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinPurple-Light/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinPurple-Light
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinRed-Dark/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinRed-Dark/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinRed-Dark
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinRed-Light/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinRed-Light/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinRed-Light
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinYellow-Dark/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinYellow-Dark/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinYellow-Dark
+    fi
+    if [ -e /usr/share/gnome-shell/theme/ZorinYellow-Light/gnome-shell-theme.gresource ]
+    then
+        rm /usr/share/gnome-shell/theme/ZorinYellow-Light/gnome-shell-theme.gresource
+        rmdir /usr/share/gnome-shell/theme/ZorinYellow-Light
     fi
   fi
 fi
