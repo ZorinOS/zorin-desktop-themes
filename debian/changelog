@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.0.2) noble; urgency=medium
+
+  * Tweaked GNOME Shell panel colours
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 04 Sep 2025 19:14:24 +0100
+
 zorin-desktop-themes (5.0.1) noble; urgency=medium
 
   * Various fixes in GNOME Shell themes

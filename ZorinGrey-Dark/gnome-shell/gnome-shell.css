@@ -1674,7 +1674,7 @@ StScrollBar {
 
 /* Top Bar */
 #panel {
-  background-color: rgba(27, 27, 27, 0.7);
+  background-color: rgba(32, 32, 32, 0.7);
   font-weight: bold;
   height: 32px;
   transition-duration: 250ms; }
@@ -2220,7 +2220,7 @@ StScrollBar {
 #dash {
   margin-top: 12px; }
   #dash .dash-background {
-    background-color: rgba(27, 27, 27, 0.7);
+    background-color: rgba(32, 32, 32, 0.7);
     border-radius: 27px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -2281,15 +2281,15 @@ StScrollBar {
     #dash .dash-item-container .grid-search-result:checked .overview-icon {
       transition-duration: 150ms;
       color: #ffffff;
-      background-color: rgba(128, 128, 128, 0.79); }
+      background-color: rgba(131, 131, 131, 0.79); }
       #dash .dash-item-container .show-apps:checked .overview-icon:hover,
       #dash .dash-item-container .overview-tile:checked .overview-icon:hover,
       #dash .dash-item-container .grid-search-result:checked .overview-icon:hover {
-        background-color: rgba(141, 141, 141, 0.805); }
+        background-color: rgba(144, 144, 144, 0.805); }
       #dash .dash-item-container .show-apps:checked .overview-icon:active,
       #dash .dash-item-container .overview-tile:checked .overview-icon:active,
       #dash .dash-item-container .grid-search-result:checked .overview-icon:active {
-        background-color: rgba(159, 159, 159, 0.8275); }
+        background-color: rgba(161, 161, 161, 0.8275); }
   #dash .dash-item-container .app-grid-running-dot {
     offset-y: -12px; }
   #dash .dash-separator {
