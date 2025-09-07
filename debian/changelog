@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.0.3) noble; urgency=medium
+
+  * Adjusted icon margin within search entry in GNOME Shell themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 07 Sep 2025 17:29:44 +0100
+
 zorin-desktop-themes (5.0.2) noble; urgency=medium
 
   * Tweaked GNOME Shell panel colours

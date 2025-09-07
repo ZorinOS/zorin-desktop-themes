@@ -2150,7 +2150,8 @@ StScrollBar {
   border-color: rgba(229, 211, 202, 0.25); }
   .search-entry .search-entry-icon {
     icon-size: 16px;
-    margin-top: 2px;
+    margin-top: 1px;
+    margin-bottom: 1px;
     padding: 0 4px; }
 
 /* Search */
