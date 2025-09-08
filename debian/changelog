@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.0.4) noble; urgency=medium
+
+  * Added vertical separator class to GNOME Shell themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 08 Sep 2025 20:25:30 +0100
+
 zorin-desktop-themes (5.0.3) noble; urgency=medium
 
   * Adjusted icon margin within search entry in GNOME Shell themes
