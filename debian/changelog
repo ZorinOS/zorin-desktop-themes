@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.0.5) noble; urgency=medium
+
+  * Fixed styling in HomeBank
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Thu, 11 Sep 2025 17:35:37 +0100
+
 zorin-desktop-themes (5.0.4) noble; urgency=medium
 
   * Added vertical separator class to GNOME Shell themes

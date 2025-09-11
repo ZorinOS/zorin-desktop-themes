@@ -2192,6 +2192,9 @@ row#AutostartTitle.tweak { padding: 8px 8px 0 8px; }
 
 #weather-page-content-view { border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; }
 
+/************ HomeBank * */
+window.background > box.vertical > box.vertical > paned.vertical > paned.horizontal > box.horizontal > box.vertical > box.horizontal > box.horizontal > frame > box.vertical > overlay widget { border-radius: 0; }
+
 /************* Rhythmbox * */
 window.background.csd > box.vertical > box.vertical > toolbar.horizontal { border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; }
 
