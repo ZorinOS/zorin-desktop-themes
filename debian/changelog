@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.1) noble; urgency=medium
+
+  * Updated login screen background image in GNOME Shell themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 15 Sep 2025 13:17:35 +0100
+
 zorin-desktop-themes (5.0.5) noble; urgency=medium
 
   * Fixed styling in HomeBank
