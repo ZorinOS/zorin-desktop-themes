@@ -421,10 +421,10 @@ StEntry {
 .web-login-url-label {
   font-family: monospace; }
 
-#panel .panel-button.screen-recording-indicator, .world-clocks-button .world-clocks-grid .world-clocks-timezone, .events-button .events-box .events-list .event-box .event-time, .calendar .calendar-day-heading {
+#panel, .world-clocks-button .world-clocks-grid .world-clocks-timezone, .events-button .events-box .events-list .event-box .event-time, .calendar .calendar-day-heading {
   font-feature-settings: "tnum"; }
 
-.unlock-dialog-clock .unlock-dialog-clock-time, #panel, .weather-button .weather-box .weather-grid .weather-forecast-temp, .world-clocks-button .world-clocks-grid .world-clocks-time, .calendar .calendar-day {
+.unlock-dialog-clock .unlock-dialog-clock-time, .weather-button .weather-box .weather-grid .weather-forecast-temp, .world-clocks-button .world-clocks-grid .world-clocks-time, .calendar .calendar-day {
   font-feature-settings: normal; }
 
 /* OSD Elements */
