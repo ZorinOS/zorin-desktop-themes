@@ -2310,7 +2310,7 @@ stacksidebar row.needs-attention > label { background-size: 6px 6px, 0 0; }
 /********************** Navigation Sidebar * */
 .navigation-sidebar { padding: 6px 0; }
 
-.navigation-sidebar, .navigation-sidebar.view, window.print .navigation-sidebar.dialog-action-box, .navigation-sidebar.view:disabled { background-color: transparent; color: inherit; }
+.navigation-sidebar, .navigation-sidebar:backdrop, .navigation-sidebar.view, window.print .navigation-sidebar.dialog-action-box, .navigation-sidebar.view:backdrop, .navigation-sidebar.view:disabled, .navigation-sidebar.view:disabled:backdrop { background-color: transparent; color: inherit; }
 
 .navigation-sidebar.background, .navigation-sidebar.background:disabled { background-color: @window_bg_color; color: @window_fg_color; }
 

@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.1.2) noble; urgency=medium
+
+  * Fixed navigation-sidebar backdrop styling in Gtk4 themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sat, 27 Sep 2025 18:04:45 +0100
+
 zorin-desktop-themes (5.1.1) noble; urgency=medium
 
   * Made GNOME Shell panel numbers numeric font style
