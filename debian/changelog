@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.1.3) noble; urgency=medium
+
+  * Fixed titlebar buttons in Chromium-based browsers
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Mon, 29 Sep 2025 17:33:04 +0100
+
 zorin-desktop-themes (5.1.2) noble; urgency=medium
 
   * Fixed navigation-sidebar backdrop styling in Gtk4 themes
