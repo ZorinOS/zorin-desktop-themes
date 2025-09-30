@@ -1,3 +1,10 @@
+zorin-desktop-themes (5.1.4) noble; urgency=medium
+
+  * Fixed disabled state for check and radio buttons in Gtk 3 themes and
+    tile button styling in GNOME Shell themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Tue, 30 Sep 2025 22:44:31 +0100
+
 zorin-desktop-themes (5.1.3) noble; urgency=medium
 
   * Fixed titlebar buttons in Chromium-based browsers

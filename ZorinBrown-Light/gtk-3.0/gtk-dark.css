@@ -1002,7 +1002,11 @@ check:hover, radio:hover { background: image(#252120); }
 
 check:active, radio:active { background: image(#2f2b29); }
 
+check:disabled, radio:disabled { background-image: none; background-color: rgba(27, 24, 23, 0.5); box-shadow: inset 0 0 0 1px rgba(79, 72, 68, 0.5); color: #e5d3ca; }
+
 check:backdrop, radio:backdrop { background-image: none; background-color: #1c1a1a; box-shadow: inset 0 0 0 1px #4d4946; color: #e5d3ca; }
+
+check:backdrop:disabled, radio:backdrop:disabled { background-image: none; background-color: rgba(28, 26, 26, 0.5); box-shadow: inset 0 0 0 1px rgba(77, 73, 70, 0.5); color: #e5d3ca; opacity: 0.5; }
 
 check:checked, radio:checked { background-clip: border-box; background: image(#e5d3ca); box-shadow: none; color: #1b1817; }
 
@@ -1010,7 +1014,11 @@ check:checked:hover, radio:checked:hover { background: image(#e5d3ca); }
 
 check:checked:active, radio:checked:active { background: image(#e5d3ca); }
 
+check:checked:disabled, radio:checked:disabled { background-image: none; background-color: rgba(229, 211, 202, 0.5); box-shadow: none; color: #1b1817; }
+
 check:checked:backdrop, radio:checked:backdrop { background-image: none; background-color: #a89f9a; box-shadow: none; color: #1b1817; }
+
+check:checked:backdrop:disabled, radio:checked:backdrop:disabled { background-image: none; background-color: rgba(168, 159, 154, 0.5); box-shadow: none; color: #1b1817; opacity: 0.5; }
 
 check:indeterminate, radio:indeterminate { background-clip: border-box; background: image(#e5d3ca); box-shadow: none; color: #1b1817; }
 
@@ -1018,9 +1026,11 @@ check:indeterminate:hover, radio:indeterminate:hover { background: image(#e5d3ca
 
 check:indeterminate:active, radio:indeterminate:active { background: image(#e5d3ca); }
 
+check:indeterminate:disabled, radio:indeterminate:disabled { background-image: none; background-color: rgba(229, 211, 202, 0.5); box-shadow: none; color: #1b1817; }
+
 check:indeterminate:backdrop, radio:indeterminate:backdrop { background-image: none; background-color: #a89f9a; box-shadow: none; color: #1b1817; }
 
-check:disabled, radio:disabled { opacity: 0.5; }
+check:indeterminate:backdrop:disabled, radio:indeterminate:backdrop:disabled { background-image: none; background-color: rgba(168, 159, 154, 0.5); box-shadow: none; color: #1b1817; opacity: 0.5; }
 
 check:backdrop, radio:backdrop { transition: 150ms ease-out; }
 

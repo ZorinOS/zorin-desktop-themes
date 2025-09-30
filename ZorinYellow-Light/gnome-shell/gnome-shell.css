@@ -1482,15 +1482,20 @@ StScrollBar {
     spacing: 12px; }
   .switcher-list .item-box {
     color: #565014;
+    text-shadow: 0px 1.5px 3px rgba(246, 245, 234, 0.5);
     background-color: transparent; }
     .switcher-list .item-box:selected, .switcher-list .item-box:focus, .switcher-list .item-box:hover {
-      background-color: rgba(86, 80, 20, 0.125); }
+      background-color: rgba(86, 80, 20, 0.125);
+      text-shadow: none; }
     .switcher-list .item-box:active {
-      background-color: rgba(86, 80, 20, 0.175); }
+      background-color: rgba(86, 80, 20, 0.175);
+      text-shadow: none; }
     .switcher-list .item-box:highlighted, .switcher-list .item-box:checked {
-      background-color: rgba(246, 190, 26, 0.3); }
+      background-color: rgba(246, 190, 26, 0.3);
+      text-shadow: none; }
     .switcher-list .item-box:insensitive {
-      background-color: transparent; }
+      background-color: transparent;
+      text-shadow: none; }
     .switcher-list .item-box:drop {
       background-color: rgba(246, 190, 26, 0.2);
       box-shadow: inset 0 0 0 2px rgba(246, 190, 26, 0.8); }
@@ -2180,16 +2185,21 @@ StScrollBar {
 
 .list-search-result, .search-provider-icon {
   color: #565014;
+  text-shadow: 0px 1.5px 3px rgba(246, 245, 234, 0.5);
   background-color: transparent;
   border-radius: 14.85px; }
   .list-search-result:selected, .search-provider-icon:selected, .list-search-result:focus, .search-provider-icon:focus, .list-search-result:hover, .search-provider-icon:hover {
-    background-color: rgba(86, 80, 20, 0.125); }
+    background-color: rgba(86, 80, 20, 0.125);
+    text-shadow: none; }
   .list-search-result:active, .search-provider-icon:active {
-    background-color: rgba(86, 80, 20, 0.175); }
+    background-color: rgba(86, 80, 20, 0.175);
+    text-shadow: none; }
   .list-search-result:highlighted, .search-provider-icon:highlighted, .list-search-result:checked, .search-provider-icon:checked {
-    background-color: rgba(246, 190, 26, 0.3); }
+    background-color: rgba(246, 190, 26, 0.3);
+    text-shadow: none; }
   .list-search-result:insensitive, .search-provider-icon:insensitive {
-    background-color: transparent; }
+    background-color: transparent;
+    text-shadow: none; }
   .list-search-result:drop, .search-provider-icon:drop {
     background-color: rgba(246, 190, 26, 0.2);
     box-shadow: inset 0 0 0 2px rgba(246, 190, 26, 0.8); }
@@ -2372,17 +2382,22 @@ StScrollBar {
 /* App Icons */
 .overview-tile, .grid-search-result {
   color: #565014;
+  text-shadow: 0px 1.5px 3px rgba(246, 245, 234, 0.5);
   background-color: transparent;
   border-radius: 27px;
   padding: 12px; }
   .overview-tile:selected, .grid-search-result:selected, .overview-tile:focus, .grid-search-result:focus, .overview-tile:hover, .grid-search-result:hover {
-    background-color: rgba(86, 80, 20, 0.125); }
+    background-color: rgba(86, 80, 20, 0.125);
+    text-shadow: none; }
   .overview-tile:active, .grid-search-result:active {
-    background-color: rgba(86, 80, 20, 0.175); }
+    background-color: rgba(86, 80, 20, 0.175);
+    text-shadow: none; }
   .overview-tile:highlighted, .grid-search-result:highlighted, .overview-tile:checked, .grid-search-result:checked {
-    background-color: rgba(246, 190, 26, 0.3); }
+    background-color: rgba(246, 190, 26, 0.3);
+    text-shadow: none; }
   .overview-tile:insensitive, .grid-search-result:insensitive {
-    background-color: transparent; }
+    background-color: transparent;
+    text-shadow: none; }
   .overview-tile:drop, .grid-search-result:drop {
     background-color: rgba(246, 190, 26, 0.2);
     box-shadow: inset 0 0 0 2px rgba(246, 190, 26, 0.8); }
@@ -2391,15 +2406,20 @@ StScrollBar {
 
 .app-folder {
   color: #565014;
+  text-shadow: 0px 1.5px 3px rgba(246, 245, 234, 0.5);
   background-color: rgba(86, 80, 20, 0.125); }
   .app-folder:selected, .app-folder:focus, .app-folder:hover {
-    background-color: rgba(86, 80, 20, 0.175); }
+    background-color: rgba(86, 80, 20, 0.175);
+    text-shadow: none; }
   .app-folder:active {
-    background-color: rgba(86, 80, 20, 0.225); }
+    background-color: rgba(86, 80, 20, 0.225);
+    text-shadow: none; }
   .app-folder:highlighted, .app-folder:checked {
-    background-color: rgba(246, 190, 26, 0.3); }
+    background-color: rgba(246, 190, 26, 0.3);
+    text-shadow: none; }
   .app-folder:insensitive {
-    background-color: rgba(86, 80, 20, 0.075); }
+    background-color: rgba(86, 80, 20, 0.075);
+    text-shadow: none; }
   .app-folder:drop {
     background-color: rgba(246, 190, 26, 0.2);
     box-shadow: inset 0 0 0 2px rgba(246, 190, 26, 0.8); }
@@ -2475,15 +2495,20 @@ StScrollBar {
         background-color: #dbd7bc; }
   .app-folder-dialog .overview-tile, .app-folder-dialog .grid-search-result {
     color: #565014;
+    text-shadow: 0px 1.5px 3px rgba(246, 245, 234, 0.5);
     background-color: transparent; }
     .app-folder-dialog .overview-tile:selected, .app-folder-dialog .grid-search-result:selected, .app-folder-dialog .overview-tile:focus, .app-folder-dialog .grid-search-result:focus, .app-folder-dialog .overview-tile:hover, .app-folder-dialog .grid-search-result:hover {
-      background-color: rgba(86, 80, 20, 0.125); }
+      background-color: rgba(86, 80, 20, 0.125);
+      text-shadow: none; }
     .app-folder-dialog .overview-tile:active, .app-folder-dialog .grid-search-result:active {
-      background-color: rgba(86, 80, 20, 0.175); }
+      background-color: rgba(86, 80, 20, 0.175);
+      text-shadow: none; }
     .app-folder-dialog .overview-tile:highlighted, .app-folder-dialog .grid-search-result:highlighted, .app-folder-dialog .overview-tile:checked, .app-folder-dialog .grid-search-result:checked {
-      background-color: rgba(246, 190, 26, 0.3); }
+      background-color: rgba(246, 190, 26, 0.3);
+      text-shadow: none; }
     .app-folder-dialog .overview-tile:insensitive, .app-folder-dialog .grid-search-result:insensitive {
-      background-color: transparent; }
+      background-color: transparent;
+      text-shadow: none; }
     .app-folder-dialog .overview-tile:drop, .app-folder-dialog .grid-search-result:drop {
       background-color: rgba(246, 190, 26, 0.2);
       box-shadow: inset 0 0 0 2px rgba(246, 190, 26, 0.8); }
