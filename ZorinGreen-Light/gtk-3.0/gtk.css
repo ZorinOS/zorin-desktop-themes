@@ -2235,6 +2235,12 @@ stacksidebar.sidebar > scrolledwindow > viewport.frame > list { border-radius: 0
 
 .thunar .standard-view > .view, .thunar .standard-view > iconview { border-radius: 0; }
 
+window.thunar .standard-view.frame { border: none; }
+
+window.thunar .standard-view.frame .view:selected, window.thunar .standard-view.frame iconview:selected { color: white; }
+
+window.thunar .standard-view.frame .view:selected:backdrop, window.thunar .standard-view.frame iconview:selected:backdrop { color: white; }
+
 /*********************** LightDM Gtk Greeter * */
 .lightdm-gtk-greeter #panel_window { border-radius: 0; border: none; background-color: #ebf4f2; }
 
@@ -2273,7 +2279,7 @@ wnck-pager:hover { background-color: #e2e8e7; }
 
 wnck-pager:selected { background-color: #d1dad8; }
 
-XfdesktopIconView.view { background: transparent; color: white; }
+XfdesktopIconView.view, XfdesktopIconView.view:backdrop { background: transparent; color: white; }
 
 XfdesktopIconView.view:active { background: #2ac88d; color: white; text-shadow: none; }
 

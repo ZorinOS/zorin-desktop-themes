@@ -2,7 +2,7 @@
 static char * close_inactive_xpm[] = {
 "26 26 4 1",
 " 	c None",
-".	c #f7f7f7",
+".	c #eeeeee",
 "#	c #323331 s inactive_text_color",
 "$	c #4C4E59 s inactive_text_color",
 "..........................",

@@ -2,7 +2,7 @@
 static char * menu_inactive_xpm[] = {
 "26 26 4 1",
 " 	c None",
-".	c #201a18",
+".	c #252219",
 "#	c #333333 s inactive_text_color",
 "$	c #626277 s inactive_text_color",
 "..........................",

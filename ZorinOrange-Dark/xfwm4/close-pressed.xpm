@@ -2,9 +2,9 @@
 static char * close_pressed_xpm[] = {
 "26 26 4 1",
 " 	c None",
-".	c #271e1b",
-"#	c #FB7C7C",
-"$	c #FB7C7C",
+".	c #2e231f",
+"#	c #323331 s active_text_color",
+"$	c #4C4E59 s active_text_color",
 "..........................",
 "..........................",
 "..........................",

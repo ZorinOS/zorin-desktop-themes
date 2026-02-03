@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.2) noble; urgency=medium
+
+  * Updated GTK 3.0 and XFWM themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Tue, 03 Feb 2026 00:43:39 +0000
+
 zorin-desktop-themes (5.1.4) noble; urgency=medium
 
   * Fixed disabled state for check and radio buttons in Gtk 3 themes and

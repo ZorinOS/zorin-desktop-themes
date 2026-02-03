@@ -2,7 +2,7 @@
 static char * hide_pressed_xpm[] = {
 "26 26 3 1",
 " 	c None",
-".	c #f6f9f9",
+".	c #ebf4f2",
 "+	c #333333 s active_text_color",
 "..........................",
 "..........................",

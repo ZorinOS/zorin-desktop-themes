@@ -2,7 +2,7 @@
 static char * shade_toggled_pressed_xpm[] = {
 "26 26 4 1",
 " 	c None",
-".	c #faf8f7",
+".	c #f6f5ea",
 "#	c #333333 s active_text_color",
 "$	c #626277 s active_text_color",
 "..........................",

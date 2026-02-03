@@ -2,7 +2,7 @@
 static char * shade_inactive_xpm[] = {
 "26 26 4 1",
 " 	c None",
-".	c #f9f7f9",
+".	c #f2f2f2",
 "#	c #333333 s inactive_text_color",
 "$	c #626277 s inactive_text_color",
 "..........................",

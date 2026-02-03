@@ -2,7 +2,7 @@
 static char * stick_active_xpm[] = {
 "26 26 4 1",
 " 	c None",
-".	c #1b2421",
+".	c #202b27",
 "#	c #333333 s active_text_color",
 "$	c #626277 s active_text_color",
 "..........................",

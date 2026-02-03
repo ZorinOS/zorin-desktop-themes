@@ -2,7 +2,7 @@
 static char * stick_toggled_prelight_xpm[] = {
 "26 26 4 1",
 " 	c None",
-".	c #221f26",
+".	c #28232d",
 "#	c #333333 s active_text_color",
 "$	c #626277 s active_text_color",
 "..........................",
