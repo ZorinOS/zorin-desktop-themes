@@ -2292,6 +2292,9 @@ XfdesktopIconView.view .label { text-shadow: 1px 1px 2px black; }
 /* Xfwm4's alt-tab dialog, aka "tabwin" */
 #xfwm-tabwin { border-radius: 15px; }
 
+/* Items in Xfce Settings Manager */
+.exoiconview.view .view, iconview.exoiconview .view, .exoiconview.view iconview, iconview.exoiconview iconview { border-radius: 0; }
+
 /******************* Zorin Menu Lite * */
 #zorinmenulite-window, #zorinmenulite-window > frame > stack { border-radius: 15px; }
 

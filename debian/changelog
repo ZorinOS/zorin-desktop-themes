@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.2.2) noble; urgency=medium
+
+  * Updated exoiconview styling
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 08 Feb 2026 19:48:18 +0000
+
 zorin-desktop-themes (5.2.1) noble; urgency=medium
 
   * Added border and rounding to Zorin Menu Lite
