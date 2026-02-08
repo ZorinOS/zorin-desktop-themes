@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.2.1) noble; urgency=medium
+
+  * Added border and rounding to Zorin Menu Lite
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Sun, 08 Feb 2026 18:36:49 +0000
+
 zorin-desktop-themes (5.2) noble; urgency=medium
 
   * Updated GTK 3.0 and XFWM themes

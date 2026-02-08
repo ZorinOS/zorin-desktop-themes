@@ -2292,6 +2292,11 @@ XfdesktopIconView.view .label { text-shadow: 1px 1px 2px black; }
 /* Xfwm4's alt-tab dialog, aka "tabwin" */
 #xfwm-tabwin { border-radius: 15px; }
 
+/******************* Zorin Menu Lite * */
+#zorinmenulite-window, #zorinmenulite-window > frame > stack { border-radius: 15px; }
+
+#zorinmenulite-window > frame > stack { box-shadow: 0 0 0 1px #3a3a3a; }
+
 /* GTK NAMED COLORS ---------------- use responsibly! */
 /*
 widget text/foreground color */
