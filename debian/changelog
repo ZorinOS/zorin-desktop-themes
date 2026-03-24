@@ -1,3 +1,9 @@
+zorin-desktop-themes (5.2.3) noble; urgency=medium
+
+  * Updated shadows and popup borders in GNOME Shell themes
+
+ -- Artyom Zorin <azorin@zoringroup.com>  Tue, 24 Mar 2026 17:34:26 +0000
+
 zorin-desktop-themes (5.2.2) noble; urgency=medium
 
   * Updated exoiconview styling
